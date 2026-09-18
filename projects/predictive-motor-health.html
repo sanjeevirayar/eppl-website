@@ -1,0 +1,2922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Predictive Motor Health & Operating-State Analyzer — an engineered condition-monitoring prototype for observing electrical, vibration, thermal and rotational behaviour of electric motors.">
+
+    <title>
+        Predictive Motor Health & Operating-State Analyzer | Engineering Projects & Prototypes Lab
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../project-detail.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         NAVIGATION
+    ======================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                EPPL
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#analysis">
+                    System Focus
+                </a>
+
+                <a href="#engineering">
+                    Engineering
+                </a>
+
+                <a href="#development">
+                    Development
+                </a>
+
+                <a href="#applications">
+                    Applications
+                </a>
+
+            </nav>
+
+            <a href="../index.html#contact" class="nav-button">
+                Discuss a Project
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ========================================
+             PROJECT HERO
+        ======================================== -->
+
+        <section class="project-detail-hero">
+
+             <!-- BACKGROUND IMAGE -->
+            <div class="project-hero-bg" style="background-image: url('../assets/images/project-04.jpg');">
+            </div>
+
+            <!-- DARK OVERLAY -->
+            <div class="project-hero-overlay"></div>
+
+            <div class="container">
+
+                <div class="project-detail-meta">
+
+                    <span class="eyebrow">
+                        PROJECT 02
+                    </span>
+
+                    <span class="project-status-label">
+                        ENGINEERED PROTOTYPE
+                    </span>
+
+                </div>
+
+
+                <h1>
+                    Predictive Motor Health
+                    <span>& Operating-State Analyzer</span>
+                </h1>
+
+
+                <div class="project-detail-tags">
+
+                    <span>Condition Monitoring</span>
+                    <span>Motor Analysis</span>
+                    <span>Predictive Maintenance</span>
+
+                </div>
+
+
+                <p class="project-detail-intro">
+                    A multi-parameter motor condition-monitoring system
+                    developed to measure electrical, vibration, thermal
+                    and rotational behaviour, identify motor operating
+                    states and detect developing deviations from established
+                    operating patterns.
+                </p>
+
+
+                <a href="../index.html#projects" class="project-back-link">
+                    ← Back to Projects
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             THE CHALLENGE
+        ======================================== -->
+
+        <section class="project-detail-section challenge-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        THE CHALLENGE
+                    </p>
+
+                    <h2>
+                        Understanding motor
+                        <span>condition before failure.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text-block">
+
+                    <p>
+                        Electric motors can continue running even while
+                        electrical, mechanical or thermal conditions are
+                        gradually changing.
+                    </p>
+
+                    <p>
+                        A single current reading or temperature measurement
+                        provides only part of the picture. Motor loading,
+                        vibration, temperature and rotational speed can all
+                        change for different reasons and must be interpreted
+                        within the actual operating state of the machine.
+                    </p>
+
+                    <p>
+                        This project addresses that problem by combining
+                        multiple sensor inputs, identifying the motor's
+                        operating state and tracking how its characteristic
+                        behaviour develops over time.
+                    </p>
+
+                </div>
+
+
+                <div class="engineering-flow">
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Sense
+                        </h3>
+
+                        <p>
+                            Measure current, vibration, temperature
+                            and rotational speed.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Recognize
+                        </h3>
+
+                        <p>
+                            Identify whether the motor is idle,
+                            starting, running or behaving unusually.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Compare
+                        </h3>
+
+                        <p>
+                            Compare current behaviour against established
+                            operating baselines.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Indicate
+                        </h3>
+
+                        <p>
+                            Highlight developing deviations that require
+                            maintenance investigation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             THE CONCEPT
+        ======================================== -->
+
+        <section id="concept" class="project-detail-section concept-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        THE CONCEPT
+                    </p>
+
+                    <h2>
+                        From motor signals to
+                        <span>condition insight.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text-block">
+
+                    <p>
+                        The system measures motor behaviour using several
+                        independent sensing channels rather than relying on
+                        one measurement alone.
+                    </p>
+
+                    <p>
+                        Current measurements represent electrical loading,
+                        vibration captures mechanical behaviour, temperature
+                        indicates thermal condition and rotational sensing
+                        establishes motor speed and operating state.
+                    </p>
+
+                    <p>
+                        These signals are processed together to create a
+                        baseline for normal operating conditions. New
+                        measurements are then compared against those patterns
+                        so gradual changes can be detected and presented as
+                        condition indicators.
+                    </p>
+
+                </div>
+
+
+                <div class="concept-flow">
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            01
+                        </span>
+
+                        <h3>
+                            SENSE
+                        </h3>
+
+                        <p>
+                            Capture electrical and physical
+                            motor behaviour.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            02
+                        </span>
+
+                        <h3>
+                            IDENTIFY
+                        </h3>
+
+                        <p>
+                            Determine the current operating
+                            state of the motor.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            03
+                        </span>
+
+                        <h3>
+                            BASELINE
+                        </h3>
+
+                        <p>
+                            Establish expected patterns for
+                            normal operating conditions.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            04
+                        </span>
+
+                        <h3>
+                            INDICATE
+                        </h3>
+
+                        <p>
+                            Detect significant deviations and
+                            developing condition trends.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SYSTEM ARCHITECTURE
+        ======================================== -->
+
+        <section id="architecture" class="project-detail-section architecture-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        SYSTEM ARCHITECTURE
+                    </p>
+
+                    <h2>
+                        How the system
+                        <span>works.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="architecture-diagram">
+
+                    <!-- MOTOR -->
+
+                    <div class="architecture-block architecture-environment">
+
+                        <span class="architecture-block-title">
+                            MOTOR
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Electrical & Mechanical Operation</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- SENSING -->
+
+                    <div class="architecture-block">
+
+                        <span class="architecture-block-title">
+                            MULTI-PARAMETER SENSING
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Current</span>
+                            <span>Vibration</span>
+                            <span>Temperature</span>
+                            <span>Speed</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- ACQUISITION -->
+
+                    <div class="architecture-block">
+
+                        <span class="architecture-block-title">
+                            DATA ACQUISITION
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Sampling</span>
+                            <span>Signal Processing</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- ANALYSIS -->
+
+                    <div class="architecture-block architecture-core">
+
+                        <span class="architecture-block-title">
+                            CONDITION ANALYSIS
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>State Recognition</span>
+                            <span>Baseline Comparison</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- OUTPUT -->
+
+                    <div class="architecture-block architecture-output">
+
+                        <span class="architecture-block-title">
+                            HEALTH VIEW
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Status</span>
+                            <span>Trends</span>
+                            <span>Deviation</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SYSTEM FOCUS
+        ======================================== -->
+
+        <section id="analysis" class="project-detail-section monitoring-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        SYSTEM FOCUS
+                    </p>
+
+                    <h2>
+                        What the system
+                        <span>observes.</span>
+                    </h2>
+
+                    <p>
+                        Electrical and physical measurements are evaluated
+                        together so that changes can be interpreted within
+                        the motor's actual operating condition.
+                    </p>
+
+                </div>
+
+
+                <div class="monitoring-grid">
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Electrical Behaviour
+                        </h3>
+
+                        <p>
+                            Tracks phase current and loading behaviour
+                            during motor startup and steady operation.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Vibration Behaviour
+                        </h3>
+
+                        <p>
+                            Measures three-axis vibration and tracks changes
+                            in the mechanical behaviour of the motor.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Thermal Behaviour
+                        </h3>
+
+                        <p>
+                            Monitors motor-body temperature and compares
+                            thermal behaviour with load and operating time.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Operating State & Trend
+                        </h3>
+
+                        <p>
+                            Uses rotational and sensor information to identify
+                            motor state and track characteristic changes over
+                            repeated operating cycles.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             ENGINEERING
+        ======================================== -->
+
+        <section id="engineering" class="project-detail-section engineering-build-section">
+
+            <div class="container">
+
+
+                <!-- ========================================
+                     ENGINEERING BUILD
+                ======================================== -->
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        ENGINEERING BUILD
+                    </p>
+
+                    <h2>
+                        Hardware behind the
+                        <span>motor-health analyzer.</span>
+                    </h2>
+
+                    <p>
+                        The prototype combines isolated current measurement,
+                        three-axis vibration sensing, RTD temperature
+                        measurement, rotational sensing, high-speed embedded
+                        acquisition and time-series monitoring.
+                    </p>
+
+                </div>
+
+
+                <div class="engineering-table-wrapper">
+
+                    <table class="engineering-table">
+
+                        <thead>
+                            <tr>
+                                <th>FUNCTION</th>
+                                <th>HARDWARE</th>
+                                <th>PURPOSE</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Motor Test Platform</td>
+
+                                <td>
+                                    12 VDC Motor
+                                </td>
+
+                                <td>
+                                    Provides the rotating equipment used
+                                    to demonstrate different motor
+                                    operating conditions.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Current Measurement</td>
+
+                                <td>
+                                    ACS712 Current Sensor Module
+                                </td>
+
+                                <td>
+                                    Measures motor electrical loading
+                                    during startup and normal operation.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Vibration Measurement</td>
+
+                                <td>
+                                    ADXL345 3-Axis Accelerometer
+                                </td>
+
+                                <td>
+                                    Measures three-axis vibration for
+                                    mechanical-condition analysis.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Temperature Measurement</td>
+
+                                <td>
+                                    DS18B20 Digital Temperature Sensor
+                                </td>
+
+                                <td>
+                                    Tracks motor surface temperature
+                                    across different operating states.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Rotational Speed</td>
+
+                                <td>
+                                    A3144 Hall Sensor
+                                    + Shaft Magnet
+                                </td>
+
+                                <td>
+                                    Generates rotational pulses used to
+                                    calculate RPM and identify motor state.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Data Acquisition</td>
+
+                                <td>
+                                    STM32 NUCLEO-F446RE
+                                </td>
+
+                                <td>
+                                    Samples sensor measurements and performs
+                                    primary signal processing.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Edge Processing</td>
+
+                                <td>
+                                    Raspberry Pi 4 Model B
+                                </td>
+
+                                <td>
+                                    Handles historical storage,
+                                    condition comparison and trend analysis.
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <p class="engineering-software-note">
+                    <strong>Software Stack:</strong>
+                    Python · InfluxDB · Grafana
+                </p>
+
+                <!-- ========================================
+                     ENGINEERING SUBSECTION 01
+                     MONITORING ARRANGEMENT
+                ======================================== -->
+
+                <div class="engineering-subsection">
+
+                    <div class="engineering-subsection-heading">
+
+                        <span class="engineering-subsection-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Motor Monitoring Arrangement
+                            </h3>
+
+                            <p>
+                                The sensor arrangement captures electrical,
+                                mechanical and thermal behaviour around the
+                                same motor while keeping the monitoring system
+                                independent from the motor protection circuit.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ========================================
+     PREDICTIVE MOTOR HEALTH TOPOLOGY
+======================================== -->
+
+                    <div class="system-topology motor-health-topology">
+
+
+                        <!-- ========================================
+         LEGEND
+    ======================================== -->
+
+                        <div class="topology-legend">
+
+                            <div class="legend-item">
+                                <span class="legend-line physical-line"></span>
+                                <span>Motor / Mechanical System</span>
+                            </div>
+
+                            <div class="legend-item">
+                                <span class="legend-line data-line"></span>
+                                <span>Measurement Data</span>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         MOTOR TEST PLATFORM
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                PROTOTYPE MOTOR TEST PLATFORM
+                            </div>
+
+
+                            <div class="motor-platform">
+
+
+                                <!-- POWER -->
+
+                                <div class="motor-power-node">
+
+                                    <span>
+                                        MOTOR SUPPLY
+                                    </span>
+
+                                    <strong>
+                                        12 VDC Bench Supply
+                                    </strong>
+
+                                    <small>
+                                        Safe prototype motor power source
+                                    </small>
+
+                                </div>
+
+
+                                <div class="motor-power-path">
+                                    →
+                                </div>
+
+
+                                <!-- CURRENT SENSOR -->
+
+                                <div class="motor-power-node motor-current-node">
+
+                                    <span>
+                                        CURRENT SENSING
+                                    </span>
+
+                                    <strong>
+                                        ACS712
+                                    </strong>
+
+                                    <small>
+                                        Motor electrical loading
+                                    </small>
+
+                                </div>
+
+
+                                <div class="motor-power-path">
+                                    →
+                                </div>
+
+
+                                <!-- MOTOR -->
+
+                                <div class="motor-main-node">
+
+                                    <div class="motor-symbol">
+
+                                        <span>
+                                            M
+                                        </span>
+
+                                    </div>
+
+                                    <div class="motor-main-text">
+
+                                        <span>
+                                            MONITORED EQUIPMENT
+                                        </span>
+
+                                        <strong>
+                                            12 VDC Motor
+                                        </strong>
+
+                                        <small>
+                                            Prototype rotating machine
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- SHAFT -->
+
+                                <div class="motor-shaft">
+
+                                    <div class="motor-shaft-line"></div>
+
+                                    <span>
+                                        SHAFT
+                                    </span>
+
+                                    <div class="shaft-marker"></div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         MOTOR CONDITION SENSORS
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                MULTI-PARAMETER CONDITION SENSING
+                            </div>
+
+
+                            <div class="motor-sensing-map">
+
+
+                                <!-- CENTRAL MOTOR -->
+
+                                <div class="motor-center">
+
+                                    <div class="motor-center-symbol">
+                                        M
+                                    </div>
+
+                                    <span>
+                                        MONITORED MOTOR
+                                    </span>
+
+                                    <strong>
+                                        Electrical + Mechanical Behaviour
+                                    </strong>
+
+                                    <small>
+                                        All measurements relate to the same
+                                        operating machine
+                                    </small>
+
+                                </div>
+
+
+
+                                <!-- CURRENT -->
+
+                                <div class="motor-sensor-card motor-sensor-current">
+
+                                    <span>
+                                        ELECTRICAL
+                                    </span>
+
+                                    <strong>
+                                        ACS712
+                                    </strong>
+
+                                    <small>
+                                        Motor current and
+                                        load behaviour
+                                    </small>
+
+                                </div>
+
+
+
+                                <!-- VIBRATION -->
+
+                                <div class="motor-sensor-card motor-sensor-vibration">
+
+                                    <span>
+                                        MECHANICAL
+                                    </span>
+
+                                    <strong>
+                                        ADXL345
+                                    </strong>
+
+                                    <small>
+                                        Three-axis vibration
+                                        behaviour
+                                    </small>
+
+                                </div>
+
+
+
+                                <!-- TEMPERATURE -->
+
+                                <div class="motor-sensor-card motor-sensor-temperature">
+
+                                    <span>
+                                        THERMAL
+                                    </span>
+
+                                    <strong>
+                                        DS18B20
+                                    </strong>
+
+                                    <small>
+                                        Motor surface
+                                        temperature
+                                    </small>
+
+                                </div>
+
+
+
+                                <!-- SPEED -->
+
+                                <div class="motor-sensor-card motor-sensor-speed">
+
+                                    <span>
+                                        ROTATIONAL
+                                    </span>
+
+                                    <strong>
+                                        A3144 Hall Sensor
+                                    </strong>
+
+                                    <small>
+                                        Shaft speed and
+                                        operating state
+                                    </small>
+
+                                </div>
+
+
+                                <!-- SENSOR CONNECTIONS -->
+
+                                <div class="motor-sensor-line current-line"></div>
+                                <div class="motor-sensor-line vibration-line"></div>
+                                <div class="motor-sensor-line temperature-line"></div>
+                                <div class="motor-sensor-line speed-line"></div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         SIGNAL ACQUISITION
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                SYNCHRONIZED SENSOR MEASUREMENTS
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                        </div>
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                DATA ACQUISITION
+                            </div>
+
+
+                            <div class="motor-acquisition-layout">
+
+
+                                <div class="motor-acquisition-card">
+
+                                    <span>
+                                        SENSOR SIGNALS
+                                    </span>
+
+                                    <strong>
+                                        Current · Vibration
+                                        · Temperature · RPM
+                                    </strong>
+
+                                    <small>
+                                        Raw measurements from the
+                                        motor test platform
+                                    </small>
+
+                                </div>
+
+
+                                <div class="motor-acquisition-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="motor-acquisition-card motor-daq-main">
+
+                                    <span>
+                                        REAL-TIME ACQUISITION
+                                    </span>
+
+                                    <strong>
+                                        STM32 NUCLEO-F446RE
+                                    </strong>
+
+                                    <small>
+                                        Sampling · Filtering · Signal Processing
+                                    </small>
+
+                                </div>
+
+
+                                <div class="motor-acquisition-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="motor-acquisition-card">
+
+                                    <span>
+                                        PROCESSED FEATURES
+                                    </span>
+
+                                    <strong>
+                                        Current · Vibration Level
+                                        · Temperature · RPM
+                                    </strong>
+
+                                    <small>
+                                        Condition indicators prepared
+                                        for higher-level analysis
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         OPERATING STATE IDENTIFICATION
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                MOTOR OPERATING-STATE RECOGNITION
+                            </div>
+
+
+                            <div class="motor-state-strip">
+
+
+                                <div class="motor-state-card">
+
+                                    <span>
+                                        S0
+                                    </span>
+
+                                    <strong>
+                                        IDLE
+                                    </strong>
+
+                                    <small>
+                                        No rotation
+                                        and near-zero load
+                                    </small>
+
+                                </div>
+
+
+                                <div class="motor-state-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="motor-state-card">
+
+                                    <span>
+                                        S1
+                                    </span>
+
+                                    <strong>
+                                        STARTING
+                                    </strong>
+
+                                    <small>
+                                        Acceleration and
+                                        current transient
+                                    </small>
+
+                                </div>
+
+
+                                <div class="motor-state-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="motor-state-card state-running">
+
+                                    <span>
+                                        S2
+                                    </span>
+
+                                    <strong>
+                                        RUNNING
+                                    </strong>
+
+                                    <small>
+                                        Stable operating
+                                        condition
+                                    </small>
+
+                                </div>
+
+
+                                <div class="motor-state-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="motor-state-card">
+
+                                    <span>
+                                        S3
+                                    </span>
+
+                                    <strong>
+                                        DEVIATION
+                                    </strong>
+
+                                    <small>
+                                        Persistent change
+                                        requiring investigation
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         BASELINE ANALYSIS
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                STATE-AWARE CONDITION DATA
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                        </div>
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                CONDITION ANALYSIS
+                            </div>
+
+
+                            <div class="motor-analysis-panel">
+
+
+                                <!-- NORMAL BASELINE -->
+
+                                <div class="motor-analysis-column">
+
+                                    <span>
+                                        REFERENCE
+                                    </span>
+
+                                    <strong>
+                                        Normal Baseline
+                                    </strong>
+
+                                    <div class="baseline-values">
+
+                                        <div>
+                                            <span>Current</span>
+                                            <strong>Normal Pattern</strong>
+                                        </div>
+
+                                        <div>
+                                            <span>Vibration</span>
+                                            <strong>Baseline Level</strong>
+                                        </div>
+
+                                        <div>
+                                            <span>Temperature</span>
+                                            <strong>Expected Range</strong>
+                                        </div>
+
+                                        <div>
+                                            <span>Speed</span>
+                                            <strong>Normal RPM</strong>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="analysis-comparison">
+
+                                    <span>
+                                        COMPARE
+                                    </span>
+
+                                    <strong>
+                                        ↔
+                                    </strong>
+
+                                    <small>
+                                        State-specific
+                                        comparison
+                                    </small>
+
+                                </div>
+
+
+                                <!-- LIVE MOTOR -->
+
+                                <div class="motor-analysis-column live-column">
+
+                                    <span>
+                                        LIVE MOTOR
+                                    </span>
+
+                                    <strong>
+                                        Current Behaviour
+                                    </strong>
+
+                                    <div class="baseline-values">
+
+                                        <div>
+                                            <span>Current</span>
+                                            <strong>Measured</strong>
+                                        </div>
+
+                                        <div>
+                                            <span>Vibration</span>
+                                            <strong>Measured</strong>
+                                        </div>
+
+                                        <div>
+                                            <span>Temperature</span>
+                                            <strong>Measured</strong>
+                                        </div>
+
+                                        <div>
+                                            <span>Speed</span>
+                                            <strong>Measured</strong>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="analysis-comparison">
+
+                                    <span>
+                                        RESULT
+                                    </span>
+
+                                    <strong>
+                                        →
+                                    </strong>
+
+                                    <small>
+                                        Trend
+                                        evaluation
+                                    </small>
+
+                                </div>
+
+
+                                <!-- CONDITION -->
+
+                                <div class="motor-condition-result">
+
+                                    <span>
+                                        CONDITION
+                                    </span>
+
+                                    <strong>
+                                        NORMAL / DEVIATION
+                                    </strong>
+
+                                    <small>
+                                        Persistent differences are
+                                        highlighted for investigation
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         CONDITION TREND LOGIC
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                CONDITION EVALUATION SEQUENCE
+                            </div>
+
+
+                            <div class="motor-logic-strip">
+
+
+                                <div class="motor-logic-stage">
+
+                                    <span>
+                                        01
+                                    </span>
+
+                                    <strong>
+                                        Acquire
+                                    </strong>
+
+                                    <small>
+                                        Capture sensor data
+                                    </small>
+
+                                </div>
+
+
+                                <div class="motor-logic-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="motor-logic-stage">
+
+                                    <span>
+                                        02
+                                    </span>
+
+                                    <strong>
+                                        Identify State
+                                    </strong>
+
+                                    <small>
+                                        Idle · Start · Run
+                                    </small>
+
+                                </div>
+
+
+                                <div class="motor-logic-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="motor-logic-stage">
+
+                                    <span>
+                                        03
+                                    </span>
+
+                                    <strong>
+                                        Compare
+                                    </strong>
+
+                                    <small>
+                                        Match against baseline
+                                    </small>
+
+                                </div>
+
+
+                                <div class="motor-logic-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="motor-logic-stage">
+
+                                    <span>
+                                        04
+                                    </span>
+
+                                    <strong>
+                                        Trend
+                                    </strong>
+
+                                    <small>
+                                        Observe change over time
+                                    </small>
+
+                                </div>
+
+
+                                <div class="motor-logic-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="motor-logic-stage motor-logic-decision">
+
+                                    <span>
+                                        05
+                                    </span>
+
+                                    <strong>
+                                        Indicate
+                                    </strong>
+
+                                    <small>
+                                        Normal or investigation required
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         EDGE ANALYSIS PLATFORM
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                CONDITION HISTORY
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                        </div>
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                EDGE MONITORING PLATFORM
+                            </div>
+
+
+                            <div class="motor-edge-platform">
+
+
+                                <div class="motor-edge-title">
+
+                                    <span>
+                                        CONDITION MONITOR
+                                    </span>
+
+                                    <strong>
+                                        Raspberry Pi 4 Model B
+                                    </strong>
+
+                                    <small>
+                                        Historical storage and condition visualization
+                                    </small>
+
+                                </div>
+
+
+                                <div class="motor-edge-services">
+
+
+                                    <div class="motor-edge-service">
+
+                                        <span>
+                                            STORAGE
+                                        </span>
+
+                                        <strong>
+                                            InfluxDB
+                                        </strong>
+
+                                        <small>
+                                            Time-series motor history
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="motor-edge-arrow">
+                                        →
+                                    </div>
+
+
+                                    <div class="motor-edge-service">
+
+                                        <span>
+                                            ANALYSIS
+                                        </span>
+
+                                        <strong>
+                                            Python
+                                        </strong>
+
+                                        <small>
+                                            Trend and deviation logic
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="motor-edge-arrow">
+                                        →
+                                    </div>
+
+
+                                    <div class="motor-edge-service">
+
+                                        <span>
+                                            VISUALIZATION
+                                        </span>
+
+                                        <strong>
+                                            Grafana
+                                        </strong>
+
+                                        <small>
+                                            Condition trends and status
+                                        </small>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         DASHBOARD
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                MOTOR HEALTH VIEW
+                            </div>
+
+
+                            <div class="motor-dashboard">
+
+
+                                <div class="motor-dashboard-title">
+
+                                    <span>
+                                        LIVE MOTOR CONDITION
+                                    </span>
+
+                                    <strong>
+                                        Operating-State & Health Dashboard
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="motor-dashboard-grid">
+
+
+                                    <div class="motor-dashboard-item">
+
+                                        <span>
+                                            STATE
+                                        </span>
+
+                                        <strong>
+                                            RUNNING
+                                        </strong>
+
+                                        <small>
+                                            S2
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="motor-dashboard-item">
+
+                                        <span>
+                                            CURRENT
+                                        </span>
+
+                                        <strong>
+                                            1.84 A
+                                        </strong>
+
+                                        <small>
+                                            Stable
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="motor-dashboard-item">
+
+                                        <span>
+                                            SPEED
+                                        </span>
+
+                                        <strong>
+                                            1420 RPM
+                                        </strong>
+
+                                        <small>
+                                            Normal
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="motor-dashboard-item">
+
+                                        <span>
+                                            TEMPERATURE
+                                        </span>
+
+                                        <strong>
+                                            41.8 °C
+                                        </strong>
+
+                                        <small>
+                                            Stable
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="motor-dashboard-item">
+
+                                        <span>
+                                            VIBRATION
+                                        </span>
+
+                                        <strong>
+                                            NORMAL
+                                        </strong>
+
+                                        <small>
+                                            Within baseline
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="motor-dashboard-item condition-item">
+
+                                        <span>
+                                            CONDITION
+                                        </span>
+
+                                        <strong>
+                                            HEALTHY
+                                        </strong>
+
+                                        <small>
+                                            No persistent deviation
+                                        </small>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ========================================
+         SYSTEM NOTE
+    ======================================== -->
+
+                        <div class="topology-note">
+
+                            <strong>
+                                Condition-Monitoring Principle
+                            </strong>
+
+                            <p>
+                                The system does not attempt to predict an exact failure date.
+                                Electrical, vibration, thermal and rotational measurements are
+                                evaluated within the motor's operating state and compared with
+                                established behaviour so persistent deviations can be identified
+                                for maintenance investigation.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 02
+                     OPERATING STATE MODEL
+                ======================================== -->
+
+                    <div class="engineering-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Motor Operating-State Model
+                                </h3>
+
+                                <p>
+                                    Sensor measurements are interpreted according
+                                    to the actual motor state so that normal
+                                    startup behaviour is not treated the same
+                                    way as steady-state operation.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="priority-table-wrapper">
+
+                            <table class="priority-table">
+
+                                <thead>
+
+                                    <tr>
+                                        <th>STATE</th>
+                                        <th>OPERATING CONDITION</th>
+                                        <th>SYSTEM INTERPRETATION</th>
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S0
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Idle
+                                        </td>
+
+                                        <td>
+                                            Rotational speed and phase current
+                                            remain near zero while motor
+                                            temperature gradually approaches
+                                            ambient condition.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S1
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Starting
+                                        </td>
+
+                                        <td>
+                                            High startup current, changing
+                                            rotational speed and transient
+                                            vibration are identified as the
+                                            normal acceleration period.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S2
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Running
+                                        </td>
+
+                                        <td>
+                                            Current, vibration, temperature
+                                            and speed are compared with the
+                                            established steady-state operating
+                                            baseline.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S3
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Developing Deviation
+                                        </td>
+
+                                        <td>
+                                            One or more parameters show a
+                                            persistent change from the established
+                                            operating pattern and are flagged
+                                            for investigation.
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 03
+                     ANALYSIS LOGIC
+                ======================================== -->
+
+                    <div class="engineering-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Motor Condition Analysis Logic
+                                </h3>
+
+                                <p>
+                                    The processing sequence converts raw sensor
+                                    measurements into an operating-state and
+                                    trend-based condition indication.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="control-logic-diagram">
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <strong>
+                                    Acquire Signals
+                                </strong>
+
+                                <p>
+                                    Sample current, vibration, temperature
+                                    and rotational information.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <strong>
+                                    Process Data
+                                </strong>
+
+                                <p>
+                                    Filter measurements and calculate usable
+                                    electrical and mechanical indicators.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block logic-decision">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <strong>
+                                    Identify State
+                                </strong>
+
+                                <p>
+                                    Classify the motor as idle, starting
+                                    or running.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    04
+                                </span>
+
+                                <strong>
+                                    Compare Baseline
+                                </strong>
+
+                                <p>
+                                    Compare measurements with the established
+                                    pattern for the identified state.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    05
+                                </span>
+
+                                <strong>
+                                    Evaluate Trend
+                                </strong>
+
+                                <p>
+                                    Determine whether deviations are transient
+                                    or developing across repeated operation.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    06
+                                </span>
+
+                                <strong>
+                                    Indicate Condition
+                                </strong>
+
+                                <p>
+                                    Present motor status and persistent
+                                    deviations requiring investigation.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 04
+                     MEASUREMENT & SAFETY PHILOSOPHY
+                ======================================== -->
+
+                    <div class="engineering-subsection safety-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Measurement & Safety Philosophy
+                                </h3>
+
+                                <p>
+                                    The analyzer operates as a monitoring system
+                                    around the motor while conventional starter,
+                                    overload and circuit-protection devices remain
+                                    responsible for machine protection.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="safety-grid">
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <h4>
+                                    Isolated Current Sensing
+                                </h4>
+
+                                <p>
+                                    LEM HLSR current transducers provide
+                                    galvanically isolated current measurement
+                                    between the motor circuit and monitoring
+                                    electronics.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <h4>
+                                    Sensor Placement
+                                </h4>
+
+                                <p>
+                                    The ADXL356 vibration sensor is mounted
+                                    securely to the motor body so measurement
+                                    changes represent machine vibration rather
+                                    than loose sensor movement.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <h4>
+                                    State-Based Comparison
+                                </h4>
+
+                                <p>
+                                    Startup measurements are evaluated
+                                    independently from steady running conditions
+                                    to avoid false condition indications.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    04
+                                </span>
+
+                                <h4>
+                                    Non-Contact Speed Sensing
+                                </h4>
+
+                                <p>
+                                    The IFS252 detects a rotating metallic
+                                    target without mechanical contact with
+                                    the motor shaft.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    05
+                                </span>
+
+                                <h4>
+                                    Condition Indication
+                                </h4>
+
+                                <p>
+                                    A detected deviation is treated as an
+                                    indication for investigation rather than
+                                    an automatic diagnosis of a specific
+                                    mechanical fault.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    06
+                                </span>
+
+                                <h4>
+                                    Existing Protection Remains
+                                </h4>
+
+                                <p>
+                                    Motor overload protection, short-circuit
+                                    protection and emergency machine-safety
+                                    systems operate independently from the
+                                    condition-monitoring platform.
+                                </p>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+
+        <!-- ========================================
+             DEVELOPMENT APPROACH
+        ======================================== -->
+
+        <section id="development" class="project-detail-section development-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        DEVELOPMENT APPROACH
+                    </p>
+
+                    <h2>
+                        From raw motor signals to
+                        <span>condition insight.</span>
+                    </h2>
+
+                    <p>
+                        The prototype was developed progressively from
+                        sensor integration and signal acquisition through
+                        operating-state recognition, baseline generation,
+                        trend analysis and dashboard visualization.
+                    </p>
+
+                </div>
+
+
+                <div class="development-list">
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Sensor Integration
+                            </h3>
+
+                            <p>
+                                Installed current, vibration, temperature
+                                and rotational sensors around the motor
+                                test arrangement.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Data Acquisition
+                            </h3>
+
+                            <p>
+                                Configured the STM32 acquisition system
+                                for synchronized measurement and processing
+                                of the different sensor channels.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                State Recognition
+                            </h3>
+
+                            <p>
+                                Developed logic to distinguish idle,
+                                startup and steady-running conditions using
+                                current and rotational behaviour.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Baseline Development
+                            </h3>
+
+                            <p>
+                                Recorded normal operating measurements and
+                                established characteristic values for
+                                current, vibration, temperature and speed.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            05
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Trend Analysis
+                            </h3>
+
+                            <p>
+                                Implemented comparison and trend logic
+                                to identify persistent changes from the
+                                established motor baseline.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            06
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Validation & Refinement
+                            </h3>
+
+                            <p>
+                                Tested the system across different motor
+                                states and simulated condition changes,
+                                then refined thresholds and processing logic.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             APPLICATIONS
+        ======================================== -->
+
+        <section id="applications" class="project-detail-section applications-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        APPLICATIONS
+                    </p>
+
+                    <h2>
+                        Where the system
+                        <span>can be applied.</span>
+                    </h2>
+
+                    <p>
+                        The monitoring architecture is suited to rotating
+                        equipment where changes in motor condition can
+                        support maintenance and operational decisions.
+                    </p>
+
+                </div>
+
+
+                <div class="applications-grid">
+
+
+                    <article class="application-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Pumps
+                        </h3>
+
+                        <p>
+                            Monitor electrical, vibration and thermal
+                            behaviour of motors driving water or
+                            process pumps.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Fans & Blowers
+                        </h3>
+
+                        <p>
+                            Track motor condition in ventilation,
+                            cooling and air-handling equipment.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Conveyor Systems
+                        </h3>
+
+                        <p>
+                            Monitor motor loading, rotational behaviour
+                            and developing vibration changes in
+                            material-handling equipment.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Compressors
+                        </h3>
+
+                        <p>
+                            Observe motor behaviour and condition trends
+                            around compressor systems and auxiliary
+                            equipment.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            05
+                        </span>
+
+                        <h3>
+                            Production Equipment
+                        </h3>
+
+                        <p>
+                            Provide condition information for motors
+                            operating continuously within industrial
+                            production systems.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            06
+                        </span>
+
+                        <h3>
+                            Facility Equipment
+                        </h3>
+
+                        <p>
+                            Monitor motors associated with HVAC,
+                            water systems and other building
+                            infrastructure.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             POSSIBLE EXTENSIONS
+        ======================================== -->
+
+        <section class="project-detail-section extensions-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        POSSIBLE EXTENSIONS
+                    </p>
+
+                    <h2>
+                        Where the system
+                        <span>can go next.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="extensions-grid">
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Frequency-Domain Analysis
+                        </h3>
+
+                        <p>
+                            Add FFT-based vibration analysis to examine
+                            characteristic frequency changes associated
+                            with rotating components.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Phase Imbalance Analysis
+                        </h3>
+
+                        <p>
+                            Compare individual motor phase currents and
+                            identify developing electrical imbalance.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Multi-Motor Monitoring
+                        </h3>
+
+                        <p>
+                            Extend the acquisition architecture to monitor
+                            multiple motors across the same facility.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Maintenance Integration
+                        </h3>
+
+                        <p>
+                            Associate condition events with inspections,
+                            maintenance history and component replacements.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            05
+                        </span>
+
+                        <h3>
+                            Adaptive Baselines
+                        </h3>
+
+                        <p>
+                            Maintain separate operating baselines for
+                            different loads, speeds and repeatable
+                            process conditions.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            06
+                        </span>
+
+                        <h3>
+                            Advanced Condition Classification
+                        </h3>
+
+                        <p>
+                            Apply statistical or machine-learning models
+                            to validated historical data for more advanced
+                            condition classification.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             PROJECT CTA
+        ======================================== -->
+
+        <section class="project-detail-cta">
+
+            <div class="container">
+
+                <div class="project-cta-content">
+
+                    <p class="eyebrow">
+                        START A PROJECT
+                    </p>
+
+                    <h2>
+                        Have a similar
+                        engineering challenge?
+                    </h2>
+
+                    <h3>
+                        Let's turn your requirement
+                        into a working system.
+                    </h3>
+
+                    <p>
+                        Tell us what you're trying to measure, understand,
+                        improve or develop.
+                    </p>
+
+                    <a href="../index.html#contact" class="footer-cta-button">
+
+                        Discuss a Project
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <span class="logo">
+                    EPPL
+                </span>
+
+                <p>
+                    Engineering ideas into practical systems.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#analysis">
+                    System Focus
+                </a>
+
+                <a href="#engineering">
+                    Engineering
+                </a>
+
+                <a href="#development">
+                    Development
+                </a>
+
+                <a href="#applications">
+                    Applications
+                </a>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 Engineering Projects & Prototypes Lab
+                </span>
+
+                <span>
+                    PREDICTIVE MOTOR HEALTH & OPERATING-STATE ANALYZER
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

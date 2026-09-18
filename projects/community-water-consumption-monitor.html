@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Community Water Consumption Monitoring & Awareness System — an engineered IoT prototype for measuring household water consumption, aggregating community usage and automatically providing weekly awareness reports.">
+
+    <title>
+        Community Water Consumption Monitoring & Awareness System |
+        Engineering Projects & Prototypes Lab
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../project-detail.css">
+</head>
+
+<body class="project-detail-page">
+
+    <!-- ========================================
+         NAVIGATION
+    ======================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                EPPL
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#analysis">
+                    System Focus
+                </a>
+
+                <a href="#engineering">
+                    Engineering
+                </a>
+
+                <a href="#development">
+                    Development
+                </a>
+
+                <a href="#applications">
+                    Applications
+                </a>
+
+            </nav>
+
+            <a href="../index.html#contact" class="nav-button">
+                Discuss a Project
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ========================================
+             PROJECT HERO
+        ======================================== -->
+
+        <section class="project-detail-hero">
+
+             <!-- BACKGROUND IMAGE -->
+            <div class="project-hero-bg" style="background-image: url('../assets/images/project-06.jpg');">
+            </div>
+
+            <!-- DARK OVERLAY -->
+            <div class="project-hero-overlay"></div>
+
+            <div class="container">
+
+                <div class="project-detail-meta">
+
+                    <span class="eyebrow">
+                        PROJECT 06
+                    </span>
+
+                    <span class="project-status-label">
+                        ENGINEERED PROTOTYPE
+                    </span>
+
+                </div>
+
+
+                <h1>
+                    Community Water Consumption
+                    <span>Monitoring & Awareness System</span>
+                </h1>
+
+
+                <div class="project-detail-tags">
+
+                    <span>Smart Utilities</span>
+                    <span>Water Monitoring</span>
+                    <span>IoT</span>
+
+                </div>
+
+
+                <p class="project-detail-intro">
+                    A community water-monitoring system developed to measure
+                    water consumption independently for each household,
+                    maintain historical usage records, calculate total
+                    community consumption and automatically provide every
+                    family with a weekly water-usage report.
+                </p>
+
+
+                <a href="../index.html#projects" class="project-back-link">
+                    ← Back to Projects
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             THE CHALLENGE
+        ======================================== -->
+
+        <section class="project-detail-section challenge-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        THE CHALLENGE
+                    </p>
+
+                    <h2>
+                        Making water consumption
+                        <span>visible.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text-block">
+
+                    <p>
+                        Water is consumed continuously across residential
+                        communities, but individual households often have
+                        limited visibility into how much water they actually
+                        use over a day or week.
+                    </p>
+
+                    <p>
+                        Without regular consumption information, it can be
+                        difficult for families to understand whether their
+                        usage is increasing, decreasing or remaining
+                        consistent over time.
+                    </p>
+
+                    <p>
+                        At community level, the same issue makes it difficult
+                        to communicate the scale of collective water use.
+                        This project addresses both problems by measuring
+                        consumption at each household while also calculating
+                        the combined consumption of the entire community.
+                    </p>
+
+                </div>
+
+
+                <div class="engineering-flow">
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Measure
+                        </h3>
+
+                        <p>
+                            Record the volume of water consumed
+                            by each individual household.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Record
+                        </h3>
+
+                        <p>
+                            Store timestamped household consumption
+                            data in the central monitoring platform.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Analyze
+                        </h3>
+
+                        <p>
+                            Calculate household totals, historical
+                            changes and total community consumption.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Inform
+                        </h3>
+
+                        <p>
+                            Automatically provide each family with
+                            a personalized weekly awareness report.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             THE CONCEPT
+        ======================================== -->
+
+        <section id="concept" class="project-detail-section concept-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        THE CONCEPT
+                    </p>
+
+                    <h2>
+                        From water flow to
+                        <span>community awareness.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text-block">
+
+                    <p>
+                        Each household is assigned an independent water
+                        monitoring node installed on its incoming water line.
+                        The node converts water-flow pulses into accumulated
+                        consumption and associates the reading with that
+                        specific household.
+                    </p>
+
+                    <p>
+                        Household measurements are transmitted through the
+                        community network to a centralized monitoring
+                        platform, where daily and weekly consumption
+                        histories are maintained.
+                    </p>
+
+                    <p>
+                        At the end of every week, the system calculates each
+                        household's consumption, compares it with the same
+                        household's previous week and calculates the total
+                        amount of water consumed by the entire community.
+                    </p>
+
+                    <p>
+                        Each family receives only its own detailed consumption
+                        information together with the shared community total,
+                        allowing personal usage to remain private while making
+                        collective water consumption visible.
+                    </p>
+
+                </div>
+
+
+                <div class="concept-flow">
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            01
+                        </span>
+
+                        <h3>
+                            MEASURE
+                        </h3>
+
+                        <p>
+                            Measure water consumption
+                            independently at each house.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            02
+                        </span>
+
+                        <h3>
+                            COLLECT
+                        </h3>
+
+                        <p>
+                            Transfer household measurements
+                            to the community platform.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            03
+                        </span>
+
+                        <h3>
+                            ANALYZE
+                        </h3>
+
+                        <p>
+                            Calculate household history
+                            and community-wide totals.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            04
+                        </span>
+
+                        <h3>
+                            INFORM
+                        </h3>
+
+                        <p>
+                            Provide each household with
+                            a weekly awareness report.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SYSTEM ARCHITECTURE
+        ======================================== -->
+
+        <section id="architecture" class="project-detail-section architecture-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        SYSTEM ARCHITECTURE
+                    </p>
+
+                    <h2>
+                        How the system
+                        <span>works.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="architecture-diagram">
+
+                    <!-- HOUSEHOLDS -->
+
+                    <div class="architecture-block architecture-environment">
+
+                        <span class="architecture-block-title">
+                            HOUSEHOLDS
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>House 01</span>
+                            <span>House 02</span>
+                            <span>House 03...</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- METERING -->
+
+                    <div class="architecture-block">
+
+                        <span class="architecture-block-title">
+                            WATER METERING
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Flow Measurement</span>
+                            <span>Pulse Counting</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- NETWORK -->
+
+                    <div class="architecture-block">
+
+                        <span class="architecture-block-title">
+                            COMMUNITY NETWORK
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>LoRaWAN</span>
+                            <span>Household Identification</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- CENTRAL SYSTEM -->
+
+                    <div class="architecture-block architecture-core">
+
+                        <span class="architecture-block-title">
+                            CENTRAL PLATFORM
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Usage Database</span>
+                            <span>Consumption Analysis</span>
+                            <span>Community Aggregation</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- REPORTING -->
+
+                    <div class="architecture-block architecture-output">
+
+                        <span class="architecture-block-title">
+                            WEEKLY REPORTING
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Household Usage</span>
+                            <span>Previous Week</span>
+                            <span>Community Total</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SYSTEM FOCUS
+        ======================================== -->
+
+        <section id="analysis" class="project-detail-section monitoring-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        SYSTEM FOCUS
+                    </p>
+
+                    <h2>
+                        What the system
+                        <span>observes.</span>
+                    </h2>
+
+                    <p>
+                        Household measurements are maintained separately
+                        while selected aggregated information is used to
+                        create community-wide awareness.
+                    </p>
+
+                </div>
+
+
+                <div class="monitoring-grid">
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Household Consumption
+                        </h3>
+
+                        <p>
+                            Measures the amount of water consumed by
+                            each registered household throughout the day.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Consumption History
+                        </h3>
+
+                        <p>
+                            Stores daily and weekly usage so each family
+                            can understand how its own consumption
+                            changes over time.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Community Consumption
+                        </h3>
+
+                        <p>
+                            Adds the consumption of all active households
+                            to calculate the community's total weekly
+                            water use.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Unusual Flow Behaviour
+                        </h3>
+
+                        <p>
+                            Observes extended continuous flow and unusual
+                            consumption patterns that may require the
+                            household's attention.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             ENGINEERING
+        ======================================== -->
+
+        <section id="engineering" class="project-detail-section engineering-build-section">
+
+            <div class="container">
+
+
+                <!-- ========================================
+                     ENGINEERING BUILD
+                ======================================== -->
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        ENGINEERING BUILD
+                    </p>
+
+                    <h2>
+                        Hardware behind the
+                        <span>community monitoring system.</span>
+                    </h2>
+
+                    <p>
+                        The prototype combines household-level flow sensing,
+                        embedded pulse acquisition, long-range wireless
+                        communication and centralized data processing to
+                        create a distributed community water-monitoring
+                        network.
+                    </p>
+
+                </div>
+
+                <div class="engineering-table-wrapper">
+
+                    <table class="engineering-table">
+
+                        <thead>
+                            <tr>
+                                <th>FUNCTION</th>
+                                <th>HARDWARE</th>
+                                <th>ENGINEERING PURPOSE</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Household Water Measurement</td>
+
+                                <td>
+                                    DFRobot SEN0217
+                                    Water Flow Sensor
+                                </td>
+
+                                <td>
+                                    Measures prototype household
+                                    water consumption.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Household Controller</td>
+
+                                <td>
+                                    ESP32-DevKitC V4
+                                </td>
+
+                                <td>
+                                    Counts flow pulses, calculates
+                                    consumed volume and associates
+                                    readings with a household ID.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Wireless Communication</td>
+
+                                <td>
+                                    ESP32 Wi-Fi
+                                </td>
+
+                                <td>
+                                    Transfers household readings
+                                    to the central monitoring system.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Community Network</td>
+
+                                <td>
+                                    Wi-Fi Router
+                                </td>
+
+                                <td>
+                                    Connects multiple household
+                                    monitoring nodes to the server.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Central Processing</td>
+
+                                <td>
+                                    Raspberry Pi 4 Model B
+                                </td>
+
+                                <td>
+                                    Collects household records,
+                                    calculates weekly totals and
+                                    generates consumption reports.
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <p class="engineering-software-note">
+                    <strong>Software Stack:</strong>
+                    Python · InfluxDB · Grafana · Scheduled Reporting
+                </p>
+                <!-- ========================================
+                     ENGINEERING SUBSECTION 01
+                     COMMUNITY METERING ARRANGEMENT
+                ======================================== -->
+
+                <div class="engineering-subsection">
+
+                    <div class="engineering-subsection-heading">
+
+                        <span class="engineering-subsection-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Community Water Monitoring Arrangement
+                            </h3>
+
+                            <p>
+                                Every household operates as an independent
+                                metering point while the central platform
+                                collects and aggregates measurements from
+                                the complete community.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+     COMMUNITY WATER SYSTEM TOPOLOGY
+======================================== -->
+
+                    <div class="system-topology water-topology">
+
+
+                        <!-- LEGEND -->
+
+                        <div class="topology-legend">
+
+                            <div class="legend-item">
+                                <span class="legend-line physical-line"></span>
+                                <span>Water Flow</span>
+                            </div>
+
+                            <div class="legend-item">
+                                <span class="legend-line data-line"></span>
+                                <span>Data Communication</span>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         WATER DISTRIBUTION LAYER
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                WATER DISTRIBUTION
+                            </div>
+
+
+                            <div class="water-source-node topology-node topology-node-primary">
+
+                                <span class="topology-kicker">
+                                    COMMUNITY SUPPLY
+                                </span>
+
+                                <strong>
+                                    Main Water Distribution
+                                </strong>
+
+                                <small>
+                                    Common supply serving monitored households
+                                </small>
+
+                            </div>
+
+
+                            <div class="water-main-line"></div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         HOUSEHOLD MONITORING LAYER
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                HOUSEHOLD MONITORING
+                            </div>
+
+
+                            <div class="household-grid">
+
+
+                                <!-- HOUSE 01 -->
+
+                                <div class="household-node">
+
+                                    <div class="household-header">
+
+                                        <span>
+                                            HOUSE 01
+                                        </span>
+
+                                        <strong>
+                                            Household Monitoring Node
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="household-process">
+
+                                        <div class="mini-node">
+
+                                            <span>
+                                                WATER LINE
+                                            </span>
+
+                                            <strong>
+                                                Incoming Supply
+                                            </strong>
+
+                                        </div>
+
+
+                                        <div class="mini-arrow">
+                                            →
+                                        </div>
+
+
+                                        <div class="mini-node sensor-node">
+
+                                            <span>
+                                                FLOW SENSOR
+                                            </span>
+
+                                            <strong>
+                                                SEN0217
+                                            </strong>
+
+                                        </div>
+
+
+                                        <div class="mini-arrow">
+                                            →
+                                        </div>
+
+
+                                        <div class="mini-node controller-node">
+
+                                            <span>
+                                                CONTROLLER
+                                            </span>
+
+                                            <strong>
+                                                ESP32
+                                            </strong>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="household-output">
+
+                                        Pulse Count
+                                        <span>→</span>
+                                        Litres Used
+                                        <span>→</span>
+                                        Household ID
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- HOUSE 02 -->
+
+                                <div class="household-node">
+
+                                    <div class="household-header">
+
+                                        <span>
+                                            HOUSE 02
+                                        </span>
+
+                                        <strong>
+                                            Household Monitoring Node
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="household-process">
+
+                                        <div class="mini-node">
+
+                                            <span>
+                                                WATER LINE
+                                            </span>
+
+                                            <strong>
+                                                Incoming Supply
+                                            </strong>
+
+                                        </div>
+
+
+                                        <div class="mini-arrow">
+                                            →
+                                        </div>
+
+
+                                        <div class="mini-node sensor-node">
+
+                                            <span>
+                                                FLOW SENSOR
+                                            </span>
+
+                                            <strong>
+                                                SEN0217
+                                            </strong>
+
+                                        </div>
+
+
+                                        <div class="mini-arrow">
+                                            →
+                                        </div>
+
+
+                                        <div class="mini-node controller-node">
+
+                                            <span>
+                                                CONTROLLER
+                                            </span>
+
+                                            <strong>
+                                                ESP32
+                                            </strong>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="household-output">
+
+                                        Pulse Count
+                                        <span>→</span>
+                                        Litres Used
+                                        <span>→</span>
+                                        Household ID
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- HOUSE N -->
+
+                                <div class="household-node">
+
+                                    <div class="household-header">
+
+                                        <span>
+                                            HOUSE N
+                                        </span>
+
+                                        <strong>
+                                            Additional Household Nodes
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="household-process">
+
+                                        <div class="mini-node">
+
+                                            <span>
+                                                WATER LINE
+                                            </span>
+
+                                            <strong>
+                                                Incoming Supply
+                                            </strong>
+
+                                        </div>
+
+
+                                        <div class="mini-arrow">
+                                            →
+                                        </div>
+
+
+                                        <div class="mini-node sensor-node">
+
+                                            <span>
+                                                FLOW SENSOR
+                                            </span>
+
+                                            <strong>
+                                                Water Meter
+                                            </strong>
+
+                                        </div>
+
+
+                                        <div class="mini-arrow">
+                                            →
+                                        </div>
+
+
+                                        <div class="mini-node controller-node">
+
+                                            <span>
+                                                CONTROLLER
+                                            </span>
+
+                                            <strong>
+                                                Monitoring Node
+                                            </strong>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="household-output">
+
+                                        Scalable
+                                        <span>→</span>
+                                        Additional Homes
+                                        <span>→</span>
+                                        Same Architecture
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         COMMUNICATION LAYER
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                HOUSEHOLD USAGE DATA
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                            <small>
+                                Wi-Fi Prototype / LoRaWAN Production Architecture
+                            </small>
+
+                        </div>
+
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                COMMUNITY COMMUNICATION
+                            </div>
+
+
+                            <div class="communication-row">
+
+
+                                <div class="topology-node">
+
+                                    <span class="topology-kicker">
+                                        PROTOTYPE NETWORK
+                                    </span>
+
+                                    <strong>
+                                        Wi-Fi Router
+                                    </strong>
+
+                                    <small>
+                                        Local prototype communication
+                                    </small>
+
+                                </div>
+
+
+                                <div class="topology-arrow-large">
+                                    →
+                                </div>
+
+
+                                <div class="topology-node topology-node-reference">
+
+                                    <span class="topology-kicker">
+                                        PRODUCTION REFERENCE
+                                    </span>
+
+                                    <strong>
+                                        RAK7268V2
+                                    </strong>
+
+                                    <small>
+                                        LoRaWAN community gateway
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         CENTRAL PLATFORM
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                TIMESTAMPED CONSUMPTION DATA
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                        </div>
+
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                CENTRAL MONITORING PLATFORM
+                            </div>
+
+
+                            <div class="platform-node">
+
+
+                                <div class="platform-title">
+
+                                    <span>
+                                        CENTRAL PROCESSING
+                                    </span>
+
+                                    <strong>
+                                        Raspberry Pi 4
+                                    </strong>
+
+                                    <small>
+                                        Community Water Monitoring Server
+                                    </small>
+
+                                </div>
+
+
+                                <div class="platform-services">
+
+
+                                    <div class="service-node">
+
+                                        <span>
+                                            STORAGE
+                                        </span>
+
+                                        <strong>
+                                            InfluxDB
+                                        </strong>
+
+                                        <small>
+                                            Timestamped household usage
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="service-arrow">
+                                        →
+                                    </div>
+
+
+                                    <div class="service-node">
+
+                                        <span>
+                                            ANALYSIS
+                                        </span>
+
+                                        <strong>
+                                            Python
+                                        </strong>
+
+                                        <small>
+                                            Daily & weekly calculations
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="service-arrow">
+                                        →
+                                    </div>
+
+
+                                    <div class="service-node">
+
+                                        <span>
+                                            VISUALIZATION
+                                        </span>
+
+                                        <strong>
+                                            Grafana
+                                        </strong>
+
+                                        <small>
+                                            Community consumption trends
+                                        </small>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         REPORTING LAYER
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                WEEKLY PROCESSING
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                        </div>
+
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                AWARENESS & REPORTING
+                            </div>
+
+
+                            <div class="report-flow">
+
+
+                                <div class="report-calculation">
+
+                                    <span>
+                                        HOUSEHOLD
+                                    </span>
+
+                                    <strong>
+                                        3,420 L
+                                    </strong>
+
+                                    <small>
+                                        This week's consumption
+                                    </small>
+
+                                </div>
+
+
+                                <div class="report-plus">
+                                    +
+                                </div>
+
+
+                                <div class="report-calculation">
+
+                                    <span>
+                                        PREVIOUS WEEK
+                                    </span>
+
+                                    <strong>
+                                        3,790 L
+                                    </strong>
+
+                                    <small>
+                                        ↓ 370 L / ↓ 9.8%
+                                    </small>
+
+                                </div>
+
+
+                                <div class="report-plus">
+                                    +
+                                </div>
+
+
+                                <div class="report-calculation">
+
+                                    <span>
+                                        COMMUNITY TOTAL
+                                    </span>
+
+                                    <strong>
+                                        63,600 L
+                                    </strong>
+
+                                    <small>
+                                        All households combined
+                                    </small>
+
+                                </div>
+
+
+                                <div class="report-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="report-result">
+
+                                    <span>
+                                        WEEKLY REPORT
+                                    </span>
+
+                                    <strong>
+                                        Individual Household
+                                    </strong>
+
+                                    <small>
+                                        Private household data + shared community total
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         SYSTEM NOTE
+    ======================================== -->
+
+                        <div class="topology-note">
+
+                            <strong>
+                                System Principle
+                            </strong>
+
+                            <p>
+                                Detailed consumption remains associated with the individual
+                                household. Only the combined community total is shared across
+                                community awareness reports.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 02
+                     CONSUMPTION STATE MODEL
+                ======================================== -->
+
+                    <div class="engineering-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Household Consumption-State Model
+                                </h3>
+
+                                <p>
+                                    Consumption is evaluated against each
+                                    household's own historical behaviour and
+                                    configured awareness thresholds rather than
+                                    publicly ranking households against each other.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="priority-table-wrapper">
+
+                            <table class="priority-table">
+
+                                <thead>
+
+                                    <tr>
+                                        <th>STATE</th>
+                                        <th>CONSUMPTION CONDITION</th>
+                                        <th>SYSTEM INTERPRETATION</th>
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S0
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Normal
+                                        </td>
+
+                                        <td>
+                                            Household consumption remains within
+                                            its established operating pattern
+                                            without unusual continuous flow.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S1
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Elevated
+                                        </td>
+
+                                        <td>
+                                            Daily or weekly consumption has
+                                            increased noticeably compared with
+                                            the household's recent history.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S2
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            High Consumption
+                                        </td>
+
+                                        <td>
+                                            Usage exceeds a configured household
+                                            awareness threshold and is highlighted
+                                            within the weekly report.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S3
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Possible Continuous Flow
+                                        </td>
+
+                                        <td>
+                                            Water flow continues for an unusually
+                                            long period and is flagged for the
+                                            household to investigate.
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 03
+                     CONSUMPTION ANALYSIS LOGIC
+                ======================================== -->
+
+                    <div class="engineering-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Consumption Analysis & Reporting Logic
+                                </h3>
+
+                                <p>
+                                    Raw flow measurements are converted into
+                                    household and community information before
+                                    the weekly awareness report is generated.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="control-logic-diagram">
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <strong>
+                                    Measure Flow
+                                </strong>
+
+                                <p>
+                                    Count water-flow pulses at the
+                                    individual household node.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <strong>
+                                    Calculate Volume
+                                </strong>
+
+                                <p>
+                                    Convert pulse counts into accumulated
+                                    household water consumption.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <strong>
+                                    Store Usage
+                                </strong>
+
+                                <p>
+                                    Associate timestamped consumption with
+                                    the registered household identifier.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    04
+                                </span>
+
+                                <strong>
+                                    Calculate Weekly Totals
+                                </strong>
+
+                                <p>
+                                    Determine each household's current and
+                                    previous weekly consumption.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block logic-decision">
+
+                                <span>
+                                    05
+                                </span>
+
+                                <strong>
+                                    Aggregate Community
+                                </strong>
+
+                                <p>
+                                    Add all active household totals to obtain
+                                    total community consumption.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    06
+                                </span>
+
+                                <strong>
+                                    Generate Report
+                                </strong>
+
+                                <p>
+                                    Send each family its private household
+                                    summary together with community totals.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 04
+                     DATA & RELIABILITY PHILOSOPHY
+                ======================================== -->
+
+                    <div class="engineering-subsection safety-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Measurement, Privacy & Reliability Philosophy
+                                </h3>
+
+                                <p>
+                                    The system is designed around transparent
+                                    water-use awareness while keeping detailed
+                                    household consumption separate from
+                                    community-wide information.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="safety-grid">
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <h4>
+                                    Independent Household Records
+                                </h4>
+
+                                <p>
+                                    Every monitoring node is assigned a unique
+                                    household identity so consumption records
+                                    remain separated within the database.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <h4>
+                                    Private Usage Reporting
+                                </h4>
+
+                                <p>
+                                    Each family receives detailed information
+                                    only about its own household consumption.
+                                    Other households' individual readings are
+                                    not included.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <h4>
+                                    Community Total Only
+                                </h4>
+
+                                <p>
+                                    Shared awareness information contains the
+                                    combined community consumption rather than
+                                    identifying highest or lowest consuming
+                                    households.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    04
+                                </span>
+
+                                <h4>
+                                    Local Pulse Accumulation
+                                </h4>
+
+                                <p>
+                                    Water consumption is accumulated at the
+                                    household node so short communication
+                                    interruptions do not immediately discard
+                                    flow information.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    05
+                                </span>
+
+                                <h4>
+                                    Possible Leak Indication
+                                </h4>
+
+                                <p>
+                                    Extended continuous flow is presented as a
+                                    possible abnormal condition requiring
+                                    investigation rather than automatically
+                                    declaring that a leak exists.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    06
+                                </span>
+
+                                <h4>
+                                    Awareness, Not Billing
+                                </h4>
+
+                                <p>
+                                    The prototype is intended for consumption
+                                    awareness and monitoring. Production billing
+                                    applications would require appropriately
+                                    certified metering hardware and installation.
+                                </p>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+
+        <!-- ========================================
+             DEVELOPMENT APPROACH
+        ======================================== -->
+
+        <section id="development" class="project-detail-section development-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        DEVELOPMENT APPROACH
+                    </p>
+
+                    <h2>
+                        From household flow to
+                        <span>community awareness.</span>
+                    </h2>
+
+                    <p>
+                        The prototype was developed progressively from
+                        water-flow measurement and household identification
+                        through wireless communication, centralized storage,
+                        consumption analysis and automated weekly reporting.
+                    </p>
+
+                </div>
+
+
+                <div class="development-list">
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Flow Measurement
+                            </h3>
+
+                            <p>
+                                Integrated the SEN0217 flow sensor and
+                                configured pulse counting to convert water
+                                movement into accumulated consumption.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Household Monitoring Nodes
+                            </h3>
+
+                            <p>
+                                Configured ESP32-based monitoring nodes with
+                                unique household identifiers and local
+                                consumption accumulation.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Community Communication
+                            </h3>
+
+                            <p>
+                                Integrated LoRaWAN communication between
+                                household monitoring nodes and the centralized
+                                community gateway.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Data Platform
+                            </h3>
+
+                            <p>
+                                Developed the Raspberry Pi-based platform
+                                for storing timestamped household measurements
+                                and maintaining consumption history.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            05
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Weekly Reporting
+                            </h3>
+
+                            <p>
+                                Implemented automated calculations for
+                                household totals, previous-week comparison,
+                                community totals and personalized reports.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            06
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Testing & Refinement
+                            </h3>
+
+                            <p>
+                                Tested varying flow conditions, multiple
+                                household nodes, communication interruption,
+                                weekly aggregation and continuous-flow
+                                detection scenarios.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             WEEKLY REPORT EXAMPLE
+        ======================================== -->
+
+        <section class="project-detail-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        WEEKLY AWARENESS REPORT
+                    </p>
+
+                    <h2>
+                        Turning measurements into
+                        <span>useful feedback.</span>
+                    </h2>
+
+                    <p>
+                        Every registered household receives an individual
+                        weekly summary while the community-wide total
+                        provides a shared awareness metric.
+                    </p>
+
+                </div>
+
+
+                <div class="priority-table-wrapper">
+
+                    <table class="priority-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>REPORT ITEM</th>
+                                <th>EXAMPLE</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Household Consumption
+                                </td>
+
+                                <td>
+                                    3,420 litres this week
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Previous Week
+                                </td>
+
+                                <td>
+                                    3,790 litres
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Household Change
+                                </td>
+
+                                <td>
+                                    ↓ 370 litres / ↓ 9.8%
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Daily Average
+                                </td>
+
+                                <td>
+                                    489 litres per day
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Community Consumption
+                                </td>
+
+                                <td>
+                                    63,600 litres this week
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Community Previous Week
+                                </td>
+
+                                <td>
+                                    68,200 litres
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Community Change
+                                </td>
+
+                                <td>
+                                    ↓ 4,600 litres / ↓ 6.7%
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             APPLICATIONS
+        ======================================== -->
+
+        <section id="applications" class="project-detail-section applications-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        APPLICATIONS
+                    </p>
+
+                    <h2>
+                        Where the system
+                        <span>can be applied.</span>
+                    </h2>
+
+                    <p>
+                        The architecture is suited to residential communities
+                        and shared facilities where individual consumption
+                        awareness and collective water-use visibility are
+                        valuable.
+                    </p>
+
+                </div>
+
+
+                <div class="applications-grid">
+
+                    <article class="application-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Apartment Communities
+                        </h3>
+
+                        <p>
+                            Monitor individual flats or residential units
+                            while presenting total community consumption.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Gated Communities
+                        </h3>
+
+                        <p>
+                            Monitor household consumption across villas
+                            or independent homes connected to a common
+                            water supply.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Housing Societies
+                        </h3>
+
+                        <p>
+                            Create regular water-use awareness across
+                            residential associations and cooperative
+                            housing developments.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Student Housing
+                        </h3>
+
+                        <p>
+                            Monitor consumption across hostels,
+                            residences or accommodation blocks.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            05
+                        </span>
+
+                        <h3>
+                            Institutional Campuses
+                        </h3>
+
+                        <p>
+                            Track water use across separate buildings
+                            while maintaining a combined campus total.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            06
+                        </span>
+
+                        <h3>
+                            Community Sustainability Programs
+                        </h3>
+
+                        <p>
+                            Provide measurable water-use information
+                            for awareness and conservation initiatives.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             POSSIBLE EXTENSIONS
+        ======================================== -->
+
+        <section class="project-detail-section extensions-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        POSSIBLE EXTENSIONS
+                    </p>
+
+                    <h2>
+                        Where the system
+                        <span>can go next.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="extensions-grid">
+
+                    <article class="extension-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Immediate Flow Alerts
+                        </h3>
+
+                        <p>
+                            Notify a household when unusual continuous
+                            water flow persists beyond a configured
+                            monitoring period.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Tank-Level Monitoring
+                        </h3>
+
+                        <p>
+                            Add community overhead or underground tank
+                            measurements to relate stored water availability
+                            to household consumption.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Supply Interruption Detection
+                        </h3>
+
+                        <p>
+                            Correlate community-wide flow behaviour with
+                            supply availability to identify interruptions
+                            or distribution issues.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Monthly Consumption Reports
+                        </h3>
+
+                        <p>
+                            Extend weekly summaries into longer-term
+                            household and community conservation trends.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            05
+                        </span>
+
+                        <h3>
+                            Mobile Resident Dashboard
+                        </h3>
+
+                        <p>
+                            Allow residents to securely view their own
+                            current and historical water consumption
+                            between weekly reports.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            06
+                        </span>
+
+                        <h3>
+                            Production-Grade Metering
+                        </h3>
+
+                        <p>
+                            Replace prototype flow sensors with certified
+                            water meters and outdoor-rated monitoring
+                            hardware for larger-scale deployment.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             PROJECT CTA
+        ======================================== -->
+
+        <section class="project-detail-cta">
+
+            <div class="container">
+
+                <div class="project-cta-content">
+
+                    <p class="eyebrow">
+                        START A PROJECT
+                    </p>
+
+                    <h2>
+                        Have a similar
+                        engineering challenge?
+                    </h2>
+
+                    <h3>
+                        Let's turn your requirement
+                        into a working system.
+                    </h3>
+
+                    <p>
+                        Tell us what you're trying to monitor, measure,
+                        automate or improve.
+                    </p>
+
+                    <a href="../index.html#contact" class="footer-cta-button">
+
+                        Discuss a Project
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <span class="logo">
+                    EPPL
+                </span>
+
+                <p>
+                    Engineering ideas into practical systems.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#analysis">
+                    System Focus
+                </a>
+
+                <a href="#engineering">
+                    Engineering
+                </a>
+
+                <a href="#development">
+                    Development
+                </a>
+
+                <a href="#applications">
+                    Applications
+                </a>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 Engineering Projects & Prototypes Lab
+                </span>
+
+                <span>
+                    COMMUNITY WATER CONSUMPTION MONITORING & AWARENESS SYSTEM
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

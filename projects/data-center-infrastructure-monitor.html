@@ -1,0 +1,2786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Intelligent Data Center Infrastructure Monitor — an engineered monitoring system for correlating power, cooling, environmental and equipment information across critical data center infrastructure.">
+
+    <title>
+        Intelligent Data Center Infrastructure Monitor | Engineering Projects & Prototypes Lab
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../project-detail.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         NAVIGATION
+    ======================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                EPPL
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#analysis">
+                    System Focus
+                </a>
+
+                <a href="#engineering">
+                    Engineering
+                </a>
+
+                <a href="#development">
+                    Development
+                </a>
+
+                <a href="#applications">
+                    Applications
+                </a>
+
+            </nav>
+
+            <a href="../index.html#contact" class="nav-button">
+                Discuss a Project
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ========================================
+             PROJECT HERO
+        ======================================== -->
+
+        <section class="project-detail-hero">
+
+               <!-- BACKGROUND IMAGE -->
+            <div class="project-hero-bg" style="background-image: url('../assets/images/project-02.jpg');">
+            </div>
+
+            <!-- DARK OVERLAY -->
+            <div class="project-hero-overlay"></div>
+
+            <div class="container">
+
+                <div class="project-detail-meta">
+
+                    <span class="eyebrow">
+                        PROJECT 03
+                    </span>
+
+                    <span class="project-status-label">
+                        ENGINEERED PROTOTYPE
+                    </span>
+
+                </div>
+
+
+                <h1>
+                    Intelligent Data Center
+                    <span>Infrastructure Monitor</span>
+                </h1>
+
+
+                <div class="project-detail-tags">
+
+                    <span>Critical Infrastructure</span>
+                    <span>Data Center Monitoring</span>
+                    <span>Infrastructure Analytics</span>
+
+                </div>
+
+
+                <p class="project-detail-intro">
+                    An intelligent infrastructure monitoring system developed
+                    to bring together power, cooling, environmental and
+                    equipment information so that the operating condition
+                    of critical data center infrastructure can be understood
+                    as one connected system.
+                </p>
+
+
+                <a href="../index.html#projects" class="project-back-link">
+                    ← Back to Projects
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             THE CHALLENGE
+        ======================================== -->
+
+        <section class="project-detail-section challenge-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        THE CHALLENGE
+                    </p>
+
+                    <h2>
+                        Seeing infrastructure as
+                        <span>one system.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text-block">
+
+                    <p>
+                        Critical facilities depend on multiple infrastructure
+                        systems operating together. Power availability,
+                        battery condition, cooling performance, room
+                        temperature and equipment state all influence
+                        overall infrastructure reliability.
+                    </p>
+
+                    <p>
+                        These systems are often monitored independently.
+                        A power alarm may be visible in one system while
+                        temperature behaviour, cooling demand or equipment
+                        loading is being observed somewhere else.
+                    </p>
+
+                    <p>
+                        This project addresses that gap by collecting these
+                        different operating parameters into a common
+                        monitoring layer and examining how changes across
+                        power, cooling and environmental systems relate
+                        to each other.
+                    </p>
+
+                </div>
+
+
+                <div class="engineering-flow">
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Collect
+                        </h3>
+
+                        <p>
+                            Gather information from power, cooling,
+                            environmental and equipment systems.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Normalize
+                        </h3>
+
+                        <p>
+                            Convert different equipment information into
+                            a common monitoring structure.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Correlate
+                        </h3>
+
+                        <p>
+                            Examine relationships between infrastructure
+                            conditions instead of isolated alarms.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Indicate
+                        </h3>
+
+                        <p>
+                            Present system condition, deviations and
+                            infrastructure events requiring attention.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             THE CONCEPT
+        ======================================== -->
+
+        <section id="concept" class="project-detail-section concept-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        THE CONCEPT
+                    </p>
+
+                    <h2>
+                        From isolated readings to
+                        <span>infrastructure context.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text-block">
+
+                    <p>
+                        The system operates as a monitoring layer above
+                        individual infrastructure equipment. It does not
+                        replace the existing protection or local control
+                        functions of UPS systems, cooling equipment or
+                        electrical panels.
+                    </p>
+
+                    <p>
+                        Operating information from multiple infrastructure
+                        sources is collected and organized into a shared
+                        view of the facility.
+                    </p>
+
+                    <p>
+                        Electrical demand, backup-power condition, cooling
+                        operation and environmental behaviour are then
+                        examined together so that abnormal conditions can
+                        be understood within the wider infrastructure state.
+                    </p>
+
+                </div>
+
+
+                <div class="concept-flow">
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            01
+                        </span>
+
+                        <h3>
+                            ACQUIRE
+                        </h3>
+
+                        <p>
+                            Collect operating information from infrastructure
+                            equipment and sensors.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            02
+                        </span>
+
+                        <h3>
+                            ORGANIZE
+                        </h3>
+
+                        <p>
+                            Structure information by equipment, subsystem
+                            and physical location.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            03
+                        </span>
+
+                        <h3>
+                            CORRELATE
+                        </h3>
+
+                        <p>
+                            Compare events and trends occurring across
+                            multiple infrastructure systems.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            04
+                        </span>
+
+                        <h3>
+                            INDICATE
+                        </h3>
+
+                        <p>
+                            Present infrastructure condition and situations
+                            requiring investigation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SYSTEM ARCHITECTURE
+        ======================================== -->
+
+        <section id="architecture" class="project-detail-section architecture-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        SYSTEM ARCHITECTURE
+                    </p>
+
+                    <h2>
+                        How the system
+                        <span>works.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="architecture-diagram">
+
+                    <!-- INFRASTRUCTURE -->
+
+                    <div class="architecture-block architecture-environment">
+
+                        <span class="architecture-block-title">
+                            INFRASTRUCTURE
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Power</span>
+                            <span>Cooling</span>
+                            <span>Environment</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- DATA SOURCES -->
+
+                    <div class="architecture-block">
+
+                        <span class="architecture-block-title">
+                            DATA SOURCES
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>UPS / SMPS</span>
+                            <span>PAC / AHU</span>
+                            <span>Sensors</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- COLLECTION -->
+
+                    <div class="architecture-block">
+
+                        <span class="architecture-block-title">
+                            DATA COLLECTION
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Modbus</span>
+                            <span>SNMP</span>
+                            <span>Digital / Analog I/O</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- ANALYSIS -->
+
+                    <div class="architecture-block architecture-core">
+
+                        <span class="architecture-block-title">
+                            CORRELATION & ANALYSIS
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Trend Comparison</span>
+                            <span>Condition Logic</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- OUTPUT -->
+
+                    <div class="architecture-block architecture-output">
+
+                        <span class="architecture-block-title">
+                            INFRASTRUCTURE VIEW
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Status</span>
+                            <span>Events</span>
+                            <span>Condition</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SYSTEM FOCUS
+        ======================================== -->
+
+        <section id="analysis" class="project-detail-section monitoring-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        SYSTEM FOCUS
+                    </p>
+
+                    <h2>
+                        What the system
+                        <span>observes.</span>
+                    </h2>
+
+                    <p>
+                        The monitoring platform combines infrastructure
+                        measurements from electrical, cooling and
+                        environmental systems into a common operational view.
+                    </p>
+
+                </div>
+
+
+                <div class="monitoring-grid">
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Power Infrastructure
+                        </h3>
+
+                        <p>
+                            Monitors electrical demand, UPS status, SMPS
+                            condition, battery information and selected
+                            distribution parameters.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Cooling Infrastructure
+                        </h3>
+
+                        <p>
+                            Monitors PAC, AHU and cooling-system operation
+                            together with equipment status and cooling demand.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Environmental Condition
+                        </h3>
+
+                        <p>
+                            Measures temperature, humidity and selected
+                            environmental conditions across equipment rooms
+                            and monitored zones.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Infrastructure Relationship
+                        </h3>
+
+                        <p>
+                            Correlates electrical loading, equipment state
+                            and cooling behaviour with environmental changes
+                            over time.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             ENGINEERING
+        ======================================== -->
+
+        <section id="engineering" class="project-detail-section engineering-build-section">
+
+            <div class="container">
+
+
+                <!-- ========================================
+                     ENGINEERING BUILD
+                ======================================== -->
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        ENGINEERING BUILD
+                    </p>
+
+                    <h2>
+                        Hardware and interfaces behind the
+                        <span>monitoring layer.</span>
+                    </h2>
+
+                    <p>
+                        The system combines equipment communication,
+                        environmental sensing, industrial data acquisition
+                        and centralized processing to create a unified view
+                        of infrastructure behaviour.
+                    </p>
+
+                </div>
+
+
+                <div class="engineering-table-wrapper">
+
+                    <table class="engineering-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>FUNCTION</th>
+                                <th>HARDWARE</th>
+                                <th>PURPOSE</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Electrical Monitoring
+                                </td>
+
+                                <td>
+                                    PZEM-016 Modbus Energy Meter
+                                </td>
+
+                                <td>
+                                    Measures voltage, current, power and
+                                    energy behaviour of the prototype
+                                    electrical load.
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Temperature & Humidity
+                                </td>
+
+                                <td>
+                                    Sensirion SHT31 Sensor Module
+                                </td>
+
+                                <td>
+                                    Monitors ambient temperature and
+                                    relative humidity around the
+                                    infrastructure environment.
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Equipment Temperature
+                                </td>
+
+                                <td>
+                                    DS18B20 Temperature Sensors
+                                </td>
+
+                                <td>
+                                    Provides localized thermal monitoring
+                                    around simulated infrastructure
+                                    equipment.
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Cooling Representation
+                                </td>
+
+                                <td>
+                                    12 VDC Cooling Fan
+                                </td>
+
+                                <td>
+                                    Represents cooling-equipment operation
+                                    for monitoring and correlation testing.
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Equipment Status Inputs
+                                </td>
+
+                                <td>
+                                    ESP32 Digital Input Node
+                                </td>
+
+                                <td>
+                                    Collects simulated run, stop and alarm
+                                    states from monitored equipment.
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Communication Interface
+                                </td>
+
+                                <td>
+                                    USB-to-RS485 Adapter
+                                </td>
+
+                                <td>
+                                    Connects Modbus measurement devices
+                                    to the central monitoring platform.
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Edge Processing
+                                </td>
+
+                                <td>
+                                    Raspberry Pi 4 Model B
+                                </td>
+
+                                <td>
+                                    Collects, processes and correlates
+                                    electrical, cooling and environmental
+                                    measurements.
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Historical Storage
+                                </td>
+
+                                <td>
+                                    InfluxDB
+                                </td>
+
+                                <td>
+                                    Stores timestamped infrastructure
+                                    measurements and operating-state
+                                    history.
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Monitoring Dashboard
+                                </td>
+
+                                <td>
+                                    Grafana
+                                </td>
+
+                                <td>
+                                    Presents power, cooling and environmental
+                                    information in a unified monitoring view.
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- ========================================
+                     ENGINEERING SUBSECTION 01
+                     INFRASTRUCTURE ARRANGEMENT
+                ======================================== -->
+
+                <div class="engineering-subsection">
+
+                    <div class="engineering-subsection-heading">
+
+                        <span class="engineering-subsection-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Infrastructure Monitoring Arrangement
+                            </h3>
+
+                            <p>
+                                The monitoring architecture brings power,
+                                cooling and environmental information into a
+                                common data-acquisition and analysis layer.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+     DATA CENTER INFRASTRUCTURE TOPOLOGY
+======================================== -->
+
+                    <div class="system-topology datacenter-topology">
+
+
+                        <!-- ========================================
+         LEGEND
+    ======================================== -->
+
+                        <div class="topology-legend">
+
+                            <div class="legend-item">
+                                <span class="legend-line physical-line"></span>
+                                <span>Infrastructure Signal</span>
+                            </div>
+
+                            <div class="legend-item">
+                                <span class="legend-line data-line"></span>
+                                <span>Monitoring Data</span>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         MONITORED INFRASTRUCTURE
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                MONITORED INFRASTRUCTURE
+                            </div>
+
+
+                            <div class="dc-infrastructure-grid">
+
+
+                                <!-- ========================================
+                 POWER
+            ======================================== -->
+
+                                <div class="dc-zone">
+
+                                    <div class="dc-zone-header">
+
+                                        <span>
+                                            POWER INFRASTRUCTURE
+                                        </span>
+
+                                        <strong>
+                                            Electrical System
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="dc-equipment-stack">
+
+
+                                        <div class="dc-equipment-node">
+
+                                            <span>
+                                                SOURCE
+                                            </span>
+
+                                            <strong>
+                                                Prototype Load Supply
+                                            </strong>
+
+                                            <small>
+                                                Represents critical electrical load
+                                            </small>
+
+                                        </div>
+
+
+                                        <div class="dc-flow-line"></div>
+
+
+                                        <div class="dc-equipment-node emphasized">
+
+                                            <span>
+                                                ELECTRICAL METERING
+                                            </span>
+
+                                            <strong>
+                                                PZEM-016
+                                            </strong>
+
+                                            <small>
+                                                Voltage · Current · Power · Energy
+                                            </small>
+
+                                        </div>
+
+
+                                        <div class="dc-flow-line"></div>
+
+
+                                        <div class="dc-equipment-node">
+
+                                            <span>
+                                                EQUIPMENT STATE
+                                            </span>
+
+                                            <strong>
+                                                Simulated UPS / Power Status
+                                            </strong>
+
+                                            <small>
+                                                Normal · Alarm · Supply State
+                                            </small>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="dc-zone-output">
+
+                                        <span>
+                                            DATA OUTPUT
+                                        </span>
+
+                                        <strong>
+                                            Modbus RTU
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- ========================================
+                 COOLING
+            ======================================== -->
+
+                                <div class="dc-zone">
+
+                                    <div class="dc-zone-header">
+
+                                        <span>
+                                            COOLING INFRASTRUCTURE
+                                        </span>
+
+                                        <strong>
+                                            Thermal Management
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="dc-equipment-stack">
+
+
+                                        <div class="dc-equipment-node">
+
+                                            <span>
+                                                COOLING EQUIPMENT
+                                            </span>
+
+                                            <strong>
+                                                Prototype Cooling Fan
+                                            </strong>
+
+                                            <small>
+                                                Represents PAC / AHU operation
+                                            </small>
+
+                                        </div>
+
+
+                                        <div class="dc-flow-line"></div>
+
+
+                                        <div class="dc-equipment-node emphasized">
+
+                                            <span>
+                                                EQUIPMENT TEMPERATURE
+                                            </span>
+
+                                            <strong>
+                                                DS18B20
+                                            </strong>
+
+                                            <small>
+                                                Cooling / equipment thermal condition
+                                            </small>
+
+                                        </div>
+
+
+                                        <div class="dc-flow-line"></div>
+
+
+                                        <div class="dc-equipment-node">
+
+                                            <span>
+                                                OPERATING STATE
+                                            </span>
+
+                                            <strong>
+                                                ESP32 Status Input
+                                            </strong>
+
+                                            <small>
+                                                Run · Stop · Alarm
+                                            </small>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="dc-zone-output">
+
+                                        <span>
+                                            DATA OUTPUT
+                                        </span>
+
+                                        <strong>
+                                            Digital / Sensor Data
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- ========================================
+                 ENVIRONMENT
+            ======================================== -->
+
+                                <div class="dc-zone">
+
+                                    <div class="dc-zone-header">
+
+                                        <span>
+                                            ENVIRONMENT
+                                        </span>
+
+                                        <strong>
+                                            Equipment Room
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="dc-equipment-stack">
+
+
+                                        <div class="dc-equipment-node">
+
+                                            <span>
+                                                MONITORED SPACE
+                                            </span>
+
+                                            <strong>
+                                                Equipment Zone
+                                            </strong>
+
+                                            <small>
+                                                Prototype data-center environment
+                                            </small>
+
+                                        </div>
+
+
+                                        <div class="dc-flow-line"></div>
+
+
+                                        <div class="dc-equipment-node emphasized">
+
+                                            <span>
+                                                ENVIRONMENT SENSOR
+                                            </span>
+
+                                            <strong>
+                                                SHT31
+                                            </strong>
+
+                                            <small>
+                                                Temperature · Relative Humidity
+                                            </small>
+
+                                        </div>
+
+
+                                        <div class="dc-flow-line"></div>
+
+
+                                        <div class="dc-equipment-node">
+
+                                            <span>
+                                                SENSOR NODE
+                                            </span>
+
+                                            <strong>
+                                                ESP32
+                                            </strong>
+
+                                            <small>
+                                                Environmental acquisition
+                                            </small>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="dc-zone-output">
+
+                                        <span>
+                                            DATA OUTPUT
+                                        </span>
+
+                                        <strong>
+                                            Digital Sensor Data
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         COLLECTION BUS
+    ======================================== -->
+
+                        <div class="dc-data-convergence">
+
+                            <div class="dc-convergence-lines">
+
+                                <div></div>
+                                <div></div>
+                                <div></div>
+
+                            </div>
+
+                            <div class="dc-data-bus">
+
+                                <span>
+                                    INFRASTRUCTURE MONITORING DATA BUS
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         DATA ACQUISITION LAYER
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                DATA ACQUISITION & COMMUNICATION
+                            </div>
+
+
+                            <div class="dc-acquisition-grid">
+
+
+                                <div class="dc-acquisition-card">
+
+                                    <span>
+                                        MODBUS INTERFACE
+                                    </span>
+
+                                    <strong>
+                                        USB-to-RS485 Adapter
+                                    </strong>
+
+                                    <small>
+                                        Retrieves electrical measurements
+                                        from the PZEM-016
+                                    </small>
+
+                                </div>
+
+
+                                <div class="dc-acquisition-card">
+
+                                    <span>
+                                        STATUS NODE
+                                    </span>
+
+                                    <strong>
+                                        ESP32
+                                    </strong>
+
+                                    <small>
+                                        Collects simulated equipment
+                                        status and sensor information
+                                    </small>
+
+                                </div>
+
+
+                                <div class="dc-acquisition-card">
+
+                                    <span>
+                                        SENSOR CHANNELS
+                                    </span>
+
+                                    <strong>
+                                        SHT31 + DS18B20
+                                    </strong>
+
+                                    <small>
+                                        Environmental and equipment
+                                        temperature measurements
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         EDGE PROCESSING
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                UNIFIED INFRASTRUCTURE DATA
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                        </div>
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                EDGE MONITORING PLATFORM
+                            </div>
+
+
+                            <div class="dc-edge-platform">
+
+
+                                <div class="dc-edge-title">
+
+                                    <span>
+                                        CENTRAL MONITOR
+                                    </span>
+
+                                    <strong>
+                                        Raspberry Pi 4 Model B
+                                    </strong>
+
+                                    <small>
+                                        Local infrastructure monitoring server
+                                    </small>
+
+                                </div>
+
+
+                                <div class="dc-platform-services">
+
+
+                                    <div class="dc-service-card">
+
+                                        <span>
+                                            COLLECTION
+                                        </span>
+
+                                        <strong>
+                                            Python
+                                        </strong>
+
+                                        <small>
+                                            Polling · Parsing · Device State
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="dc-service-arrow">
+                                        →
+                                    </div>
+
+
+                                    <div class="dc-service-card">
+
+                                        <span>
+                                            STORAGE
+                                        </span>
+
+                                        <strong>
+                                            InfluxDB
+                                        </strong>
+
+                                        <small>
+                                            Timestamped infrastructure history
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="dc-service-arrow">
+                                        →
+                                    </div>
+
+
+                                    <div class="dc-service-card">
+
+                                        <span>
+                                            VISUALIZATION
+                                        </span>
+
+                                        <strong>
+                                            Grafana
+                                        </strong>
+
+                                        <small>
+                                            Status · Trends · Alarms
+                                        </small>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         CORRELATION ENGINE
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                MULTI-SYSTEM ANALYSIS
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                        </div>
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                INFRASTRUCTURE CORRELATION
+                            </div>
+
+
+                            <div class="dc-correlation-panel">
+
+
+                                <div class="dc-correlation-row">
+
+                                    <div class="correlation-signal">
+
+                                        <span>
+                                            POWER
+                                        </span>
+
+                                        <strong>
+                                            Load ↑
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="correlation-arrow">
+                                        →
+                                    </div>
+
+
+                                    <div class="correlation-signal">
+
+                                        <span>
+                                            THERMAL
+                                        </span>
+
+                                        <strong>
+                                            Temperature ↑
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="correlation-arrow">
+                                        →
+                                    </div>
+
+
+                                    <div class="correlation-signal">
+
+                                        <span>
+                                            COOLING
+                                        </span>
+
+                                        <strong>
+                                            Cooling Demand ↑
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="dc-correlation-divider"></div>
+
+
+                                <div class="dc-correlation-row">
+
+                                    <div class="correlation-signal">
+
+                                        <span>
+                                            EQUIPMENT
+                                        </span>
+
+                                        <strong>
+                                            Cooling Stops
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="correlation-arrow">
+                                        →
+                                    </div>
+
+
+                                    <div class="correlation-signal">
+
+                                        <span>
+                                            ENVIRONMENT
+                                        </span>
+
+                                        <strong>
+                                            Room Temp ↑
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="correlation-arrow">
+                                        →
+                                    </div>
+
+
+                                    <div class="correlation-signal">
+
+                                        <span>
+                                            CONDITION
+                                        </span>
+
+                                        <strong>
+                                            Investigation Alert
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         DASHBOARD
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                OPERATIONAL VIEW
+                            </div>
+
+
+                            <div class="dc-dashboard">
+
+
+                                <div class="dc-dashboard-header">
+
+                                    <span>
+                                        INFRASTRUCTURE DASHBOARD
+                                    </span>
+
+                                    <strong>
+                                        Unified Data Center View
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="dc-dashboard-grid">
+
+
+                                    <div class="dc-dashboard-item">
+
+                                        <span>
+                                            POWER
+                                        </span>
+
+                                        <strong>
+                                            2.84 kW
+                                        </strong>
+
+                                        <small>
+                                            Normal
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="dc-dashboard-item">
+
+                                        <span>
+                                            ROOM TEMP
+                                        </span>
+
+                                        <strong>
+                                            23.8 °C
+                                        </strong>
+
+                                        <small>
+                                            Stable
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="dc-dashboard-item">
+
+                                        <span>
+                                            HUMIDITY
+                                        </span>
+
+                                        <strong>
+                                            48 %
+                                        </strong>
+
+                                        <small>
+                                            Normal
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="dc-dashboard-item">
+
+                                        <span>
+                                            COOLING
+                                        </span>
+
+                                        <strong>
+                                            RUNNING
+                                        </strong>
+
+                                        <small>
+                                            Normal State
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="dc-dashboard-item">
+
+                                        <span>
+                                            SYSTEM
+                                        </span>
+
+                                        <strong>
+                                            HEALTHY
+                                        </strong>
+
+                                        <small>
+                                            No active alert
+                                        </small>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ========================================
+         SYSTEM NOTE
+    ======================================== -->
+
+                        <div class="topology-note">
+
+                            <strong>
+                                Monitoring Philosophy
+                            </strong>
+
+                            <p>
+                                The prototype combines power, cooling and environmental
+                                information into one monitoring layer so relationships between
+                                infrastructure systems can be observed over time. Monitoring
+                                remains independent from equipment protection and local
+                                control systems.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 02
+                     CONDITION MODEL
+                ======================================== -->
+
+                    <div class="engineering-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Infrastructure Condition Model
+                                </h3>
+
+                                <p>
+                                    Equipment information is grouped into
+                                    infrastructure operating states so that
+                                    individual alarms can be interpreted within
+                                    the wider facility condition.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="priority-table-wrapper">
+
+                            <table class="priority-table">
+
+                                <thead>
+
+                                    <tr>
+                                        <th>STATE</th>
+                                        <th>INFRASTRUCTURE CONDITION</th>
+                                        <th>SYSTEM INTERPRETATION</th>
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S0
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Normal
+                                        </td>
+
+                                        <td>
+                                            Power, cooling and environmental
+                                            parameters remain within expected
+                                            operating patterns without significant
+                                            active infrastructure events.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S1
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Changing
+                                        </td>
+
+                                        <td>
+                                            One or more infrastructure parameters
+                                            are moving away from their normal
+                                            behaviour while remaining within
+                                            acceptable operating conditions.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S2
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Degraded
+                                        </td>
+
+                                        <td>
+                                            An equipment alarm, abnormal trend
+                                            or reduced-redundancy condition is
+                                            present and requires operational review.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S3
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Critical
+                                        </td>
+
+                                        <td>
+                                            Multiple related conditions or a
+                                            significant infrastructure event
+                                            require immediate investigation
+                                            or operational response.
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 03
+                     CORRELATION LOGIC
+                ======================================== -->
+
+                    <div class="engineering-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Infrastructure Correlation Logic
+                                </h3>
+
+                                <p>
+                                    The monitoring platform evaluates changes
+                                    occurring across different infrastructure
+                                    systems and relates them to the wider
+                                    operating condition.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="control-logic-diagram">
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <strong>
+                                    Acquire Data
+                                </strong>
+
+                                <p>
+                                    Collect power, cooling, environmental
+                                    and equipment-state information.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <strong>
+                                    Normalize
+                                </strong>
+
+                                <p>
+                                    Organize information from different protocols
+                                    and equipment into a common structure.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block logic-decision">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <strong>
+                                    Detect Change
+                                </strong>
+
+                                <p>
+                                    Identify alarms, threshold changes or
+                                    deviations from expected infrastructure
+                                    behaviour.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    04
+                                </span>
+
+                                <strong>
+                                    Correlate Systems
+                                </strong>
+
+                                <p>
+                                    Compare related changes across power,
+                                    cooling and environmental systems.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    05
+                                </span>
+
+                                <strong>
+                                    Determine Context
+                                </strong>
+
+                                <p>
+                                    Build an infrastructure-level view around
+                                    individual equipment events.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    06
+                                </span>
+
+                                <strong>
+                                    Present Condition
+                                </strong>
+
+                                <p>
+                                    Display events together with related trends,
+                                    equipment states and operating context.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 04
+                     RELIABILITY PHILOSOPHY
+                ======================================== -->
+
+                    <div class="engineering-subsection safety-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Monitoring & Reliability Philosophy
+                                </h3>
+
+                                <p>
+                                    The monitoring platform improves visibility
+                                    while remaining independent from the
+                                    equipment-level protection required for
+                                    critical infrastructure operation.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="safety-grid">
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <h4>
+                                    Read-Only Monitoring
+                                </h4>
+
+                                <p>
+                                    Infrastructure interfaces are kept read-only
+                                    where control capability is not required,
+                                    reducing unintended interaction with
+                                    critical equipment.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <h4>
+                                    Local Protection Remains
+                                </h4>
+
+                                <p>
+                                    UPS protection, breakers, cooling controllers
+                                    and equipment-level safety systems remain
+                                    independent from the monitoring platform.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <h4>
+                                    Communication Failure Tolerance
+                                </h4>
+
+                                <p>
+                                    Loss of communication with the monitoring
+                                    platform does not interrupt normal operation
+                                    of the monitored infrastructure equipment.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    04
+                                </span>
+
+                                <h4>
+                                    Data Quality Monitoring
+                                </h4>
+
+                                <p>
+                                    Missing, stale and invalid measurements are
+                                    identified so unavailable data is not
+                                    interpreted as normal equipment condition.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    05
+                                </span>
+
+                                <h4>
+                                    Alarm Context
+                                </h4>
+
+                                <p>
+                                    Correlation provides additional context for
+                                    investigation while equipment-specific alarms
+                                    remain visible individually.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    06
+                                </span>
+
+                                <h4>
+                                    Network Segmentation
+                                </h4>
+
+                                <p>
+                                    Infrastructure monitoring communication is
+                                    separated from unrelated network functions
+                                    to maintain a controlled monitoring
+                                    architecture.
+                                </p>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+
+        <!-- ========================================
+             DEVELOPMENT APPROACH
+        ======================================== -->
+
+        <section id="development" class="project-detail-section development-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        DEVELOPMENT APPROACH
+                    </p>
+
+                    <h2>
+                        From equipment data to
+                        <span>infrastructure insight.</span>
+                    </h2>
+
+                    <p>
+                        The system was developed progressively, beginning
+                        with infrastructure mapping and equipment integration
+                        before moving into centralized data collection,
+                        visualization and correlation.
+                    </p>
+
+                </div>
+
+
+                <div class="development-list">
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Infrastructure Mapping
+                            </h3>
+
+                            <p>
+                                Identified monitored equipment, measurement
+                                points, communication interfaces and
+                                operational relationships.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Equipment Integration
+                            </h3>
+
+                            <p>
+                                Integrated UPS, SMPS, cooling, metering and
+                                environmental devices through their available
+                                monitoring interfaces.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Data Acquisition
+                            </h3>
+
+                            <p>
+                                Normalized equipment measurements,
+                                timestamps, alarms and operating states
+                                into a common data structure.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Monitoring Interface
+                            </h3>
+
+                            <p>
+                                Developed infrastructure views, equipment
+                                dashboards, trend displays and event
+                                visualization.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            05
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Correlation Logic
+                            </h3>
+
+                            <p>
+                                Implemented rules for relating power, cooling,
+                                environmental and equipment-state changes.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            06
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Validation & Refinement
+                            </h3>
+
+                            <p>
+                                Tested monitoring behaviour using equipment
+                                state changes, communication interruptions
+                                and simulated infrastructure-event scenarios.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             APPLICATIONS
+        ======================================== -->
+
+        <section id="applications" class="project-detail-section applications-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        APPLICATIONS
+                    </p>
+
+                    <h2>
+                        Where the system
+                        <span>can be applied.</span>
+                    </h2>
+
+                    <p>
+                        The monitoring architecture is suited to facilities
+                        where electrical, cooling and environmental systems
+                        need to be observed together.
+                    </p>
+
+                </div>
+
+
+                <div class="applications-grid">
+
+
+                    <article class="application-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Data Centers
+                        </h3>
+
+                        <p>
+                            Centralized visibility across critical electrical,
+                            cooling and environmental infrastructure.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Network Rooms
+                        </h3>
+
+                        <p>
+                            Monitoring of power availability, cooling
+                            behaviour and environmental conditions around
+                            network equipment.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Telecom Facilities
+                        </h3>
+
+                        <p>
+                            Monitoring of SMPS, battery, cooling and
+                            environmental systems in telecom infrastructure.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Server Rooms
+                        </h3>
+
+                        <p>
+                            Infrastructure monitoring for smaller enterprise
+                            computing environments.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            05
+                        </span>
+
+                        <h3>
+                            Critical Equipment Rooms
+                        </h3>
+
+                        <p>
+                            Correlated monitoring of environmental and
+                            equipment conditions around operationally
+                            important systems.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            06
+                        </span>
+
+                        <h3>
+                            Distributed Infrastructure
+                        </h3>
+
+                        <p>
+                            Monitoring of multiple infrastructure locations
+                            through a centralized operational interface.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             POSSIBLE EXTENSIONS
+        ======================================== -->
+
+        <section class="project-detail-section extensions-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        POSSIBLE EXTENSIONS
+                    </p>
+
+                    <h2>
+                        Where the system
+                        <span>can go next.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="extensions-grid">
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Rack-Level Monitoring
+                        </h3>
+
+                        <p>
+                            Extend environmental and power visibility
+                            to individual racks or selected rack groups.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Capacity Tracking
+                        </h3>
+
+                        <p>
+                            Compare electrical and cooling utilization
+                            against available infrastructure capacity.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Advanced Alarm Correlation
+                        </h3>
+
+                        <p>
+                            Group related equipment alarms into broader
+                            infrastructure events for faster investigation.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Energy Performance
+                        </h3>
+
+                        <p>
+                            Expand electrical monitoring to include energy
+                            usage and facility-efficiency indicators.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            05
+                        </span>
+
+                        <h3>
+                            Maintenance Integration
+                        </h3>
+
+                        <p>
+                            Associate equipment condition, alarms and trends
+                            with maintenance history and inspection records.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            06
+                        </span>
+
+                        <h3>
+                            Multi-Site Monitoring
+                        </h3>
+
+                        <p>
+                            Aggregate infrastructure information from
+                            multiple facilities into one centralized
+                            operational view.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             PROJECT CTA
+        ======================================== -->
+
+        <section class="project-detail-cta">
+
+            <div class="container">
+
+                <div class="project-cta-content">
+
+                    <p class="eyebrow">
+                        START A PROJECT
+                    </p>
+
+                    <h2>
+                        Have a similar
+                        engineering challenge?
+                    </h2>
+
+                    <h3>
+                        Let's turn the concept
+                        into a working system.
+                    </h3>
+
+                    <p>
+                        Tell us what you're trying to measure, understand,
+                        improve or develop.
+                    </p>
+
+                    <a href="../index.html#contact" class="footer-cta-button">
+
+                        Discuss a Project
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <span class="logo">
+                    EPPL
+                </span>
+
+                <p>
+                    Engineering ideas into practical systems.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#analysis">
+                    System Focus
+                </a>
+
+                <a href="#engineering">
+                    Engineering
+                </a>
+
+                <a href="#development">
+                    Development
+                </a>
+
+                <a href="#applications">
+                    Applications
+                </a>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 Engineering Projects & Prototypes Lab
+                </span>
+
+                <span>
+                    INTELLIGENT DATA CENTER INFRASTRUCTURE MONITOR
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

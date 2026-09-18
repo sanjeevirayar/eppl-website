@@ -1,0 +1,2573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Smart Electrical Panel — an engineered automatic power-management system for monitoring electrical demand, prioritizing connected loads and automatically controlling non-critical circuits according to available power capacity.">
+
+    <title>
+        Smart Electrical Panel | Engineering Projects & Prototypes Lab
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../project-detail.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         NAVIGATION
+    ======================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                EPPL
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#analysis">
+                    System Focus
+                </a>
+
+                <a href="#engineering">
+                    Engineering
+                </a>
+
+                <a href="#development">
+                    Development
+                </a>
+
+                <a href="#applications">
+                    Applications
+                </a>
+
+            </nav>
+
+            <a href="../index.html#contact" class="nav-button">
+                Discuss a Project
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ========================================
+             PROJECT HERO
+        ======================================== -->
+
+        <section class="project-detail-hero">
+
+            <!-- BACKGROUND IMAGE -->
+            <div class="project-hero-bg" style="background-image: url('../assets/images/project-01.jpg');">
+            </div>
+
+            <!-- DARK OVERLAY -->
+            <div class="project-hero-overlay"></div>
+
+
+            <div class="container">
+
+                <div class="project-detail-meta">
+
+                    <span class="eyebrow">
+                        PROJECT 01
+                    </span>
+
+                    <span class="project-status-label">
+                        ENGINEERED PROTOTYPE
+                    </span>
+
+                </div>
+
+
+                <h1>
+                    Smart Electrical Panel
+                    <span>Load Priority & Automatic Power Management</span>
+                </h1>
+
+
+                <div class="project-detail-tags">
+
+                    <span>Power Management</span>
+                    <span>Electrical Automation</span>
+                    <span>Load Control</span>
+
+                </div>
+
+
+                <p class="project-detail-intro">
+                    An intelligent electrical panel developed to monitor
+                    real-time power demand, classify connected loads by
+                    operational priority and automatically manage selected
+                    circuits when available electrical capacity becomes
+                    constrained.
+                </p>
+
+
+                <a href="../index.html#projects" class="project-back-link">
+                    ← Back to Projects
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             THE CHALLENGE
+        ======================================== -->
+
+        <section class="project-detail-section challenge-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        THE CHALLENGE
+                    </p>
+
+                    <h2>
+                        Managing available
+                        <span>power intelligently.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text-block">
+
+                    <p>
+                        Electrical panels distribute power to multiple loads,
+                        but conventional distribution systems do not normally
+                        distinguish between equipment according to its
+                        operational importance.
+                    </p>
+
+                    <p>
+                        When electrical demand approaches the available source
+                        capacity, critical and non-critical equipment continue
+                        competing for the same supply unless an operator
+                        manually intervenes.
+                    </p>
+
+                    <p>
+                        This project addresses that problem by continuously
+                        measuring electrical demand, assigning load priorities
+                        and automatically controlling lower-priority circuits
+                        while preserving power for more important equipment.
+                    </p>
+
+                </div>
+
+
+                <div class="engineering-flow">
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Monitor
+                        </h3>
+
+                        <p>
+                            Measure voltage, current, power and total
+                            electrical demand.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Prioritize
+                        </h3>
+
+                        <p>
+                            Classify connected circuits according to
+                            their operational importance.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Decide
+                        </h3>
+
+                        <p>
+                            Compare real-time demand with the configured
+                            operating capacity.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Control
+                        </h3>
+
+                        <p>
+                            Shed and restore controllable loads according
+                            to the programmed priority sequence.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             THE CONCEPT
+        ======================================== -->
+
+        <section id="concept" class="project-detail-section concept-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        THE CONCEPT
+                    </p>
+
+                    <h2>
+                        From power distribution to
+                        <span>active load management.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text-block">
+
+                    <p>
+                        The system combines conventional electrical
+                        distribution with a dedicated monitoring and
+                        automation layer.
+                    </p>
+
+                    <p>
+                        Electrical parameters are measured continuously
+                        while the connected circuits are assigned predefined
+                        priority levels. Critical loads remain protected from
+                        normal automatic load shedding, while lower-priority
+                        loads are available for controlled disconnection.
+                    </p>
+
+                    <p>
+                        When measured demand crosses the configured operating
+                        limit, the controller progressively removes selected
+                        loads. Once sufficient electrical capacity becomes
+                        available again, the loads are restored in a controlled
+                        sequence.
+                    </p>
+
+                </div>
+
+
+                <div class="concept-flow">
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            01
+                        </span>
+
+                        <h3>
+                            MEASURE
+                        </h3>
+
+                        <p>
+                            Capture electrical demand and supply
+                            conditions continuously.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            02
+                        </span>
+
+                        <h3>
+                            CLASSIFY
+                        </h3>
+
+                        <p>
+                            Group electrical loads according to
+                            operational priority.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            03
+                        </span>
+
+                        <h3>
+                            MANAGE
+                        </h3>
+
+                        <p>
+                            Disconnect lower-priority loads when
+                            available capacity is constrained.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            04
+                        </span>
+
+                        <h3>
+                            RESTORE
+                        </h3>
+
+                        <p>
+                            Return controlled loads progressively when
+                            sufficient capacity becomes available.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SYSTEM ARCHITECTURE
+        ======================================== -->
+
+        <section id="architecture" class="project-detail-section architecture-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        SYSTEM ARCHITECTURE
+                    </p>
+
+                    <h2>
+                        How the system
+                        <span>works.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="architecture-diagram">
+
+                    <!-- POWER INPUT -->
+
+                    <div class="architecture-block architecture-environment">
+
+                        <span class="architecture-block-title">
+                            POWER INPUT
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Utility / Backup Source</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- MEASUREMENT -->
+
+                    <div class="architecture-block">
+
+                        <span class="architecture-block-title">
+                            POWER MEASUREMENT
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Voltage</span>
+                            <span>Current</span>
+                            <span>Power</span>
+                            <span>Demand</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- CONTROLLER -->
+
+                    <div class="architecture-block architecture-core">
+
+                        <span class="architecture-block-title">
+                            LOAD MANAGEMENT
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Priority Logic</span>
+                            <span>Capacity Evaluation</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- SWITCHING -->
+
+                    <div class="architecture-block">
+
+                        <span class="architecture-block-title">
+                            LOAD SWITCHING
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>PLC Outputs</span>
+                            <span>Relays</span>
+                            <span>Contactors</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- OUTPUT -->
+
+                    <div class="architecture-block architecture-output">
+
+                        <span class="architecture-block-title">
+                            MANAGED LOADS
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>P1 Critical</span>
+                            <span>P2 Important</span>
+                            <span>P3 Non-Critical</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SYSTEM FOCUS
+        ======================================== -->
+
+        <section id="analysis" class="project-detail-section monitoring-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        SYSTEM FOCUS
+                    </p>
+
+                    <h2>
+                        What the system
+                        <span>manages.</span>
+                    </h2>
+
+                    <p>
+                        Electrical measurements and equipment states are
+                        processed together to determine when load-management
+                        action is required and which circuits can be controlled.
+                    </p>
+
+                </div>
+
+
+                <div class="monitoring-grid">
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Electrical Demand
+                        </h3>
+
+                        <p>
+                            Monitors voltage, current, active power,
+                            frequency, power factor and overall demand.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Load Priority
+                        </h3>
+
+                        <p>
+                            Maintains predefined priorities between critical,
+                            important and non-critical electrical loads.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Available Capacity
+                        </h3>
+
+                        <p>
+                            Compares measured electrical demand against
+                            the configured operating limit before initiating
+                            load-management action.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Load & Control State
+                        </h3>
+
+                        <p>
+                            Tracks whether individual controllable circuits
+                            are running, shed, manually overridden or
+                            waiting for restoration.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             ENGINEERING
+        ======================================== -->
+
+        <section id="engineering" class="project-detail-section engineering-build-section">
+
+            <div class="container">
+
+
+                <!-- ========================================
+                     ENGINEERING BUILD
+                ======================================== -->
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        ENGINEERING BUILD
+                    </p>
+
+                    <h2>
+                        Hardware behind the
+                        <span>automatic power-management panel.</span>
+                    </h2>
+
+                    <p>
+                        The system combines industrial power measurement,
+                        programmable control, electrically isolated output
+                        interfaces and contactor-based load switching inside
+                        a structured electrical panel.
+                    </p>
+
+                </div>
+
+
+                <div class="engineering-table-wrapper">
+
+                    <table class="engineering-table">
+
+                        <thead>
+                            <tr>
+                                <th>FUNCTION</th>
+                                <th>HARDWARE</th>
+                                <th>PURPOSE</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Power Measurement</td>
+
+                                <td>
+                                    INA226 Voltage / Current
+                                    Monitoring Module
+                                </td>
+
+                                <td>
+                                    Measures prototype supply voltage,
+                                    current and electrical demand for
+                                    load-management decisions.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Main Controller</td>
+
+                                <td>
+                                    Espressif ESP32-DevKitC V4
+                                </td>
+
+                                <td>
+                                    Executes capacity evaluation,
+                                    load-priority, shedding and
+                                    restoration logic.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Load Switching</td>
+
+                                <td>
+                                    4-Channel Relay Module
+                                </td>
+
+                                <td>
+                                    Provides independent switching of
+                                    controllable P2 and P3 loads.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Critical Load</td>
+
+                                <td>
+                                    12 VDC LED Lamp — P1
+                                </td>
+
+                                <td>
+                                    Represents the critical load excluded
+                                    from the normal automatic shedding sequence.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Important Load</td>
+
+                                <td>
+                                    12 VDC LED Lamp — P2
+                                </td>
+
+                                <td>
+                                    Represents the second-priority load,
+                                    disconnected only when additional
+                                    demand reduction is required.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Non-Critical Load</td>
+
+                                <td>
+                                    12 VDC LED Lamp — P3
+                                </td>
+
+                                <td>
+                                    Represents the first load selected
+                                    during automatic load shedding.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Prototype Power</td>
+
+                                <td>
+                                    12 VDC Bench Power Supply
+                                </td>
+
+                                <td>
+                                    Provides a low-voltage source for
+                                    safe prototype testing and demonstration.
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- ========================================
+                     ENGINEERING SUBSECTION 01
+                     ELECTRICAL ARRANGEMENT
+                ======================================== -->
+
+                <div class="engineering-subsection">
+
+                    <div class="engineering-subsection-heading">
+
+                        <span class="engineering-subsection-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Electrical & Control Arrangement
+                            </h3>
+
+                            <p>
+                                The panel separates the electrical power path
+                                from the low-voltage automation layer while
+                                allowing selected outgoing circuits to be
+                                controlled according to their assigned priority.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+     SMART ELECTRICAL PANEL TOPOLOGY
+======================================== -->
+
+                    <div class="system-topology electrical-topology">
+
+
+                        <!-- ========================================
+         LEGEND
+    ======================================== -->
+
+                        <div class="topology-legend">
+
+                            <div class="legend-item">
+                                <span class="legend-line power-line"></span>
+                                <span>Power Path</span>
+                            </div>
+
+                            <div class="legend-item">
+                                <span class="legend-line control-data-line"></span>
+                                <span>Control / Data</span>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         PROTOTYPE POWER SOURCE
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                PROTOTYPE POWER DISTRIBUTION
+                            </div>
+
+
+                            <div class="electrical-source-row">
+
+
+                                <div class="electrical-node source-node">
+
+                                    <span>
+                                        POWER SOURCE
+                                    </span>
+
+                                    <strong>
+                                        12 VDC Bench Supply
+                                    </strong>
+
+                                    <small>
+                                        Low-voltage source for safe
+                                        prototype demonstration
+                                    </small>
+
+                                </div>
+
+
+                                <div class="electrical-path-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="electrical-node protection-node">
+
+                                    <span>
+                                        INPUT PROTECTION
+                                    </span>
+
+                                    <strong>
+                                        DC Fuse / Protection
+                                    </strong>
+
+                                    <small>
+                                        Prototype supply protection
+                                    </small>
+
+                                </div>
+
+
+                                <div class="electrical-path-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="electrical-node measurement-node">
+
+                                    <span>
+                                        POWER MEASUREMENT
+                                    </span>
+
+                                    <strong>
+                                        INA226
+                                    </strong>
+
+                                    <small>
+                                        Voltage · Current · Power
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         MAIN DISTRIBUTION BUS
+    ======================================== -->
+
+                        <div class="electrical-bus-section">
+
+                            <div class="electrical-drop-line"></div>
+
+                            <div class="electrical-bus">
+
+                                <span>
+                                    MAIN DISTRIBUTION BUS
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         PRIORITY LOAD BRANCHES
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                PRIORITY LOAD DISTRIBUTION
+                            </div>
+
+
+                            <div class="priority-load-grid">
+
+
+                                <!-- ========================================
+                 P1
+            ======================================== -->
+
+                                <div class="priority-load-column">
+
+                                    <div class="branch-feed-line"></div>
+
+                                    <div class="priority-switch fixed-path">
+
+                                        <span>
+                                            DIRECT PATH
+                                        </span>
+
+                                        <strong>
+                                            Always Connected
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="priority-load-card priority-critical">
+
+                                        <div class="priority-load-top">
+
+                                            <span class="priority-code-large">
+                                                P1
+                                            </span>
+
+                                            <span class="priority-state">
+                                                CRITICAL
+                                            </span>
+
+                                        </div>
+
+                                        <strong>
+                                            Critical Load
+                                        </strong>
+
+                                        <small>
+                                            Essential load excluded from
+                                            normal automatic shedding
+                                        </small>
+
+
+                                        <div class="load-demo">
+
+                                            <span>
+                                                PROTOTYPE LOAD
+                                            </span>
+
+                                            <strong>
+                                                12 VDC Lamp
+                                            </strong>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- ========================================
+                 P2
+            ======================================== -->
+
+                                <div class="priority-load-column">
+
+                                    <div class="branch-feed-line"></div>
+
+                                    <div class="priority-switch controllable-path">
+
+                                        <span>
+                                            SWITCHING DEVICE
+                                        </span>
+
+                                        <strong>
+                                            Relay Channel 1
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="priority-load-card priority-important">
+
+                                        <div class="priority-load-top">
+
+                                            <span class="priority-code-large">
+                                                P2
+                                            </span>
+
+                                            <span class="priority-state">
+                                                IMPORTANT
+                                            </span>
+
+                                        </div>
+
+                                        <strong>
+                                            Important Load
+                                        </strong>
+
+                                        <small>
+                                            Shed only when P3 reduction
+                                            is not sufficient
+                                        </small>
+
+
+                                        <div class="load-demo">
+
+                                            <span>
+                                                PROTOTYPE LOAD
+                                            </span>
+
+                                            <strong>
+                                                12 VDC Lamp
+                                            </strong>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- ========================================
+                 P3
+            ======================================== -->
+
+                                <div class="priority-load-column">
+
+                                    <div class="branch-feed-line"></div>
+
+                                    <div class="priority-switch controllable-path">
+
+                                        <span>
+                                            SWITCHING DEVICE
+                                        </span>
+
+                                        <strong>
+                                            Relay Channel 2
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="priority-load-card priority-noncritical">
+
+                                        <div class="priority-load-top">
+
+                                            <span class="priority-code-large">
+                                                P3
+                                            </span>
+
+                                            <span class="priority-state">
+                                                NON-CRITICAL
+                                            </span>
+
+                                        </div>
+
+                                        <strong>
+                                            Non-Critical Load
+                                        </strong>
+
+                                        <small>
+                                            First load selected during
+                                            capacity limitation
+                                        </small>
+
+
+                                        <div class="load-demo">
+
+                                            <span>
+                                                PROTOTYPE LOAD
+                                            </span>
+
+                                            <strong>
+                                                12 VDC Lamp
+                                            </strong>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         CONTROL CONNECTION
+    ======================================== -->
+
+                        <div class="electrical-control-link">
+
+                            <span>
+                                MEASUREMENT DATA & SWITCHING COMMANDS
+                            </span>
+
+                            <div class="control-link-line"></div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         CONTROL SYSTEM
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                AUTOMATIC LOAD MANAGEMENT
+                            </div>
+
+
+                            <div class="electrical-control-layout">
+
+
+                                <!-- INPUT -->
+
+                                <div class="control-system-node">
+
+                                    <span>
+                                        MEASUREMENT INPUT
+                                    </span>
+
+                                    <strong>
+                                        INA226 Data
+                                    </strong>
+
+                                    <small>
+                                        Live voltage, current
+                                        and calculated power
+                                    </small>
+
+                                </div>
+
+
+                                <div class="control-flow-arrow">
+                                    →
+                                </div>
+
+
+                                <!-- CONTROLLER -->
+
+                                <div class="control-system-node controller-main">
+
+                                    <span>
+                                        MAIN CONTROLLER
+                                    </span>
+
+                                    <strong>
+                                        ESP32-DevKitC V4
+                                    </strong>
+
+                                    <small>
+                                        Capacity evaluation · Priority logic
+                                        · Shedding · Restoration
+                                    </small>
+
+                                </div>
+
+
+                                <div class="control-flow-arrow">
+                                    →
+                                </div>
+
+
+                                <!-- OUTPUT -->
+
+                                <div class="control-system-node">
+
+                                    <span>
+                                        CONTROL OUTPUTS
+                                    </span>
+
+                                    <strong>
+                                        4-Channel Relay Module
+                                    </strong>
+
+                                    <small>
+                                        Independent control of
+                                        P2 and P3 load branches
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         CONTROL LOGIC VISUAL
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                LOAD MANAGEMENT SEQUENCE
+                            </div>
+
+
+                            <div class="load-logic-strip">
+
+
+                                <div class="logic-stage">
+
+                                    <span>
+                                        01
+                                    </span>
+
+                                    <strong>
+                                        Measure
+                                    </strong>
+
+                                    <small>
+                                        Read total demand
+                                    </small>
+
+                                </div>
+
+
+                                <div class="logic-strip-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="logic-stage">
+
+                                    <span>
+                                        02
+                                    </span>
+
+                                    <strong>
+                                        Compare
+                                    </strong>
+
+                                    <small>
+                                        Check available capacity
+                                    </small>
+
+                                </div>
+
+
+                                <div class="logic-strip-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="logic-stage logic-stage-decision">
+
+                                    <span>
+                                        03
+                                    </span>
+
+                                    <strong>
+                                        Over Limit?
+                                    </strong>
+
+                                    <small>
+                                        Evaluate demand threshold
+                                    </small>
+
+                                </div>
+
+
+                                <div class="logic-strip-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="logic-stage">
+
+                                    <span>
+                                        04
+                                    </span>
+
+                                    <strong>
+                                        Shed P3
+                                    </strong>
+
+                                    <small>
+                                        First controllable load
+                                    </small>
+
+                                </div>
+
+
+                                <div class="logic-strip-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="logic-stage">
+
+                                    <span>
+                                        05
+                                    </span>
+
+                                    <strong>
+                                        Shed P2
+                                    </strong>
+
+                                    <small>
+                                        Only if still required
+                                    </small>
+
+                                </div>
+
+
+                                <div class="logic-strip-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="logic-stage">
+
+                                    <span>
+                                        06
+                                    </span>
+
+                                    <strong>
+                                        Restore
+                                    </strong>
+
+                                    <small>
+                                        Sequentially when capacity returns
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         OPERATOR VIEW
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                SYSTEM STATUS
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                        </div>
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                OPERATOR MONITORING
+                            </div>
+
+
+                            <div class="electrical-dashboard">
+
+
+                                <div class="dashboard-title">
+
+                                    <span>
+                                        PROTOTYPE INTERFACE
+                                    </span>
+
+                                    <strong>
+                                        ESP32 Web Dashboard
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="dashboard-metrics">
+
+
+                                    <div class="dashboard-metric">
+
+                                        <span>
+                                            TOTAL DEMAND
+                                        </span>
+
+                                        <strong>
+                                            27.4 W
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="dashboard-metric">
+
+                                        <span>
+                                            P1
+                                        </span>
+
+                                        <strong>
+                                            ON
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="dashboard-metric">
+
+                                        <span>
+                                            P2
+                                        </span>
+
+                                        <strong>
+                                            ON
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="dashboard-metric">
+
+                                        <span>
+                                            P3
+                                        </span>
+
+                                        <strong>
+                                            SHED
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="dashboard-metric">
+
+                                        <span>
+                                            SYSTEM MODE
+                                        </span>
+
+                                        <strong>
+                                            AUTO
+                                        </strong>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ========================================
+         SYSTEM NOTE
+    ======================================== -->
+
+                        <div class="topology-note">
+
+                            <strong>
+                                System Principle
+                            </strong>
+
+                            <p>
+                                The prototype validates power measurement, load-priority logic,
+                                automatic shedding and sequential restoration using safe low-voltage
+                                loads. A production installation would apply the same control
+                                architecture using industrial metering, PLC control and appropriately
+                                rated switching and protection devices.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 02
+                     LOAD PRIORITY MODEL
+                ======================================== -->
+
+                    <div class="engineering-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Load Priority Strategy
+                                </h3>
+
+                                <p>
+                                    Connected circuits are assigned fixed operating
+                                    priorities so that the controller can reduce
+                                    electrical demand in a predictable and
+                                    repeatable sequence.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="priority-table-wrapper">
+
+                            <table class="priority-table">
+
+                                <thead>
+
+                                    <tr>
+                                        <th>PRIORITY</th>
+                                        <th>LOAD CLASS</th>
+                                        <th>CONTROL BEHAVIOUR</th>
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                P1
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Critical
+                                        </td>
+
+                                        <td>
+                                            Maintained during normal automatic
+                                            load-management operation and excluded
+                                            from the standard shedding sequence.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                P2
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Important
+                                        </td>
+
+                                        <td>
+                                            Remains energized under normal
+                                            conditions and is disconnected only
+                                            when P3 shedding does not provide
+                                            sufficient capacity reduction.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                P3
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Non-Critical
+                                        </td>
+
+                                        <td>
+                                            First circuit selected for automatic
+                                            disconnection when total demand
+                                            exceeds the configured operating limit.
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 03
+                     CONTROL LOGIC
+                ======================================== -->
+
+                    <div class="engineering-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Automatic Load Management Logic
+                                </h3>
+
+                                <p>
+                                    The PLC continuously evaluates measured power
+                                    demand and moves through the load hierarchy
+                                    only when the configured capacity conditions
+                                    require intervention.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="control-logic-diagram">
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <strong>
+                                    Read Demand
+                                </strong>
+
+                                <p>
+                                    Receive real-time power measurements
+                                    from the PM5350.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <strong>
+                                    Compare Capacity
+                                </strong>
+
+                                <p>
+                                    Compare current demand against the
+                                    configured operating limit.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block logic-decision">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <strong>
+                                    Limit Exceeded?
+                                </strong>
+
+                                <p>
+                                    Determine whether automatic load
+                                    reduction is required.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    04
+                                </span>
+
+                                <strong>
+                                    Shed P3 / P2
+                                </strong>
+
+                                <p>
+                                    Disconnect controllable loads beginning
+                                    with the lowest priority.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    05
+                                </span>
+
+                                <strong>
+                                    Re-Evaluate
+                                </strong>
+
+                                <p>
+                                    Measure demand again after every
+                                    switching action.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    06
+                                </span>
+
+                                <strong>
+                                    Restore Sequentially
+                                </strong>
+
+                                <p>
+                                    Reconnect managed circuits when stable
+                                    spare capacity becomes available.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 04
+                     CONTROL & SAFETY PHILOSOPHY
+                ======================================== -->
+
+                    <div class="engineering-subsection safety-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Control & Safety Philosophy
+                                </h3>
+
+                                <p>
+                                    Automatic load management operates as a
+                                    supervisory control function while conventional
+                                    electrical protection remains responsible for
+                                    protecting the electrical circuits.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="safety-grid">
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <h4>
+                                    Critical Load Protection
+                                </h4>
+
+                                <p>
+                                    P1 circuits are excluded from the normal
+                                    automatic shedding sequence so essential
+                                    loads remain energized.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <h4>
+                                    Sequential Switching
+                                </h4>
+
+                                <p>
+                                    Loads are disconnected and restored one stage
+                                    at a time to avoid unnecessary simultaneous
+                                    switching and sudden demand changes.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <h4>
+                                    Manual Override
+                                </h4>
+
+                                <p>
+                                    Harmony XB5AD33 selector switches provide
+                                    manual Hand / Off / Auto operation when
+                                    automatic control needs to be overridden.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    04
+                                </span>
+
+                                <h4>
+                                    Control Isolation
+                                </h4>
+
+                                <p>
+                                    Phoenix Contact interface relays separate
+                                    PLC outputs from the contactor-control
+                                    circuits.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    05
+                                </span>
+
+                                <h4>
+                                    Supply Supervision
+                                </h4>
+
+                                <p>
+                                    The RM17TG20 independently supervises
+                                    three-phase supply condition and provides
+                                    an additional electrical-state input.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    06
+                                </span>
+
+                                <h4>
+                                    Conventional Protection
+                                </h4>
+
+                                <p>
+                                    The PLC does not replace breakers or other
+                                    required protective devices; automatic
+                                    control remains separate from fault protection.
+                                </p>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+
+        <!-- ========================================
+             DEVELOPMENT APPROACH
+        ======================================== -->
+
+        <section id="development" class="project-detail-section development-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        DEVELOPMENT APPROACH
+                    </p>
+
+                    <h2>
+                        From electrical distribution to
+                        <span>automatic load management.</span>
+                    </h2>
+
+                    <p>
+                        The system was developed progressively from panel
+                        architecture and measurement integration through
+                        PLC programming, switching control, operator
+                        interface development and functional testing.
+                    </p>
+
+                </div>
+
+
+                <div class="development-list">
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Panel Architecture
+                            </h3>
+
+                            <p>
+                                Defined the incoming supply, protected
+                                distribution paths, controllable branches
+                                and P1 / P2 / P3 load hierarchy.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Hardware Integration
+                            </h3>
+
+                            <p>
+                                Integrated the PLC, power meter, current
+                                transformers, contactors, relays, HMI and
+                                24 VDC control supply within the panel.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Electrical Measurement
+                            </h3>
+
+                            <p>
+                                Configured the PM5350 and current-transformer
+                                inputs for real-time electrical-demand
+                                monitoring.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                PLC Control Logic
+                            </h3>
+
+                            <p>
+                                Implemented demand comparison, load-priority
+                                sequencing, shedding delays and controlled
+                                restoration logic in the Modicon M221.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            05
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                HMI & Operator Control
+                            </h3>
+
+                            <p>
+                                Developed an HMI view for electrical demand,
+                                circuit status, operating mode, priority
+                                condition and manual supervision.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            06
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Testing & Refinement
+                            </h3>
+
+                            <p>
+                                Tested load-shedding sequences, manual
+                                override, demand recovery and sequential
+                                restoration across simulated operating
+                                conditions.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             APPLICATIONS
+        ======================================== -->
+
+        <section id="applications" class="project-detail-section applications-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        APPLICATIONS
+                    </p>
+
+                    <h2>
+                        Where the system
+                        <span>can be applied.</span>
+                    </h2>
+
+                    <p>
+                        The architecture is suited to electrical systems
+                        where available supply capacity must be distributed
+                        between loads with different operational priorities.
+                    </p>
+
+                </div>
+
+
+                <div class="applications-grid">
+
+                    <article class="application-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Commercial Buildings
+                        </h3>
+
+                        <p>
+                            Manage selected lighting, HVAC and auxiliary
+                            loads during periods of high electrical demand.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Industrial Facilities
+                        </h3>
+
+                        <p>
+                            Maintain priority equipment while controlling
+                            selected auxiliary and non-critical plant loads.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Backup Power Systems
+                        </h3>
+
+                        <p>
+                            Match connected demand with the available
+                            capacity of generators, UPS systems or other
+                            backup sources.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Workshops & Laboratories
+                        </h3>
+
+                        <p>
+                            Prioritize essential equipment while controlling
+                            flexible loads within a limited electrical supply.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            05
+                        </span>
+
+                        <h3>
+                            Telecom & Equipment Rooms
+                        </h3>
+
+                        <p>
+                            Maintain critical infrastructure loads while
+                            managing lower-priority auxiliary circuits.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            06
+                        </span>
+
+                        <h3>
+                            Limited-Capacity Power Systems
+                        </h3>
+
+                        <p>
+                            Automatically allocate available electrical
+                            capacity between prioritized connected loads.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             POSSIBLE EXTENSIONS
+        ======================================== -->
+
+        <section class="project-detail-section extensions-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        POSSIBLE EXTENSIONS
+                    </p>
+
+                    <h2>
+                        Where the system
+                        <span>can go next.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="extensions-grid">
+
+                    <article class="extension-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Source-Aware Load Control
+                        </h3>
+
+                        <p>
+                            Automatically change load limits and priorities
+                            according to whether the facility is operating
+                            on utility, generator or backup power.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Dynamic Load Priorities
+                        </h3>
+
+                        <p>
+                            Modify load priorities according to operating
+                            schedules, equipment state or facility demand.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Peak Demand Control
+                        </h3>
+
+                        <p>
+                            Use historical demand trends and configurable
+                            limits to reduce avoidable electrical demand peaks.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Remote Monitoring
+                        </h3>
+
+                        <p>
+                            Extend panel information to a centralized
+                            dashboard for remote status and demand monitoring.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            05
+                        </span>
+
+                        <h3>
+                            Energy Analytics
+                        </h3>
+
+                        <p>
+                            Store historical electrical data to examine
+                            energy usage, demand patterns and controlled-load
+                            behaviour over time.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            06
+                        </span>
+
+                        <h3>
+                            Multi-Panel Coordination
+                        </h3>
+
+                        <p>
+                            Coordinate load-management decisions across
+                            multiple distribution panels through a common
+                            supervisory control system.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             PROJECT CTA
+        ======================================== -->
+
+        <section class="project-detail-cta">
+
+            <div class="container">
+
+                <div class="project-cta-content">
+
+                    <p class="eyebrow">
+                        START A PROJECT
+                    </p>
+
+                    <h2>
+                        Have a similar
+                        engineering challenge?
+                    </h2>
+
+                    <h3>
+                        Let's turn the concept
+                        into a working system.
+                    </h3>
+
+                    <p>
+                        Tell us what you're trying to measure, understand,
+                        improve or develop.
+                    </p>
+
+                    <a href="../index.html#contact" class="footer-cta-button">
+
+                        Discuss a Project
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <span class="logo">
+                    EPPL
+                </span>
+
+                <p>
+                    Engineering ideas into practical systems.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#analysis">
+                    System Focus
+                </a>
+
+                <a href="#engineering">
+                    Engineering
+                </a>
+
+                <a href="#development">
+                    Development
+                </a>
+
+                <a href="#applications">
+                    Applications
+                </a>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 Engineering Projects & Prototypes Lab
+                </span>
+
+                <span>
+                    SMART ELECTRICAL PANEL / LOAD PRIORITY & AUTOMATIC POWER MANAGEMENT
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

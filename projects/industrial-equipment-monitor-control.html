@@ -1,0 +1,2707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Industrial Equipment Behaviour & Production Monitor and Control — an engineered automation prototype for monitoring equipment condition, production activity and machine operation while providing PLC-based control and operator supervision.">
+
+    <title>
+        Industrial Equipment Behaviour & Production Monitor and Control |
+        Engineering Projects & Prototypes Lab
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../project-detail.css">
+</head>
+
+<body class="project-detail-page">
+
+    <!-- ========================================
+         NAVIGATION
+    ======================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                EPPL
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#analysis">
+                    System Focus
+                </a>
+
+                <a href="#engineering">
+                    Engineering
+                </a>
+
+                <a href="#development">
+                    Development
+                </a>
+
+                <a href="#applications">
+                    Applications
+                </a>
+
+            </nav>
+
+            <a href="../index.html#contact" class="nav-button">
+                Discuss a Project
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ========================================
+             PROJECT HERO
+        ======================================== -->
+
+        <section class="project-detail-hero">
+
+             <!-- BACKGROUND IMAGE -->
+            <div class="project-hero-bg" style="background-image: url('../assets/images/project-03.jpg');">
+            </div>
+
+            <!-- DARK OVERLAY -->
+            <div class="project-hero-overlay"></div>
+
+            <div class="container">
+
+                <div class="project-detail-meta">
+
+                    <span class="eyebrow">
+                        PROJECT 04
+                    </span>
+
+                    <span class="project-status-label">
+                        ENGINEERED PROTOTYPE
+                    </span>
+
+                </div>
+
+
+                <h1>
+                    Industrial Equipment Behaviour
+                    <span>& Production Monitor and Control</span>
+                </h1>
+
+
+                <div class="project-detail-tags">
+
+                    <span>Industrial Automation</span>
+                    <span>Condition Monitoring</span>
+                    <span>Production Control</span>
+
+                </div>
+
+
+                <p class="project-detail-intro">
+                    An industrial automation system developed to monitor
+                    machine condition, operating state and production activity
+                    while coordinating motor speed, equipment operation and
+                    operator alerts through PLC-based control.
+                </p>
+
+
+                <a href="../index.html#projects" class="project-back-link">
+                    ← Back to Projects
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             THE CHALLENGE
+        ======================================== -->
+
+        <section class="project-detail-section challenge-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        THE CHALLENGE
+                    </p>
+
+                    <h2>
+                        Understanding what the machine is
+                        <span>actually doing.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text-block">
+
+                    <p>
+                        Industrial equipment may continue producing even
+                        while motor load, vibration, temperature or production
+                        behaviour gradually moves away from normal operating
+                        conditions.
+                    </p>
+
+                    <p>
+                        Production count alone shows output, while condition
+                        sensors alone show equipment behaviour. When these
+                        signals are monitored separately, the relationship
+                        between machine condition and production performance
+                        can be difficult to understand.
+                    </p>
+
+                    <p>
+                        This project combines machine-condition sensing,
+                        production detection and PLC control into one system,
+                        allowing equipment behaviour and production activity
+                        to be evaluated together.
+                    </p>
+
+                </div>
+
+
+                <div class="engineering-flow">
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Monitor
+                        </h3>
+
+                        <p>
+                            Measure vibration, temperature, speed
+                            and drive operating state.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Count
+                        </h3>
+
+                        <p>
+                            Detect manufactured objects and track
+                            completed production cycles.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Evaluate
+                        </h3>
+
+                        <p>
+                            Compare machine behaviour with the
+                            current operating and production state.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Control
+                        </h3>
+
+                        <p>
+                            Adjust operation, reduce speed, stop
+                            production or alert the operator.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             THE CONCEPT
+        ======================================== -->
+
+        <section id="concept" class="project-detail-section concept-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        THE CONCEPT
+                    </p>
+
+                    <h2>
+                        From machine signals to
+                        <span>operational control.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text-block">
+
+                    <p>
+                        The system combines conventional PLC automation with
+                        equipment-condition monitoring and production sensing.
+                    </p>
+
+                    <p>
+                        Vibration, bearing temperature and rotational speed
+                        provide information about equipment behaviour, while
+                        the drive communicates motor operating information
+                        and the photoelectric sensor tracks production output.
+                    </p>
+
+                    <p>
+                        The PLC processes these signals together and maintains
+                        the current machine state. When operating conditions
+                        move outside the configured production rules, the
+                        system can generate an operator warning, modify the
+                        drive command or stop the production sequence.
+                    </p>
+
+                </div>
+
+
+                <div class="concept-flow">
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            01
+                        </span>
+
+                        <h3>
+                            SENSE
+                        </h3>
+
+                        <p>
+                            Capture machine condition, speed and
+                            production activity.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            02
+                        </span>
+
+                        <h3>
+                            IDENTIFY
+                        </h3>
+
+                        <p>
+                            Determine the current operating and
+                            production state.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            03
+                        </span>
+
+                        <h3>
+                            EVALUATE
+                        </h3>
+
+                        <p>
+                            Compare equipment behaviour against
+                            configured operating conditions.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            04
+                        </span>
+
+                        <h3>
+                            CONTROL
+                        </h3>
+
+                        <p>
+                            Coordinate machine operation according
+                            to equipment and production state.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SYSTEM ARCHITECTURE
+        ======================================== -->
+
+        <section id="architecture" class="project-detail-section architecture-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        SYSTEM ARCHITECTURE
+                    </p>
+
+                    <h2>
+                        How the system
+                        <span>works.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="architecture-diagram">
+
+                    <!-- MACHINE -->
+
+                    <div class="architecture-block architecture-environment">
+
+                        <span class="architecture-block-title">
+                            MACHINE
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Motor</span>
+                            <span>Production Equipment</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- SENSING -->
+
+                    <div class="architecture-block">
+
+                        <span class="architecture-block-title">
+                            SENSING
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Vibration</span>
+                            <span>Temperature</span>
+                            <span>Speed</span>
+                            <span>Object Detection</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- PLC -->
+
+                    <div class="architecture-block architecture-core">
+
+                        <span class="architecture-block-title">
+                            PLC CONTROL
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Machine State</span>
+                            <span>Production Logic</span>
+                            <span>Condition Rules</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- DRIVE -->
+
+                    <div class="architecture-block">
+
+                        <span class="architecture-block-title">
+                            MACHINE CONTROL
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>VFD Speed</span>
+                            <span>Run / Stop</span>
+                            <span>Auxiliary Outputs</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- OUTPUT -->
+
+                    <div class="architecture-block architecture-output">
+
+                        <span class="architecture-block-title">
+                            OPERATOR VIEW
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Status</span>
+                            <span>Production</span>
+                            <span>Condition</span>
+                            <span>Alerts</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SYSTEM FOCUS
+        ======================================== -->
+
+        <section id="analysis" class="project-detail-section monitoring-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        SYSTEM FOCUS
+                    </p>
+
+                    <h2>
+                        What the system
+                        <span>monitors and controls.</span>
+                    </h2>
+
+                    <p>
+                        Equipment-condition measurements and production
+                        information are processed together so machine
+                        performance can be evaluated within its actual
+                        operating state.
+                    </p>
+
+                </div>
+
+
+                <div class="monitoring-grid">
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Equipment Condition
+                        </h3>
+
+                        <p>
+                            Monitors vibration and bearing temperature
+                            to track changes in machine behaviour.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Motor Operation
+                        </h3>
+
+                        <p>
+                            Tracks rotational speed, drive state and
+                            motor operating conditions during production.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Production Activity
+                        </h3>
+
+                        <p>
+                            Counts detected products and tracks production
+                            cycles, output rate and equipment activity.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Machine Control State
+                        </h3>
+
+                        <p>
+                            Tracks commanded speed, run state, operator
+                            mode, warnings and controlled stop conditions.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             ENGINEERING
+        ======================================== -->
+
+        <section id="engineering" class="project-detail-section engineering-build-section">
+
+            <div class="container">
+
+
+                <!-- ========================================
+                     ENGINEERING BUILD
+                ======================================== -->
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        ENGINEERING BUILD
+                    </p>
+
+                    <h2>
+                        Hardware behind the
+                        <span>industrial automation system.</span>
+                    </h2>
+
+                    <p>
+                        The prototype combines industrial PLC control,
+                        analog condition sensing, production detection,
+                        variable-speed motor control and an operator HMI
+                        within one machine-monitoring architecture.
+                    </p>
+
+                </div>
+
+
+                <div class="engineering-table-wrapper">
+
+                    <table class="engineering-table">
+
+                        <thead>
+                            <tr>
+                                <th>FUNCTION</th>
+                                <th>HARDWARE</th>
+                                <th>PURPOSE</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Main Controller</td>
+
+                                <td>
+                                    ESP32-DevKitC V4
+                                </td>
+
+                                <td>
+                                    Executes equipment monitoring,
+                                    machine-state recognition,
+                                    production counting and control logic.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Production Machine</td>
+
+                                <td>
+                                    12 VDC Geared Motor
+                                    + Prototype Conveyor
+                                </td>
+
+                                <td>
+                                    Provides a motor-driven production
+                                    mechanism for system testing.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Motor Speed Control</td>
+
+                                <td>
+                                    PWM Motor Driver Module
+                                </td>
+
+                                <td>
+                                    Controls prototype motor run state
+                                    and operating speed.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Vibration Monitoring</td>
+
+                                <td>
+                                    ADXL345 Accelerometer
+                                </td>
+
+                                <td>
+                                    Tracks changes in mechanical
+                                    equipment behaviour.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Temperature Monitoring</td>
+
+                                <td>
+                                    DS18B20 Temperature Sensor
+                                </td>
+
+                                <td>
+                                    Measures thermal behaviour of the
+                                    motor and equipment.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Rotational Feedback</td>
+
+                                <td>
+                                    Hall Sensor + Shaft Magnet
+                                </td>
+
+                                <td>
+                                    Confirms machine rotation and
+                                    calculates operating speed.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Product Detection</td>
+
+                                <td>
+                                    IR Object Detection Sensor
+                                </td>
+
+                                <td>
+                                    Detects passing objects and maintains
+                                    the production count.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Monitoring Platform</td>
+
+                                <td>
+                                    Raspberry Pi 4 Model B
+                                </td>
+
+                                <td>
+                                    Provides centralized machine-condition
+                                    and production monitoring.
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- ========================================
+                     ENGINEERING SUBSECTION 01
+                     MACHINE ARRANGEMENT
+                ======================================== -->
+
+                <div class="engineering-subsection">
+
+                    <div class="engineering-subsection-heading">
+
+                        <span class="engineering-subsection-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Machine Monitoring & Control Arrangement
+                            </h3>
+
+                            <p>
+                                The architecture separates machine-safety
+                                functions from operational PLC control while
+                                connecting condition, production and speed
+                                sensors to the same control platform.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ========================================
+     INDUSTRIAL EQUIPMENT & PRODUCTION TOPOLOGY
+======================================== -->
+
+                    <div class="system-topology equipment-topology">
+
+
+                        <!-- ========================================
+         LEGEND
+    ======================================== -->
+
+                        <div class="topology-legend">
+
+                            <div class="legend-item">
+                                <span class="legend-line physical-line"></span>
+                                <span>Mechanical / Production Path</span>
+                            </div>
+
+                            <div class="legend-item">
+                                <span class="legend-line data-line"></span>
+                                <span>Sensor / Control Data</span>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         PROTOTYPE MACHINE
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                PROTOTYPE PRODUCTION MACHINE
+                            </div>
+
+
+                            <div class="machine-layout">
+
+
+                                <!-- DRIVE -->
+
+                                <div class="machine-block machine-drive">
+
+                                    <span>
+                                        DRIVE
+                                    </span>
+
+                                    <strong>
+                                        12 VDC Geared Motor
+                                    </strong>
+
+                                    <small>
+                                        Drives the prototype production mechanism
+                                    </small>
+
+                                </div>
+
+
+                                <div class="machine-shaft">
+
+                                    <span>
+                                        ROTATION
+                                    </span>
+
+                                    <div class="shaft-line"></div>
+
+                                    <strong>
+                                        →
+                                    </strong>
+
+                                </div>
+
+
+                                <!-- PROCESS -->
+
+                                <div class="machine-process">
+
+                                    <div class="machine-process-header">
+
+                                        <span>
+                                            PRODUCTION EQUIPMENT
+                                        </span>
+
+                                        <strong>
+                                            Motor-Driven Conveyor / Mechanism
+                                        </strong>
+
+                                    </div>
+
+
+                                    <!-- CONVEYOR -->
+
+                                    <div class="prototype-conveyor">
+
+                                        <div class="conveyor-rail"></div>
+
+                                        <div class="conveyor-products">
+
+                                            <div class="product-object">
+                                                P1
+                                            </div>
+
+                                            <div class="product-object">
+                                                P2
+                                            </div>
+
+                                            <div class="product-object">
+                                                P3
+                                            </div>
+
+                                        </div>
+
+                                        <div class="conveyor-direction">
+                                            PRODUCTION FLOW →
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- PRODUCT SENSOR -->
+
+                                <div class="machine-block product-sensor-block">
+
+                                    <span>
+                                        PRODUCT SENSOR
+                                    </span>
+
+                                    <strong>
+                                        IR Detection Sensor
+                                    </strong>
+
+                                    <small>
+                                        Detects and counts passing products
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         MACHINE SENSOR PLACEMENT
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                MACHINE CONDITION SENSING
+                            </div>
+
+
+                            <div class="machine-sensor-layout">
+
+
+                                <!-- MOTOR REPRESENTATION -->
+
+                                <div class="machine-center-object">
+
+                                    <span>
+                                        MONITORED EQUIPMENT
+                                    </span>
+
+                                    <strong>
+                                        Drive Motor
+                                    </strong>
+
+                                    <small>
+                                        Electrical → Mechanical Motion
+                                    </small>
+
+                                </div>
+
+
+
+                                <!-- VIBRATION -->
+
+                                <div class="machine-sensor-card sensor-vibration">
+
+                                    <span>
+                                        VIBRATION
+                                    </span>
+
+                                    <strong>
+                                        ADXL345
+                                    </strong>
+
+                                    <small>
+                                        Mounted on motor / machine body
+                                    </small>
+
+                                </div>
+
+
+
+                                <!-- TEMPERATURE -->
+
+                                <div class="machine-sensor-card sensor-temperature">
+
+                                    <span>
+                                        TEMPERATURE
+                                    </span>
+
+                                    <strong>
+                                        DS18B20
+                                    </strong>
+
+                                    <small>
+                                        Tracks motor thermal behaviour
+                                    </small>
+
+                                </div>
+
+
+
+                                <!-- SPEED -->
+
+                                <div class="machine-sensor-card sensor-speed">
+
+                                    <span>
+                                        ROTATIONAL SPEED
+                                    </span>
+
+                                    <strong>
+                                        Hall Sensor
+                                    </strong>
+
+                                    <small>
+                                        Shaft magnet provides RPM pulses
+                                    </small>
+
+                                </div>
+
+
+
+                                <!-- PRODUCTION -->
+
+                                <div class="machine-sensor-card sensor-production">
+
+                                    <span>
+                                        PRODUCTION
+                                    </span>
+
+                                    <strong>
+                                        IR Object Sensor
+                                    </strong>
+
+                                    <small>
+                                        Counts completed units
+                                    </small>
+
+                                </div>
+
+
+                                <!-- CONNECTION LINES -->
+
+                                <div class="sensor-link vibration-link"></div>
+                                <div class="sensor-link temperature-link"></div>
+                                <div class="sensor-link speed-link"></div>
+                                <div class="sensor-link production-link"></div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         DATA COLLECTION
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                MACHINE CONDITION & PRODUCTION DATA
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                        </div>
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                DATA ACQUISITION & MACHINE CONTROL
+                            </div>
+
+
+                            <div class="equipment-control-layout">
+
+
+                                <div class="equipment-control-card">
+
+                                    <span>
+                                        SENSOR INPUTS
+                                    </span>
+
+                                    <strong>
+                                        Vibration · Temperature
+                                        · RPM · Product Count
+                                    </strong>
+
+                                    <small>
+                                        Live machine-condition and
+                                        production measurements
+                                    </small>
+
+                                </div>
+
+
+                                <div class="equipment-control-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="equipment-control-card equipment-main-controller">
+
+                                    <span>
+                                        MAIN CONTROLLER
+                                    </span>
+
+                                    <strong>
+                                        ESP32-DevKitC V4
+                                    </strong>
+
+                                    <small>
+                                        Machine-state recognition · Production counting
+                                        · Condition logic · Motor control
+                                    </small>
+
+                                </div>
+
+
+                                <div class="equipment-control-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="equipment-control-card">
+
+                                    <span>
+                                        MACHINE OUTPUT
+                                    </span>
+
+                                    <strong>
+                                        Motor Driver / PWM
+                                    </strong>
+
+                                    <small>
+                                        Run · Stop · Speed command
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         OPERATING STATE
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                MACHINE OPERATING STATE
+                            </div>
+
+
+                            <div class="equipment-state-strip">
+
+
+                                <div class="equipment-state">
+
+                                    <span>
+                                        S0
+                                    </span>
+
+                                    <strong>
+                                        STOPPED
+                                    </strong>
+
+                                    <small>
+                                        Motor stationary
+                                    </small>
+
+                                </div>
+
+
+                                <div class="equipment-state-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="equipment-state">
+
+                                    <span>
+                                        S1
+                                    </span>
+
+                                    <strong>
+                                        STARTING
+                                    </strong>
+
+                                    <small>
+                                        Motor acceleration
+                                    </small>
+
+                                </div>
+
+
+                                <div class="equipment-state-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="equipment-state active-state">
+
+                                    <span>
+                                        S2
+                                    </span>
+
+                                    <strong>
+                                        PRODUCTION
+                                    </strong>
+
+                                    <small>
+                                        Normal machine operation
+                                    </small>
+
+                                </div>
+
+
+                                <div class="equipment-state-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="equipment-state">
+
+                                    <span>
+                                        S3
+                                    </span>
+
+                                    <strong>
+                                        DEVIATION
+                                    </strong>
+
+                                    <small>
+                                        Condition requires attention
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         MONITORING & CONTROL LOGIC
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                CONDITION & PRODUCTION LOGIC
+                            </div>
+
+
+                            <div class="equipment-logic-grid">
+
+
+                                <div class="equipment-logic-card">
+
+                                    <span>
+                                        01
+                                    </span>
+
+                                    <strong>
+                                        Measure
+                                    </strong>
+
+                                    <small>
+                                        Acquire machine
+                                        and production signals
+                                    </small>
+
+                                </div>
+
+
+                                <div class="equipment-logic-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="equipment-logic-card">
+
+                                    <span>
+                                        02
+                                    </span>
+
+                                    <strong>
+                                        Identify
+                                    </strong>
+
+                                    <small>
+                                        Determine current
+                                        machine state
+                                    </small>
+
+                                </div>
+
+
+                                <div class="equipment-logic-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="equipment-logic-card">
+
+                                    <span>
+                                        03
+                                    </span>
+
+                                    <strong>
+                                        Count
+                                    </strong>
+
+                                    <small>
+                                        Track produced
+                                        units and throughput
+                                    </small>
+
+                                </div>
+
+
+                                <div class="equipment-logic-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="equipment-logic-card logic-condition">
+
+                                    <span>
+                                        04
+                                    </span>
+
+                                    <strong>
+                                        Evaluate
+                                    </strong>
+
+                                    <small>
+                                        Check vibration,
+                                        temperature and speed
+                                    </small>
+
+                                </div>
+
+
+                                <div class="equipment-logic-arrow">
+                                    →
+                                </div>
+
+
+                                <div class="equipment-logic-card">
+
+                                    <span>
+                                        05
+                                    </span>
+
+                                    <strong>
+                                        Respond
+                                    </strong>
+
+                                    <small>
+                                        Continue · Warn
+                                        · Reduce · Stop
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         DASHBOARD
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                MACHINE STATUS & PRODUCTION INFORMATION
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                        </div>
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                OPERATOR MONITORING
+                            </div>
+
+
+                            <div class="equipment-dashboard">
+
+
+                                <div class="equipment-dashboard-title">
+
+                                    <span>
+                                        PROTOTYPE DASHBOARD
+                                    </span>
+
+                                    <strong>
+                                        Machine & Production Monitor
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="equipment-dashboard-grid">
+
+
+                                    <div class="equipment-dashboard-item">
+
+                                        <span>
+                                            MACHINE
+                                        </span>
+
+                                        <strong>
+                                            RUNNING
+                                        </strong>
+
+                                        <small>
+                                            S2 Production
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="equipment-dashboard-item">
+
+                                        <span>
+                                            SPEED
+                                        </span>
+
+                                        <strong>
+                                            1180 RPM
+                                        </strong>
+
+                                        <small>
+                                            Stable
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="equipment-dashboard-item">
+
+                                        <span>
+                                            TEMPERATURE
+                                        </span>
+
+                                        <strong>
+                                            42.6 °C
+                                        </strong>
+
+                                        <small>
+                                            Normal
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="equipment-dashboard-item">
+
+                                        <span>
+                                            VIBRATION
+                                        </span>
+
+                                        <strong>
+                                            NORMAL
+                                        </strong>
+
+                                        <small>
+                                            Within baseline
+                                        </small>
+
+                                    </div>
+
+
+                                    <div class="equipment-dashboard-item">
+
+                                        <span>
+                                            PRODUCTION
+                                        </span>
+
+                                        <strong>
+                                            148 UNITS
+                                        </strong>
+
+                                        <small>
+                                            Current count
+                                        </small>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         SAFETY SEPARATION
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                MACHINE SAFETY BOUNDARY
+                            </div>
+
+
+                            <div class="equipment-safety-layout">
+
+
+                                <div class="equipment-safety-card prototype-safety">
+
+                                    <span>
+                                        PROTOTYPE
+                                    </span>
+
+                                    <strong>
+                                        Emergency-Stop Demonstration Input
+                                    </strong>
+
+                                    <small>
+                                        Used to demonstrate machine stop-state
+                                        handling within the prototype.
+                                    </small>
+
+                                </div>
+
+
+                                <div class="safety-separation">
+
+                                    ≠
+
+                                </div>
+
+
+                                <div class="equipment-safety-card">
+
+                                    <span>
+                                        PRODUCTION SYSTEM
+                                    </span>
+
+                                    <strong>
+                                        Certified Safety Circuit
+                                    </strong>
+
+                                    <small>
+                                        Safety relay, E-stop devices and required
+                                        machine protective functions remain independent
+                                        from normal automation control.
+                                    </small>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         SYSTEM NOTE
+    ======================================== -->
+
+                        <div class="topology-note">
+
+                            <strong>
+                                System Principle
+                            </strong>
+
+                            <p>
+                                The prototype combines equipment-condition sensing with
+                                production monitoring so machine behaviour can be evaluated
+                                alongside actual production activity. Operational control
+                                remains separate from certified machine-safety functions.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 02
+                     OPERATING STATE MODEL
+                ======================================== -->
+
+                    <div class="engineering-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Machine Operating-State Model
+                                </h3>
+
+                                <p>
+                                    Sensor and production information is interpreted
+                                    according to the current machine state so that
+                                    startup, normal production and abnormal
+                                    conditions are handled differently.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="priority-table-wrapper">
+
+                            <table class="priority-table">
+
+                                <thead>
+
+                                    <tr>
+                                        <th>STATE</th>
+                                        <th>MACHINE CONDITION</th>
+                                        <th>SYSTEM BEHAVIOUR</th>
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S0
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Stopped
+                                        </td>
+
+                                        <td>
+                                            Motor command is disabled, rotational
+                                            feedback is absent and production
+                                            counting is paused while condition
+                                            values remain visible.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S1
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Starting
+                                        </td>
+
+                                        <td>
+                                            The VFD accelerates the machine to
+                                            the requested operating speed while
+                                            rotational feedback confirms movement.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S2
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Production
+                                        </td>
+
+                                        <td>
+                                            Machine condition, production count
+                                            and throughput are continuously
+                                            monitored while normal control
+                                            commands remain active.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S3
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Deviation
+                                        </td>
+
+                                        <td>
+                                            A sustained abnormal equipment or
+                                            production condition generates an
+                                            operator warning and initiates the
+                                            configured operational response.
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 03
+                     CONTROL LOGIC
+                ======================================== -->
+
+                    <div class="engineering-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Equipment & Production Control Logic
+                                </h3>
+
+                                <p>
+                                    The PLC continuously evaluates machine
+                                    condition alongside production activity before
+                                    determining whether normal operation should
+                                    continue or corrective action is required.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="control-logic-diagram">
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <strong>
+                                    Acquire Signals
+                                </strong>
+
+                                <p>
+                                    Read machine-condition, speed and
+                                    production sensors.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <strong>
+                                    Identify State
+                                </strong>
+
+                                <p>
+                                    Determine whether the machine is stopped,
+                                    starting or producing.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <strong>
+                                    Track Production
+                                </strong>
+
+                                <p>
+                                    Count completed objects and calculate
+                                    production activity.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block logic-decision">
+
+                                <span>
+                                    04
+                                </span>
+
+                                <strong>
+                                    Condition Acceptable?
+                                </strong>
+
+                                <p>
+                                    Compare vibration, temperature and machine
+                                    state against configured operating limits.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    05
+                                </span>
+
+                                <strong>
+                                    Apply Response
+                                </strong>
+
+                                <p>
+                                    Maintain operation, reduce speed, issue
+                                    a warning or perform a controlled stop.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    06
+                                </span>
+
+                                <strong>
+                                    Update Operator
+                                </strong>
+
+                                <p>
+                                    Display machine condition, production
+                                    status and control response on the HMI.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 04
+                     CONTROL & SAFETY PHILOSOPHY
+                ======================================== -->
+
+                    <div class="engineering-subsection safety-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Control & Safety Philosophy
+                                </h3>
+
+                                <p>
+                                    Condition-based PLC control is used for
+                                    operational management only. Machine safety
+                                    remains independent from the normal automation
+                                    program.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="safety-grid">
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <h4>
+                                    Independent Emergency Stop
+                                </h4>
+
+                                <p>
+                                    The SIRIUS 3SK1 safety relay handles the
+                                    emergency-stop circuit independently from
+                                    standard PLC program execution.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <h4>
+                                    Controlled Machine Stop
+                                </h4>
+
+                                <p>
+                                    Condition-monitoring logic can command a
+                                    normal controlled stop without treating that
+                                    function as a substitute for emergency safety.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <h4>
+                                    Speed Verification
+                                </h4>
+
+                                <p>
+                                    The IFS252 provides independent rotation
+                                    feedback so commanded VFD speed can be
+                                    compared with actual machine movement.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    04
+                                </span>
+
+                                <h4>
+                                    Analog Signal Monitoring
+                                </h4>
+
+                                <p>
+                                    Vibration and temperature transmitters use
+                                    industrial analog signals that are monitored
+                                    for valid operating ranges.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    05
+                                </span>
+
+                                <h4>
+                                    Operator Supervision
+                                </h4>
+
+                                <p>
+                                    Machine state, alerts and control actions
+                                    remain visible on the HMI so automated
+                                    responses can be understood by the operator.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    06
+                                </span>
+
+                                <h4>
+                                    Protection Remains Separate
+                                </h4>
+
+                                <p>
+                                    Motor protection, emergency stopping and other
+                                    required machine-safety functions remain
+                                    independent from condition-monitoring logic.
+                                </p>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+
+        <!-- ========================================
+             DEVELOPMENT APPROACH
+        ======================================== -->
+
+        <section id="development" class="project-detail-section development-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        DEVELOPMENT APPROACH
+                    </p>
+
+                    <h2>
+                        From machine sensing to
+                        <span>production control.</span>
+                    </h2>
+
+                    <p>
+                        The prototype was developed progressively from
+                        equipment sensing and PLC integration through motor
+                        control, production tracking, HMI development and
+                        operating-state testing.
+                    </p>
+
+                </div>
+
+
+                <div class="development-list">
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Machine Instrumentation
+                            </h3>
+
+                            <p>
+                                Installed vibration, temperature, rotational
+                                and production-detection sensors around the
+                                equipment test platform.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                PLC Integration
+                            </h3>
+
+                            <p>
+                                Connected digital and analog sensor signals
+                                to the S7-1200 and configured scaling,
+                                filtering and equipment-state inputs.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Motor Control
+                            </h3>
+
+                            <p>
+                                Integrated the SINAMICS V20 with the PLC
+                                for run commands, variable-speed operation
+                                and drive-state communication.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Production Logic
+                            </h3>
+
+                            <p>
+                                Developed object counting, production-rate
+                                tracking and equipment-state sequencing
+                                using photoelectric detection.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            05
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                HMI Development
+                            </h3>
+
+                            <p>
+                                Built operator screens for machine state,
+                                production count, sensor trends, VFD speed,
+                                warnings and manual controls.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            06
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Testing & Refinement
+                            </h3>
+
+                            <p>
+                                Tested startup, production counting,
+                                speed changes, abnormal sensor conditions,
+                                controlled stopping and safety-interface
+                                behaviour.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             APPLICATIONS
+        ======================================== -->
+
+        <section id="applications" class="project-detail-section applications-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        APPLICATIONS
+                    </p>
+
+                    <h2>
+                        Where the system
+                        <span>can be applied.</span>
+                    </h2>
+
+                    <p>
+                        The architecture is suited to motor-driven production
+                        equipment where machine condition, output and operating
+                        control need to be observed together.
+                    </p>
+
+                </div>
+
+
+                <div class="applications-grid">
+
+                    <article class="application-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Conveyor Systems
+                        </h3>
+
+                        <p>
+                            Monitor drive condition, conveyor movement
+                            and product throughput while controlling
+                            operating speed.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Packaging Equipment
+                        </h3>
+
+                        <p>
+                            Track production units, machine state and
+                            equipment condition during repetitive
+                            packaging cycles.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Assembly Stations
+                        </h3>
+
+                        <p>
+                            Combine production counting and machine-state
+                            monitoring around semi-automated assembly
+                            equipment.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Material Handling
+                        </h3>
+
+                        <p>
+                            Monitor motor-driven equipment and detect
+                            material movement through production
+                            processes.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            05
+                        </span>
+
+                        <h3>
+                            Process Equipment
+                        </h3>
+
+                        <p>
+                            Track machine condition and operational
+                            performance of pumps, mixers and other
+                            motor-driven equipment.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            06
+                        </span>
+
+                        <h3>
+                            Prototype Production Lines
+                        </h3>
+
+                        <p>
+                            Provide a flexible PLC-based platform for
+                            developing and testing automated production
+                            concepts.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             POSSIBLE EXTENSIONS
+        ======================================== -->
+
+        <section class="project-detail-section extensions-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        POSSIBLE EXTENSIONS
+                    </p>
+
+                    <h2>
+                        Where the system
+                        <span>can go next.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="extensions-grid">
+
+                    <article class="extension-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Production Target Tracking
+                        </h3>
+
+                        <p>
+                            Compare live production quantity and cycle rate
+                            against shift-level production targets.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Downtime Classification
+                        </h3>
+
+                        <p>
+                            Record machine stoppages and classify downtime
+                            according to equipment, process or operator state.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            OEE Monitoring
+                        </h3>
+
+                        <p>
+                            Extend production information toward
+                            availability, performance and quality
+                            efficiency indicators.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Historical Condition Trends
+                        </h3>
+
+                        <p>
+                            Store vibration, temperature and machine-state
+                            history for longer-term maintenance analysis.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            05
+                        </span>
+
+                        <h3>
+                            Remote Supervisory Dashboard
+                        </h3>
+
+                        <p>
+                            Forward production and machine-condition
+                            information to a centralized monitoring
+                            platform.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            06
+                        </span>
+
+                        <h3>
+                            Multi-Machine Coordination
+                        </h3>
+
+                        <p>
+                            Extend the PLC architecture across multiple
+                            production stations and coordinate upstream
+                            and downstream machine states.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             PROJECT CTA
+        ======================================== -->
+
+        <section class="project-detail-cta">
+
+            <div class="container">
+
+                <div class="project-cta-content">
+
+                    <p class="eyebrow">
+                        START A PROJECT
+                    </p>
+
+                    <h2>
+                        Have a similar
+                        engineering challenge?
+                    </h2>
+
+                    <h3>
+                        Let's turn your requirement
+                        into a working system.
+                    </h3>
+
+                    <p>
+                        Tell us what you're trying to measure, automate,
+                        control or improve.
+                    </p>
+
+                    <a href="../index.html#contact" class="footer-cta-button">
+
+                        Discuss a Project
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <span class="logo">
+                    EPPL
+                </span>
+
+                <p>
+                    Engineering ideas into practical systems.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#analysis">
+                    System Focus
+                </a>
+
+                <a href="#engineering">
+                    Engineering
+                </a>
+
+                <a href="#development">
+                    Development
+                </a>
+
+                <a href="#applications">
+                    Applications
+                </a>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 Engineering Projects & Prototypes Lab
+                </span>
+
+                <span>
+                    INDUSTRIAL EQUIPMENT BEHAVIOUR & PRODUCTION MONITOR AND CONTROL
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

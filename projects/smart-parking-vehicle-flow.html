@@ -1,0 +1,2268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Smart Parking & Vehicle Flow Management System — an engineered prototype for monitoring parking-space occupancy, managing vehicle entry and exit, controlling access and providing real-time parking availability.">
+
+    <title>
+        Smart Parking & Vehicle Flow Management System |
+        Engineering Projects & Prototypes Lab
+    </title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../project-detail.css">
+</head>
+
+<body class="project-detail-page">
+
+    <!-- ========================================
+         NAVIGATION
+    ======================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                EPPL
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#analysis">
+                    System Focus
+                </a>
+
+                <a href="#engineering">
+                    Engineering
+                </a>
+
+                <a href="#development">
+                    Development
+                </a>
+
+                <a href="#applications">
+                    Applications
+                </a>
+
+            </nav>
+
+            <a href="../index.html#contact" class="nav-button">
+                Discuss a Project
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ========================================
+             PROJECT HERO
+        ======================================== -->
+
+        <section class="project-detail-hero">
+
+             <!-- BACKGROUND IMAGE -->
+            <div class="project-hero-bg" style="background-image: url('../assets/images/project-05.jpg');">
+            </div>
+
+            <!-- DARK OVERLAY -->
+            <div class="project-hero-overlay"></div>
+
+            <div class="container">
+
+                <div class="project-detail-meta">
+
+                    <span class="eyebrow">
+                        PROJECT 05
+                    </span>
+
+                    <span class="project-status-label">
+                        ENGINEERED PROTOTYPE
+                    </span>
+
+                </div>
+
+
+                <h1>
+                    Smart Parking
+                    <span>& Vehicle Flow Management</span>
+                </h1>
+
+
+                <div class="project-detail-tags">
+
+                    <span>Smart Infrastructure</span>
+                    <span>Vehicle Access</span>
+                    <span>Parking Automation</span>
+
+                </div>
+
+
+                <p class="project-detail-intro">
+                    An intelligent parking-management system developed to
+                    detect parking-space occupancy, identify approaching
+                    vehicles, manage entry and exit access and maintain
+                    real-time visibility of available parking capacity.
+                </p>
+
+
+                <a href="../index.html#projects" class="project-back-link">
+                    ← Back to Projects
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             THE CHALLENGE
+        ======================================== -->
+
+        <section class="project-detail-section challenge-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        THE CHALLENGE
+                    </p>
+
+                    <h2>
+                        Managing more than
+                        <span>empty spaces.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text-block">
+
+                    <p>
+                        Parking congestion is not created only by a shortage
+                        of spaces. Vehicles entering without knowing current
+                        availability, queues forming at access points and
+                        inefficient movement within the parking area can all
+                        reduce the effectiveness of the available capacity.
+                    </p>
+
+                    <p>
+                        A basic parking sensor can indicate whether one space
+                        is occupied, but that information becomes significantly
+                        more useful when it is connected to the entry gate,
+                        vehicle-identification system and overall parking count.
+                    </p>
+
+                    <p>
+                        This project combines occupancy detection, vehicle
+                        identification, access control and parking-capacity
+                        tracking into one coordinated system that manages both
+                        individual spaces and vehicle movement.
+                    </p>
+
+                </div>
+
+
+                <div class="engineering-flow">
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Detect
+                        </h3>
+
+                        <p>
+                            Identify parking-space occupancy and
+                            vehicles approaching entry or exit points.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Identify
+                        </h3>
+
+                        <p>
+                            Read vehicle credentials and determine
+                            whether access is authorized.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Evaluate
+                        </h3>
+
+                        <p>
+                            Compare vehicle requests with real-time
+                            parking availability.
+                        </p>
+
+                    </div>
+
+
+                    <div class="engineering-flow-arrow">
+                        →
+                    </div>
+
+
+                    <div class="engineering-flow-item">
+
+                        <span class="flow-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Manage
+                        </h3>
+
+                        <p>
+                            Control access, update occupancy and
+                            direct vehicles according to capacity.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             THE CONCEPT
+        ======================================== -->
+
+        <section id="concept" class="project-detail-section concept-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        THE CONCEPT
+                    </p>
+
+                    <h2>
+                        From parking detection to
+                        <span>vehicle-flow management.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text-block">
+
+                    <p>
+                        Each monitored parking bay is equipped with an
+                        ultrasonic sensor that detects whether a vehicle is
+                        present. These individual states are combined to
+                        maintain the total number of available spaces.
+                    </p>
+
+                    <p>
+                        At the entrance, a vehicle-detection sensor identifies
+                        an arriving vehicle while the UHF RFID reader obtains
+                        its access credential. The system verifies both vehicle
+                        authorization and current parking capacity before an
+                        entry command is issued.
+                    </p>
+
+                    <p>
+                        Entry and exit events are combined with individual
+                        parking-space measurements so that the system maintains
+                        an up-to-date view of parking usage, access activity
+                        and available capacity.
+                    </p>
+
+                </div>
+
+
+                <div class="concept-flow">
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            01
+                        </span>
+
+                        <h3>
+                            SENSE
+                        </h3>
+
+                        <p>
+                            Detect vehicles, parking occupancy
+                            and access-point activity.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            02
+                        </span>
+
+                        <h3>
+                            VERIFY
+                        </h3>
+
+                        <p>
+                            Confirm vehicle identity and
+                            available parking capacity.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            03
+                        </span>
+
+                        <h3>
+                            DIRECT
+                        </h3>
+
+                        <p>
+                            Grant access and communicate
+                            current parking availability.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-stage">
+
+                        <span class="concept-stage-number">
+                            04
+                        </span>
+
+                        <h3>
+                            UPDATE
+                        </h3>
+
+                        <p>
+                            Synchronize individual bay state
+                            with the overall facility count.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SYSTEM ARCHITECTURE
+        ======================================== -->
+
+        <section id="architecture" class="project-detail-section architecture-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        SYSTEM ARCHITECTURE
+                    </p>
+
+                    <h2>
+                        How the system
+                        <span>works.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="architecture-diagram">
+
+                    <!-- PARKING AREA -->
+
+                    <div class="architecture-block architecture-environment">
+
+                        <span class="architecture-block-title">
+                            PARKING AREA
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Parking Bays</span>
+                            <span>Entry / Exit Lane</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- SENSING -->
+
+                    <div class="architecture-block">
+
+                        <span class="architecture-block-title">
+                            VEHICLE SENSING
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Bay Occupancy</span>
+                            <span>Entry Detection</span>
+                            <span>Exit Detection</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- CONTROL -->
+
+                    <div class="architecture-block architecture-core">
+
+                        <span class="architecture-block-title">
+                            PARKING CONTROL
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Capacity Logic</span>
+                            <span>RFID Verification</span>
+                            <span>Vehicle State</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- ACCESS -->
+
+                    <div class="architecture-block">
+
+                        <span class="architecture-block-title">
+                            ACCESS MANAGEMENT
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Barrier Control</span>
+                            <span>Entry / Exit</span>
+                            <span>Operator Override</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="architecture-connector"></div>
+
+
+                    <!-- OUTPUT -->
+
+                    <div class="architecture-block architecture-output">
+
+                        <span class="architecture-block-title">
+                            PARKING VIEW
+                        </span>
+
+                        <div class="architecture-items">
+                            <span>Availability</span>
+                            <span>Occupancy</span>
+                            <span>Vehicle Events</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SYSTEM FOCUS
+        ======================================== -->
+
+        <section id="analysis" class="project-detail-section monitoring-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        SYSTEM FOCUS
+                    </p>
+
+                    <h2>
+                        What the system
+                        <span>manages.</span>
+                    </h2>
+
+                    <p>
+                        Individual bay measurements, access-point activity
+                        and vehicle events are combined into a single
+                        parking-management state.
+                    </p>
+
+                </div>
+
+
+                <div class="monitoring-grid">
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Parking Occupancy
+                        </h3>
+
+                        <p>
+                            Tracks whether each monitored parking bay
+                            is available or occupied.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Available Capacity
+                        </h3>
+
+                        <p>
+                            Calculates total available parking capacity
+                            from individual bay states and facility limits.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Vehicle Access
+                        </h3>
+
+                        <p>
+                            Tracks arriving vehicles, RFID authorization,
+                            barrier state and completed entry or exit events.
+                        </p>
+
+                    </article>
+
+
+                    <article class="monitoring-item">
+
+                        <span class="monitoring-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Vehicle Flow
+                        </h3>
+
+                        <p>
+                            Monitors movement through the access points
+                            and identifies capacity or entry conditions
+                            that can contribute to unnecessary queuing.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             ENGINEERING
+        ======================================== -->
+
+        <section id="engineering" class="project-detail-section engineering-build-section">
+
+            <div class="container">
+
+
+                <!-- ========================================
+                     ENGINEERING BUILD
+                ======================================== -->
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        ENGINEERING BUILD
+                    </p>
+
+                    <h2>
+                        Hardware behind the
+                        <span>parking-management system.</span>
+                    </h2>
+
+                    <p>
+                        The prototype combines industrial ultrasonic sensing,
+                        vehicle detection, long-range RFID identification,
+                        PLC-based access logic and edge data processing to
+                        coordinate parking occupancy and vehicle movement.
+                    </p>
+
+                </div>
+
+                <div class="engineering-table-wrapper">
+
+                    <table class="engineering-table">
+
+                        <thead>
+                            <tr>
+                                <th>FUNCTION</th>
+                                <th>HARDWARE</th>
+                                <th>PURPOSE</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Main Controller</td>
+
+                                <td>
+                                    ESP32-DevKitC V4
+                                </td>
+
+                                <td>
+                                    Executes parking occupancy,
+                                    access and barrier-control logic.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Parking Bay Detection</td>
+
+                                <td>
+                                    HC-SR04 Ultrasonic Sensors
+                                </td>
+
+                                <td>
+                                    Determines whether individual
+                                    prototype parking bays are occupied.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Vehicle Identification</td>
+
+                                <td>
+                                    MFRC522 RFID Reader
+                                    + RFID Tags
+                                </td>
+
+                                <td>
+                                    Identifies registered vehicles
+                                    requesting parking access.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Entry Detection</td>
+
+                                <td>
+                                    IR Break-Beam Sensor
+                                </td>
+
+                                <td>
+                                    Detects a vehicle arriving at
+                                    the entry checkpoint.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Exit Detection</td>
+
+                                <td>
+                                    IR Break-Beam Sensor
+                                </td>
+
+                                <td>
+                                    Confirms vehicle movement through
+                                    the prototype exit.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Barrier Mechanism</td>
+
+                                <td>
+                                    MG996R Servo Motor
+                                    + Model Barrier Arm
+                                </td>
+
+                                <td>
+                                    Demonstrates controlled parking
+                                    entry and exit.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Central Monitoring</td>
+
+                                <td>
+                                    Raspberry Pi 4 Model B
+                                </td>
+
+                                <td>
+                                    Records parking occupancy,
+                                    capacity and access events.
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- ========================================
+                     ENGINEERING SUBSECTION 01
+                     PARKING ARRANGEMENT
+                ======================================== -->
+
+                <div class="engineering-subsection">
+
+                    <div class="engineering-subsection-heading">
+
+                        <span class="engineering-subsection-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Parking Monitoring & Access Arrangement
+                            </h3>
+
+                            <p>
+                                The parking area combines individual bay
+                                sensing with dedicated vehicle-entry and
+                                exit checkpoints controlled from a common
+                                parking-management system.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+     SMART PARKING SYSTEM TOPOLOGY
+======================================== -->
+
+                    <div class="system-topology parking-topology">
+
+                        <!-- LEGEND -->
+
+                        <div class="topology-legend">
+
+                            <div class="legend-item">
+                                <span class="legend-line physical-line"></span>
+                                <span>Vehicle Movement</span>
+                            </div>
+
+                            <div class="legend-item">
+                                <span class="legend-line data-line"></span>
+                                <span>Control / Data Flow</span>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         PARKING LAYOUT
+    ======================================== -->
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                PHYSICAL PARKING LAYOUT
+                            </div>
+
+                            <div class="parking-layout-map">
+
+
+                                <!-- ENTRY -->
+
+                                <div class="parking-side-node">
+
+                                    <span class="topology-kicker">
+                                        ENTRY GATE
+                                    </span>
+
+                                    <strong>
+                                        Vehicle Entry
+                                    </strong>
+
+                                    <small>
+                                        IDLR12 V2 reader + FAAC B614 barrier
+                                    </small>
+
+                                </div>
+
+
+
+                                <!-- PARKING CORE -->
+
+                                <div class="parking-core">
+
+                                    <div class="parking-bay-row">
+
+                                        <div class="parking-bay occupied">
+                                            <span>BAY 01</span>
+                                            <strong>Occupied</strong>
+                                            <small>Q45U Sensor</small>
+                                        </div>
+
+                                        <div class="parking-bay available">
+                                            <span>BAY 02</span>
+                                            <strong>Available</strong>
+                                            <small>Q45U Sensor</small>
+                                        </div>
+
+                                        <div class="parking-bay occupied">
+                                            <span>BAY 03</span>
+                                            <strong>Occupied</strong>
+                                            <small>Q45U Sensor</small>
+                                        </div>
+
+                                        <div class="parking-bay available">
+                                            <span>BAY 04</span>
+                                            <strong>Available</strong>
+                                            <small>Q45U Sensor</small>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="parking-lane">
+
+                                        <span class="lane-flow">
+                                            ENTRY
+                                        </span>
+
+                                        <div class="lane-line"></div>
+
+                                        <span class="lane-arrow">
+                                            →
+                                        </span>
+
+                                        <div class="lane-line"></div>
+
+                                        <span class="lane-flow">
+                                            INTERNAL FLOW
+                                        </span>
+
+                                        <div class="lane-line"></div>
+
+                                        <span class="lane-arrow">
+                                            →
+                                        </span>
+
+                                        <div class="lane-line"></div>
+
+                                        <span class="lane-flow">
+                                            EXIT
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="parking-bay-row">
+
+                                        <div class="parking-bay available">
+                                            <span>BAY 05</span>
+                                            <strong>Available</strong>
+                                            <small>Q45U Sensor</small>
+                                        </div>
+
+                                        <div class="parking-bay occupied">
+                                            <span>BAY 06</span>
+                                            <strong>Occupied</strong>
+                                            <small>Q45U Sensor</small>
+                                        </div>
+
+                                        <div class="parking-bay available">
+                                            <span>BAY 07</span>
+                                            <strong>Available</strong>
+                                            <small>Q45U Sensor</small>
+                                        </div>
+
+                                        <div class="parking-bay future-bay">
+                                            <span>BAY N</span>
+                                            <strong>Scalable</strong>
+                                            <small>Additional monitored bays</small>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <!-- EXIT -->
+
+                                <div class="parking-side-node">
+
+                                    <span class="topology-kicker">
+                                        EXIT GATE
+                                    </span>
+
+                                    <strong>
+                                        Vehicle Exit
+                                    </strong>
+
+                                    <small>
+                                        Exit barrier + flow confirmation
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         FIELD INPUTS
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                FIELD EVENTS
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                            <small>
+                                Entry authentication · Bay occupancy · Exit events
+                            </small>
+
+                        </div>
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                FIELD INPUTS & CONTROL
+                            </div>
+
+                            <div class="parking-input-grid">
+
+                                <div class="parking-input-card">
+
+                                    <span>
+                                        ACCESS INPUT
+                                    </span>
+
+                                    <strong>
+                                        IDLR12 V2
+                                    </strong>
+
+                                    <small>
+                                        Entry identification and access request
+                                    </small>
+
+                                </div>
+
+                                <div class="parking-input-card">
+
+                                    <span>
+                                        OCCUPANCY INPUT
+                                    </span>
+
+                                    <strong>
+                                        Q45U Sensors
+                                    </strong>
+
+                                    <small>
+                                        Bay occupancy status from each monitored parking slot
+                                    </small>
+
+                                </div>
+
+                                <div class="parking-input-card">
+
+                                    <span>
+                                        FLOW / ACTUATION
+                                    </span>
+
+                                    <strong>
+                                        FAAC B614
+                                    </strong>
+
+                                    <small>
+                                        Barrier action and vehicle movement control
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         CONTROLLER + MONITORING
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                CONTROL DECISIONS & STATUS DATA
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                        </div>
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                CENTRAL LOGIC & MONITORING
+                            </div>
+
+                            <div class="parking-control-row">
+
+                                <div class="control-block">
+
+                                    <span>
+                                        PARKING CONTROLLER
+                                    </span>
+
+                                    <strong>
+                                        SIMATIC S7-1200 CPU 1212C
+                                    </strong>
+
+                                    <small>
+                                        Access logic, bay-status aggregation, entry / exit interlocking and gate control
+                                    </small>
+
+                                </div>
+
+                                <div class="control-arrow">
+                                    →
+                                </div>
+
+                                <div class="control-block">
+
+                                    <span>
+                                        MONITORING PLATFORM
+                                    </span>
+
+                                    <strong>
+                                        Raspberry Pi 4 + Web Dashboard
+                                    </strong>
+
+                                    <small>
+                                        Space availability, occupancy summary, entry logs, exit events and historical
+                                        status
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         SYSTEM FUNCTIONS
+    ======================================== -->
+
+                        <div class="topology-downlink">
+
+                            <span>
+                                OPERATIONAL OUTPUTS
+                            </span>
+
+                            <div class="topology-downlink-line"></div>
+
+                        </div>
+
+
+                        <div class="topology-section">
+
+                            <div class="topology-section-label">
+                                SYSTEM FUNCTIONS
+                            </div>
+
+                            <div class="parking-functions-grid">
+
+                                <div class="parking-function-card">
+                                    <span>01</span>
+                                    <strong>Parking Bay Tracking</strong>
+                                    <small>
+                                        Live occupied / available state for monitored bays
+                                    </small>
+                                </div>
+
+                                <div class="parking-function-card">
+                                    <span>02</span>
+                                    <strong>Vehicle Access Management</strong>
+                                    <small>
+                                        Entry authorization and controlled barrier actuation
+                                    </small>
+                                </div>
+
+                                <div class="parking-function-card">
+                                    <span>03</span>
+                                    <strong>Vehicle Flow Control</strong>
+                                    <small>
+                                        Managed movement through entry and exit points
+                                    </small>
+                                </div>
+
+                                <div class="parking-function-card">
+                                    <span>04</span>
+                                    <strong>Availability Display</strong>
+                                    <small>
+                                        Dashboard view of parking capacity and bay utilization
+                                    </small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ========================================
+         NOTE
+    ======================================== -->
+
+                        <div class="topology-note">
+
+                            <strong>
+                                System Principle
+                            </strong>
+
+                            <p>
+                                The parking controller manages access logic and parking-state decisions,
+                                while the monitoring platform records bay availability, entry / exit activity
+                                and overall parking utilization for operator visibility.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 02
+                     PARKING STATE MODEL
+                ======================================== -->
+
+                    <div class="engineering-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Parking & Access State Model
+                                </h3>
+
+                                <p>
+                                    Parking availability and access conditions
+                                    are converted into operating states so entry
+                                    decisions are based on both vehicle identity
+                                    and actual facility capacity.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="priority-table-wrapper">
+
+                            <table class="priority-table">
+
+                                <thead>
+
+                                    <tr>
+                                        <th>STATE</th>
+                                        <th>PARKING CONDITION</th>
+                                        <th>SYSTEM BEHAVIOUR</th>
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S0
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Available
+                                        </td>
+
+                                        <td>
+                                            Parking spaces are available and the
+                                            system accepts authorized vehicle
+                                            entry requests.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S1
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Entry Requested
+                                        </td>
+
+                                        <td>
+                                            A vehicle has been detected at the
+                                            entrance and its RFID credential
+                                            and facility capacity are evaluated.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S2
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Access Granted
+                                        </td>
+
+                                        <td>
+                                            Vehicle authorization and parking
+                                            capacity are valid, allowing the
+                                            barrier opening request to be issued.
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <span class="priority-code">
+                                                S3
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            Full / Restricted
+                                        </td>
+
+                                        <td>
+                                            Normal entry is prevented when
+                                            calculated capacity reaches zero or
+                                            when the access request is not valid.
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 03
+                     FLOW MANAGEMENT LOGIC
+                ======================================== -->
+
+                    <div class="engineering-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Vehicle Flow Management Logic
+                                </h3>
+
+                                <p>
+                                    Entry decisions are based on vehicle detection,
+                                    identity and live parking availability rather
+                                    than operating the access barrier independently.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="control-logic-diagram">
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <strong>
+                                    Detect Vehicle
+                                </strong>
+
+                                <p>
+                                    Entry sensor detects a vehicle
+                                    approaching the access point.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <strong>
+                                    Read Credential
+                                </strong>
+
+                                <p>
+                                    UHF reader retrieves the vehicle's
+                                    registered RFID identifier.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block logic-decision">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <strong>
+                                    Capacity Available?
+                                </strong>
+
+                                <p>
+                                    Compare occupied bays with the configured
+                                    parking capacity.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    04
+                                </span>
+
+                                <strong>
+                                    Grant Access
+                                </strong>
+
+                                <p>
+                                    Issue an entry request to the barrier
+                                    when authorization conditions are valid.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    05
+                                </span>
+
+                                <strong>
+                                    Update Occupancy
+                                </strong>
+
+                                <p>
+                                    Recalculate parking availability from
+                                    individual bay-sensor states.
+                                </p>
+
+                            </div>
+
+
+                            <div class="logic-arrow">
+                                →
+                            </div>
+
+
+                            <div class="logic-block">
+
+                                <span>
+                                    06
+                                </span>
+
+                                <strong>
+                                    Display Availability
+                                </strong>
+
+                                <p>
+                                    Update operator and dashboard views with
+                                    occupancy and vehicle-event information.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ========================================
+                     ENGINEERING SUBSECTION 04
+                     CONTROL & SAFETY PHILOSOPHY
+                ======================================== -->
+
+                    <div class="engineering-subsection safety-subsection">
+
+                        <div class="engineering-subsection-heading">
+
+                            <span class="engineering-subsection-number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Access & Safety Philosophy
+                                </h3>
+
+                                <p>
+                                    Parking automation manages access decisions
+                                    and occupancy information while physical
+                                    barrier safety remains within the dedicated
+                                    barrier-control system.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="safety-grid">
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <h4>
+                                    Barrier Control Separation
+                                </h4>
+
+                                <p>
+                                    The PLC sends access commands through an
+                                    isolated relay interface rather than directly
+                                    powering or controlling the barrier motor.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <h4>
+                                    Barrier Safety Remains Local
+                                </h4>
+
+                                <p>
+                                    Motion control, obstacle handling and other
+                                    barrier-specific functions remain with the
+                                    FAAC barrier control system.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <h4>
+                                    Sensor Validation
+                                </h4>
+
+                                <p>
+                                    Parking occupancy is updated only after
+                                    sensor readings remain within the configured
+                                    occupied or available range.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    04
+                                </span>
+
+                                <h4>
+                                    Count Reconciliation
+                                </h4>
+
+                                <p>
+                                    Total parking capacity is derived from
+                                    individual bay states rather than relying
+                                    only on entry-minus-exit counting.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    05
+                                </span>
+
+                                <h4>
+                                    Operator Override
+                                </h4>
+
+                                <p>
+                                    The HMI provides an operator-supervised
+                                    method for handling visitor access, sensor
+                                    faults and exceptional vehicle movement.
+                                </p>
+
+                            </article>
+
+
+                            <article class="safety-item">
+
+                                <span>
+                                    06
+                                </span>
+
+                                <h4>
+                                    Uncertain State Handling
+                                </h4>
+
+                                <p>
+                                    Conflicting occupancy or access information
+                                    is displayed for operator review rather than
+                                    automatically assuming additional capacity.
+                                </p>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+
+        <!-- ========================================
+             DEVELOPMENT APPROACH
+        ======================================== -->
+
+        <section id="development" class="project-detail-section development-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        DEVELOPMENT APPROACH
+                    </p>
+
+                    <h2>
+                        From space detection to
+                        <span>vehicle-flow control.</span>
+                    </h2>
+
+                    <p>
+                        The prototype was developed progressively from
+                        individual parking-space sensing through access
+                        detection, PLC logic, RFID integration, barrier
+                        control and centralized monitoring.
+                    </p>
+
+                </div>
+
+
+                <div class="development-list">
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Parking Layout & Instrumentation
+                            </h3>
+
+                            <p>
+                                Defined monitored parking bays, entry and
+                                exit points and installed the occupancy and
+                                vehicle-detection sensors.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Occupancy Detection
+                            </h3>
+
+                            <p>
+                                Configured ultrasonic distance measurements
+                                and converted them into stable available
+                                and occupied parking states.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Vehicle Identification
+                            </h3>
+
+                            <p>
+                                Integrated the long-range UHF RFID reader
+                                and linked registered vehicle identifiers
+                                with entry-access decisions.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Access-Control Logic
+                            </h3>
+
+                            <p>
+                                Developed PLC sequencing for vehicle detection,
+                                capacity verification and isolated barrier
+                                command generation.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            05
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Dashboard & Operator Interface
+                            </h3>
+
+                            <p>
+                                Developed parking views showing individual
+                                bay status, total availability, barrier state
+                                and vehicle-access events.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="development-step">
+
+                        <span class="development-number">
+                            06
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Testing & Refinement
+                            </h3>
+
+                            <p>
+                                Tested vehicle entry, occupied-bay changes,
+                                full-capacity conditions, RFID access,
+                                exit events and inconsistent sensor scenarios.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             APPLICATIONS
+        ======================================== -->
+
+        <section id="applications" class="project-detail-section applications-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        APPLICATIONS
+                    </p>
+
+                    <h2>
+                        Where the system
+                        <span>can be applied.</span>
+                    </h2>
+
+                    <p>
+                        The architecture is suited to controlled parking
+                        environments where occupancy visibility and vehicle
+                        access need to operate as one coordinated system.
+                    </p>
+
+                </div>
+
+
+                <div class="applications-grid">
+
+                    <article class="application-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Office Campuses
+                        </h3>
+
+                        <p>
+                            Manage employee vehicle access while maintaining
+                            real-time visibility of available parking capacity.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Apartment Complexes
+                        </h3>
+
+                        <p>
+                            Combine resident vehicle identification with
+                            controlled entry and parking-space monitoring.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Industrial Facilities
+                        </h3>
+
+                        <p>
+                            Coordinate employee and authorized-vehicle
+                            access around controlled facility parking.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Hospitals
+                        </h3>
+
+                        <p>
+                            Provide real-time capacity visibility and
+                            controlled access across high-demand parking
+                            areas.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            05
+                        </span>
+
+                        <h3>
+                            Commercial Parking
+                        </h3>
+
+                        <p>
+                            Monitor bay availability and manage vehicle
+                            entry according to actual parking capacity.
+                        </p>
+
+                    </article>
+
+
+                    <article class="application-item">
+
+                        <span>
+                            06
+                        </span>
+
+                        <h3>
+                            Institutional Campuses
+                        </h3>
+
+                        <p>
+                            Manage authorized vehicles across universities,
+                            research campuses and secured facilities.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             POSSIBLE EXTENSIONS
+        ======================================== -->
+
+        <section class="project-detail-section extensions-section">
+
+            <div class="container">
+
+                <div class="project-section-heading">
+
+                    <p class="eyebrow">
+                        POSSIBLE EXTENSIONS
+                    </p>
+
+                    <h2>
+                        Where the system
+                        <span>can go next.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="extensions-grid">
+
+                    <article class="extension-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Dynamic Parking Guidance
+                        </h3>
+
+                        <p>
+                            Add directional displays that guide arriving
+                            vehicles toward areas with available spaces.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Reserved Parking
+                        </h3>
+
+                        <p>
+                            Add reservation states for visitors, employees,
+                            accessible bays and designated vehicle classes.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Number-Plate Recognition
+                        </h3>
+
+                        <p>
+                            Add camera-based vehicle identification as an
+                            additional or alternative access-control method.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Parking Analytics
+                        </h3>
+
+                        <p>
+                            Analyze occupancy percentage, peak periods,
+                            dwell time and parking-space utilization
+                            from historical data.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            05
+                        </span>
+
+                        <h3>
+                            Dynamic Lighting
+                        </h3>
+
+                        <p>
+                            Coordinate parking-area lighting with vehicle
+                            movement and occupancy to reduce unnecessary
+                            energy consumption.
+                        </p>
+
+                    </article>
+
+
+                    <article class="extension-item">
+
+                        <span>
+                            06
+                        </span>
+
+                        <h3>
+                            Multi-Zone Parking
+                        </h3>
+
+                        <p>
+                            Extend the architecture across multiple floors,
+                            parking zones or separate parking facilities
+                            through centralized supervision.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             PROJECT CTA
+        ======================================== -->
+
+        <section class="project-detail-cta">
+
+            <div class="container">
+
+                <div class="project-cta-content">
+
+                    <p class="eyebrow">
+                        START A PROJECT
+                    </p>
+
+                    <h2>
+                        Have a similar
+                        engineering challenge?
+                    </h2>
+
+                    <h3>
+                        Let's turn your requirement
+                        into a working system.
+                    </h3>
+
+                    <p>
+                        Tell us what you're trying to monitor, automate,
+                        control or improve.
+                    </p>
+
+                    <a href="../index.html#contact" class="footer-cta-button">
+
+                        Discuss a Project
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <span class="logo">
+                    EPPL
+                </span>
+
+                <p>
+                    Engineering ideas into practical systems.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#architecture">
+                    Architecture
+                </a>
+
+                <a href="#analysis">
+                    System Focus
+                </a>
+
+                <a href="#engineering">
+                    Engineering
+                </a>
+
+                <a href="#development">
+                    Development
+                </a>
+
+                <a href="#applications">
+                    Applications
+                </a>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 Engineering Projects & Prototypes Lab
+                </span>
+
+                <span>
+                    SMART PARKING & VEHICLE FLOW MANAGEMENT SYSTEM
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
