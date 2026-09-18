@@ -5785,3 +5785,154 @@ html {
     }
 
 }
+
+/* =========================================================
+   FINAL MOBILE FIXES
+========================================================= */
+
+@media (max-width: 700px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* -----------------------------------------
+       CONTAINERS
+    ----------------------------------------- */
+
+    .project-detail-hero .container,
+    .project-detail-section .container {
+        width: calc(100% - 32px) !important;
+        max-width: none !important;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* -----------------------------------------
+       HEADINGS
+    ----------------------------------------- */
+
+    #concept .project-section-heading h2,
+    .project-section-heading h2,
+    .project-detail-hero h1 {
+        white-space: normal !important;
+
+        max-width: 100% !important;
+
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+
+    .project-section-heading {
+        width: 100%;
+        max-width: 100% !important;
+    }
+
+
+    .project-text-block {
+        width: 100%;
+        max-width: 100% !important;
+    }
+
+
+    /* -----------------------------------------
+       CHALLENGE FLOW
+       Monitor → Prioritize → Decide → Control
+    ----------------------------------------- */
+
+    .engineering-flow {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        width: 100% !important;
+
+        flex-wrap: nowrap !important;
+    }
+
+
+    .engineering-flow-item {
+        width: 100% !important;
+        max-width: none !important;
+
+        flex: 0 0 100% !important;
+
+        border-right: none !important;
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.08);
+    }
+
+
+    .engineering-flow-item:last-child {
+        border-bottom: none;
+    }
+
+
+    .engineering-flow-arrow {
+        display: none !important;
+    }
+
+
+    /* -----------------------------------------
+       OTHER PROJECT GRIDS
+    ----------------------------------------- */
+
+    .concept-flow,
+    .monitoring-grid,
+    .applications-grid,
+    .extensions-grid,
+    .development-list {
+        grid-template-columns: 1fr !important;
+
+        width: 100% !important;
+    }
+
+
+    /* -----------------------------------------
+       ARCHITECTURE
+    ----------------------------------------- */
+
+    .architecture-diagram {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        width: 100% !important;
+    }
+
+
+    .architecture-block {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+
+    .architecture-connector {
+        display: none !important;
+    }
+
+
+    /* -----------------------------------------
+       TABLES
+    ----------------------------------------- */
+
+    .engineering-table-wrapper {
+        width: 100%;
+
+        overflow-x: auto;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    .engineering-table {
+        min-width: 720px;
+    }
+
+}
