@@ -22,37 +22,59 @@
 
     <!-- ================= NAVIGATION ================= -->
 
-    <header class="navbar">
+   <header class="navbar">
 
-        <div class="container nav-container">
+    <div class="container nav-container">
 
-            <a href="#home" class="logo">
-                EPPL
-            </a>
-
-
-            <nav class="nav-links">
-
-                <a href="#solutions">Solutions</a>
-
-                <a href="#projects">Projects</a>
-
-                <a href="#technologies">Technologies</a>
-
-                <a href="#about">About</a>
-
-                <a href="#contact">Contact</a>
-
-            </nav>
+        <!-- LOGO -->
+        <a href="#home" class="logo">
+            EPPL
+        </a>
 
 
-            <a href="#contact" class="nav-button">
+        <!-- NAV LINKS -->
+        <nav class="nav-links" id="navMenu">
+
+            <a href="#solutions">Solutions</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#technologies">Technologies</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+            <!-- MOBILE CTA -->
+            <a href="#contact" class="nav-button mobile-nav-button">
                 Discuss a Project
             </a>
 
-        </div>
+        </nav>
 
-    </header>
+
+        <!-- DESKTOP CTA -->
+        <a href="#contact" class="nav-button desktop-nav-button">
+            Discuss a Project
+        </a>
+
+
+        <!-- MOBILE HAMBURGER -->
+        <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Open navigation"
+            aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+</header>
 
 
 
