@@ -1414,16 +1414,15 @@ textarea {
 .meet-engineer {
     position: relative;
 
-    margin-top: 110px;
+    margin-top: 50px;
 
     z-index: 2;
 }
 
 
 .meet-engineer-header {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
-
 
 .meet-engineer-grid {
     display: grid;
