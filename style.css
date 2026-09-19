@@ -2693,7 +2693,9 @@ textarea {
     /* =====================================================
        PROCESS
     ===================================================== */
-
+#process{
+    margin-bottom: 1px;
+}
     .process-grid {
         grid-template-columns: 1fr;
     }
@@ -2736,7 +2738,8 @@ textarea {
     ===================================================== */
 
     .technology-section {
-        padding: 52px 0;
+        padding: 0px 0;
+
     }
 
     .technology-heading {
