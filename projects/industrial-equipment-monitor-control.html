@@ -22,16 +22,18 @@
     <!-- ========================================
          NAVIGATION
     ======================================== -->
-
     <header class="navbar">
 
         <div class="container nav-container">
 
+            <!-- LOGO -->
             <a href="../index.html" class="logo">
                 EPPL
             </a>
 
-            <nav class="nav-links">
+
+            <!-- NAV LINKS -->
+            <nav class="nav-links" id="navMenu">
 
                 <a href="#concept">
                     Concept
@@ -57,11 +59,33 @@
                     Applications
                 </a>
 
+
+                <!-- MOBILE BUTTON -->
+                <a href="../index.html#contact" class="nav-button mobile-nav-button">
+
+                    Discuss a Project
+
+                </a>
+
             </nav>
 
-            <a href="../index.html#contact" class="nav-button">
+
+            <!-- DESKTOP BUTTON -->
+            <a href="../index.html#contact" class="nav-button desktop-nav-button">
+
                 Discuss a Project
+
             </a>
+
+
+            <!-- HAMBURGER -->
+            <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
 
         </div>
 
@@ -76,7 +100,7 @@
 
         <section class="project-detail-hero">
 
-             <!-- BACKGROUND IMAGE -->
+            <!-- BACKGROUND IMAGE -->
             <div class="project-hero-bg" style="background-image: url('../assets/images/project-03.jpg');">
             </div>
 

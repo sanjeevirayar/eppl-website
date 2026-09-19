@@ -14,9 +14,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="icon"
-          type="image/jpeg"
-          href="assets/images/eppl-logo.png">
+    <link rel="icon" type="image/jpeg" href="assets/images/eppl-logo.png">
 
 </head>
 
@@ -26,59 +24,55 @@
 
     <!-- ================= NAVIGATION ================= -->
 
-   <header class="navbar">
+    <header class="navbar">
 
-    <div class="container nav-container">
+        <div class="container nav-container">
 
-        <!-- LOGO -->
-        <a href="#home" class="logo">
-            EPPL
-        </a>
+            <!-- LOGO -->
+            <a href="#home" class="logo">
+                EPPL
+            </a>
 
 
-        <!-- NAV LINKS -->
-        <nav class="nav-links" id="navMenu">
+            <!-- NAV LINKS -->
+            <nav class="nav-links" id="navMenu">
 
-            <a href="#solutions">Solutions</a>
+                <a href="#solutions">Solutions</a>
 
-            <a href="#projects">Projects</a>
+                <a href="#projects">Projects</a>
 
-            <a href="#technologies">Technologies</a>
+                <a href="#technologies">Technologies</a>
 
-            <a href="#about">About</a>
+                <a href="#about">About</a>
 
-            <a href="#contact">Contact</a>
+                <a href="#contact">Contact</a>
 
-            <!-- MOBILE CTA -->
-            <a href="#contact" class="nav-button mobile-nav-button">
+                <!-- MOBILE CTA -->
+                <a href="#contact" class="nav-button mobile-nav-button">
+                    Discuss a Project
+                </a>
+
+            </nav>
+
+
+            <!-- DESKTOP CTA -->
+            <a href="#contact" class="nav-button desktop-nav-button">
                 Discuss a Project
             </a>
 
-        </nav>
 
+            <!-- MOBILE HAMBURGER -->
+            <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
 
-        <!-- DESKTOP CTA -->
-        <a href="#contact" class="nav-button desktop-nav-button">
-            Discuss a Project
-        </a>
+                <span></span>
+                <span></span>
+                <span></span>
 
+            </button>
 
-        <!-- MOBILE HAMBURGER -->
-        <button
-            class="nav-toggle"
-            id="navToggle"
-            aria-label="Open navigation"
-            aria-expanded="false">
+        </div>
 
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </button>
-
-    </div>
-
-</header>
+    </header>
 
 
 
@@ -406,7 +400,8 @@
 
                         <!-- PROJECT 01 -->
 
-                        <a href="projects/smart-electrical-panel.html" class="project-card" aria-label="Open Smart Electrical Panel project">
+                        <a href="projects/smart-electrical-panel.html" class="project-card"
+                            aria-label="Open Smart Electrical Panel project">
 
                             <div class="project-image">
                                 <img src="assets/images/project-01.jpg" alt="Smart Electrical Panel">
@@ -442,7 +437,8 @@
 
                         <!-- PROJECT 02 -->
 
-                        <a href="projects/data-center-infrastructure-monitor.html" class="project-card" aria-label="Open Data Center Infrastructure Monitor project">
+                        <a href="projects/data-center-infrastructure-monitor.html" class="project-card"
+                            aria-label="Open Data Center Infrastructure Monitor project">
 
                             <div class="project-image">
                                 <img src="assets/images/project-02.jpg" alt="Data Center Infrastructure Monitor">
@@ -474,7 +470,8 @@
                         </a>
 
                         <!-- PROJECT 03 -->
-                        <a href="projects/industrial-equipment-monitor-control.html" class="project-card" aria-label="Open Equipment & Production Monitor project">
+                        <a href="projects/industrial-equipment-monitor-control.html" class="project-card"
+                            aria-label="Open Equipment & Production Monitor project">
 
                             <div class="project-image">
                                 <img src="assets/images/project-03.jpg" alt="Equipment & Production Monitor">
@@ -508,7 +505,8 @@
 
                         <!-- PROJECT 04 -->
 
-                        <a href="projects/predictive-motor-health.html" class="project-card" aria-label="Open Predictive Motor Health Analyzer project">
+                        <a href="projects/predictive-motor-health.html" class="project-card"
+                            aria-label="Open Predictive Motor Health Analyzer project">
 
                             <div class="project-image">
                                 <img src="assets/images/project-04.jpg" alt="Predictive Motor Health Analyzer">
@@ -543,7 +541,8 @@
 
                         <!-- PROJECT 05 -->
 
-                        <a href="projects/smart-parking-vehicle-flow.html" class="project-card" aria-label="Open Smart Parking & Vehicle Flow project">
+                        <a href="projects/smart-parking-vehicle-flow.html" class="project-card"
+                            aria-label="Open Smart Parking & Vehicle Flow project">
 
                             <div class="project-image">
                                 <img src="assets/images/project-05.jpg" alt="Smart Parking & Vehicle Flow">
@@ -579,7 +578,8 @@
 
                         <!-- PROJECT 06 -->
 
-                        <a href="projects/community-water-consumption-monitor.html" class="project-card" aria-label="Open Community Water Consumption Monitor project">
+                        <a href="projects/community-water-consumption-monitor.html" class="project-card"
+                            aria-label="Open Community Water Consumption Monitor project">
 
                             <div class="project-image">
                                 <img src="assets/images/project-06.jpg" alt="Community Water Consumption Monitor">
@@ -1268,7 +1268,6 @@
 
                     </div>
 
-
                     <div class="meet-engineer-grid">
 
 
@@ -1278,6 +1277,18 @@
 
                             <img src="assets/images/engineer-profile.jpg"
                                 alt="Engineer behind Engineering Projects & Prototypes Lab">
+
+                            <div class="engineer-photo-overlay">
+
+                                <strong>
+                                    Sanjeevirayar S
+                                </strong>
+
+                                <span>
+                                    B.Tech EEE
+                                </span>
+
+                            </div>
 
                         </div>
 
@@ -1514,10 +1525,17 @@
 
 
 
-                    <button type="submit" class="primary-button">
+                    <button type="submit" class="project-enquiry-btn">
+                        <span class="project-enquiry-icon">
+                            <svg viewBox="0 0 32 32" aria-hidden="true">
+                                <path
+                                    d="M27.2 15.2c0 6.1-4.9 11-11 11-1.9 0-3.7-.5-5.3-1.4L5 26.3l1.6-5.7c-1-1.6-1.5-3.5-1.5-5.4 0-6.1 4.9-11 11-11s11.1 4.9 11.1 11zm-11-9.2c-5.1 0-9.2 4.1-9.2 9.2 0 1.8.5 3.5 1.5 5l.2.3-.9 3.2 3.3-.9.3.2c1.4.9 3 1.4 4.8 1.4 5.1 0 9.2-4.1 9.2-9.2S21.3 6 16.2 6zm5.2 11.7c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1s-.7.9-.8 1c-.1.1-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.1-.2 0-.3.1-.5.1-.1.2-.3.4-.4.1-.1.1-.2.2-.4s0-.3 0-.4c-.1-.1-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3s-.8.8-.8 1.9.8 2.2.9 2.4c.1.2 1.7 2.7 4.2 3.7.6.3 1.1.4 1.5.5.6.2 1.2.1 1.6.1.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3 0-.1-.2-.2-.5-.3z" />
+                            </svg>
+                        </span>
 
-                        Send Project Enquiry
-
+                        <span class="project-enquiry-text">
+                            SEND PROJECT ENQUIRE
+                        </span>
                     </button>
 
 
@@ -1525,6 +1543,7 @@
 
 
             </div>
+
 
         </section>
 
@@ -1547,9 +1566,22 @@
                     EPPL
                 </div>
 
+                <p class="footer-lab-name">
+                    Engineering Projects & Prototypes Lab
+                </p>
 
                 <p>
-                    Engineering Projects & Prototypes Lab
+                    Phone:
+                    <a href="tel:+919150387179">
+                        9150387179
+                    </a>
+                </p>
+
+                <p>
+                    Email:
+                    <a href="mailto:support.eppl@gmail.com">
+                        support.eppl@gmail.com
+                    </a>
                 </p>
 
             </div>

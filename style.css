@@ -1952,7 +1952,7 @@ textarea {
 ========================================================= */
 
 .contact-section {
-    padding: 75px 0;
+    padding: 50px 0;
 
     background:
         radial-gradient(
@@ -2025,20 +2025,93 @@ textarea {
     min-height: 120px;
 }
 
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-    border-color: #555;
-}
+/* =========================================================
+   PROJECT ENQUIRY BUTTON
+========================================================= */
 
-.contact-form .primary-button {
+.contact-form .project-enquiry-btn {
+    display: flex;
+    align-items: stretch;
+
+    width: 100%;
+    height: 58px;
+
+    padding: 0;
+    margin-top: 2px;
+
     border: none;
+    border-radius: 6px;
 
+    background: transparent;
+
+    overflow: hidden;
     cursor: pointer;
 
-    align-self: flex-start;
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
 }
 
+
+/* WHATSAPP ICON SIDE */
+
+.project-enquiry-icon {
+    width: 70px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #21c45a;
+}
+
+
+.project-enquiry-icon svg {
+    width: 28px;
+    height: 28px;
+
+    fill: #ffffff;
+}
+
+
+/* TEXT SIDE */
+
+.project-enquiry-text {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #25d366;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: .04em;
+
+    white-space: nowrap;
+}
+
+
+/* HOVER */
+
+.contact-form .project-enquiry-btn:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 18px rgba(37, 211, 102, .20);
+}
+
+
+/* CLICK */
+
+.contact-form .project-enquiry-btn:active {
+    transform: translateY(0);
+}
 
 /* =========================================================
    FOOTER
@@ -2048,6 +2121,15 @@ textarea {
     padding: 22px 0 16px;
 
     background: var(--bg-dark);
+    
+}
+
+.footer-lab-name {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-muted);
+    margin: 12px 0 10px;
 }
 
 .footer-container {
@@ -2957,3 +3039,33 @@ textarea {
     }
 
 }
+.engineer-photo-overlay {
+    position: absolute;
+
+    left: 22px;
+    right: 22px;
+    bottom: 20px;
+
+    z-index: 3;
+}
+
+.engineer-photo-overlay strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: #ffffff;
+}
+
+.engineer-photo-overlay span {
+    display: block;
+
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+
+    color: rgba(255,255,255,.68);
+}
+
